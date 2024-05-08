@@ -20,6 +20,14 @@ const NAVIGATION_ITENS: INavigationItens[] = [
     href: '/#',
   },
   {
+    label: 'Jogos',
+    href: '/#',
+  },
+  {
+    label: 'Fotos',
+    href: '/#',
+  },
+  {
     label: 'Contato',
     href: '/#',
   },

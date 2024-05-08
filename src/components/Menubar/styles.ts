@@ -9,5 +9,5 @@ export const MenubarContainer = styled('menu', {
   marginTop: '1.25rem',
   // marginLeft: '3.95rem',
 
-  border: '1px solid red',
+  // border: '1px solid red',
 });

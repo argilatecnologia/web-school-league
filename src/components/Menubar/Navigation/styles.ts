@@ -6,7 +6,8 @@ export const NavigationContainer = styled('div', {
 
   gap: '1.5rem',
 
+  fontSize: '$lg',
   fontWeight: '$bold',
 
-  border: '1px solid green',
+  // border: '1px solid green',
 });

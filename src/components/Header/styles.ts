@@ -25,7 +25,7 @@ export const HeaderContent = styled('div', {
   justifyContent: 'space-between',
 
   borderBottomWidth: '1px',
-  borderBottomColor: `linear-gradient(180deg, #FFC887 0%, #e96924 100%)`,
+  borderBottomColor: '$gray200',
   borderBottomStyle: 'solid',
 });
 
