@@ -12,7 +12,7 @@ interface INavigationItens {
 const NAVIGATION_ITENS: INavigationItens[] = [
   {
     label: 'Início',
-    href: '/dashboard',
+    href: '/',
     shouldMatchExactHref: true,
   },
   {
@@ -29,7 +29,7 @@ const NAVIGATION_ITENS: INavigationItens[] = [
   },
   {
     label: 'Contato',
-    href: '/#',
+    href: '/contato',
   },
 ];
 

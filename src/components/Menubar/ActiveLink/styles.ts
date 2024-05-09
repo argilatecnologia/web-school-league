@@ -13,6 +13,9 @@ export const ActiveLinkContent = styled(Link, {
 
   transition: '0.2s',
 
+  // display: 'inline-block',
+  position: 'relative',
+
   '&:hover': {
     color: '$orange600',
   },
@@ -24,13 +27,18 @@ export const ActiveLinkContent = styled(Link, {
     width: 4,
     height: 24,
 
-    // background: '$gradient-vertical',
+    background: '$gradient-vertical',
 
-    // marginRight: '0.75rem',
+    marginRight: '0.75rem',
 
     borderRadius: '2px',
+    // borderRadius: '3px 3px 0 0',
 
     transition: '0.2s',
+
+    // position: 'absolute',
+    // bottom: 10,
+    // left: -10,
 
     // para aparecer e sumir dinamicamente
     opacity: 0,
