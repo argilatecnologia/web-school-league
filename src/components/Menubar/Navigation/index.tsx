@@ -16,17 +16,17 @@ const NAVIGATION_ITENS: INavigationItens[] = [
     shouldMatchExactHref: true,
   },
   {
-    label: 'Quem Somos',
-    href: '/#',
+    label: 'Sobre',
+    href: '/sobre',
   },
   {
     label: 'Jogos',
     href: '/#',
   },
-  {
-    label: 'Fotos',
-    href: '/#',
-  },
+  // {
+  //   label: 'Fotos',
+  //   href: '/#',
+  // },
   {
     label: 'Contato',
     href: '/contato',

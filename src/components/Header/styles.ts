@@ -33,5 +33,3 @@ export const HeaderContentImage = styled(Image, {
   width: '140px',
   height: '90px',
 });
-
-export const Divider = styled('div', {});
