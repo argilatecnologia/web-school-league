@@ -3,10 +3,10 @@ import { styled } from '@/styles/stitches.config';
 import Image from 'next/image';
 
 export const HeaderContainer = styled('header', {
-  width: '1366px',
+  width: '100vw',
   height: '85px',
 
-  maxWidth: 1280,
+  maxWidth: 1370,
 
   display: 'flex',
   flexDirection: 'row',

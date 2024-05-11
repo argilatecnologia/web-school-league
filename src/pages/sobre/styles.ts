@@ -18,15 +18,25 @@ export const AboutContent = styled('div', {
   margin: '0 auto',
   marginTop: '2rem',
   padding: '2rem 0',
-
-  border: '1px solid red',
 });
 
 export const AboutContentImage = styled(Image, {
-  width: '607px',
-  height: '402px',
+  width: '617px',
+  height: '412px',
+  flexShrink: 0,
 
   borderRadius: '0.5rem',
+});
+
+export const AboutRectangleImage = styled('div', {
+  width: '581px',
+  height: '405px',
+  flexShrink: 0,
+
+  margin: 'auto',
+
+  borderRadius: '0.25rem',
+  background: '#CCF4E6',
 });
 
 export const AboutTitleContainer = styled('div', {
@@ -35,8 +45,13 @@ export const AboutTitleContainer = styled('div', {
 
   margin: '0 auto',
   padding: '2rem 1rem',
-
-  border: '1px solid red',
 });
 
-export const AboutTextContent = styled('div', {});
+export const AboutTextContent = styled('div', {
+  width: '600px',
+
+  textAlign: 'justify',
+
+  marginTop: '1rem',
+  lineHeight: '$short',
+});
