@@ -15,18 +15,19 @@ export const ActiveLinkContent = styled(Link, {
 
   position: 'relative',
 
-  padding: '0 0.5rem',
-  lineHeight: '5rem',
+  padding: '0 0.25rem',
+  lineHeight: '3rem',
 
   '&::after': {
     // fazer assim, senão não funciona no Stitches
     content: "''",
 
+    position: 'absolute',
     display: 'block',
     width: 0,
     height: '3px',
 
-    marginTop: '-0.7rem',
+    marginTop: '0.85rem',
     left: 0,
 
     background: 'transparent',
@@ -52,17 +53,13 @@ export const ActiveLinkContent = styled(Link, {
           width: 'stretch',
           height: '3px',
 
-          marginTop: '-0.7rem',
+          marginTop: '0.85rem',
           left: 3,
 
           background: '$orange600',
 
           opacity: 1,
         },
-
-        // '&::after': {
-        //   opacity: 1,
-        // },
       },
     },
   },
