@@ -4,13 +4,13 @@ import backgroundHomeImg from '../../assets/backgroung-home-img.png';
 
 import Head from 'next/head';
 
-import { Heading } from '@/components/Typography';
+import { Heading, Text } from '@/components/Typography';
 import {
   HomeContainer,
-  HomeContainerImage,
   HomeContent,
-  HomeContentImage,
   HomeContentTitle,
+  HomeContainerImage,
+  HomeContentImage,
 } from './styles';
 
 export default function Home() {
@@ -28,6 +28,9 @@ export default function Home() {
             <Heading size="lg" color="gray-700">
               Conteúdo esportivo dos jogos escolares.{<br />} Fique por dentro!
             </Heading>
+            <Text size="md" color="gray-700">
+              Um site repleto de notícias esportivas para você.
+            </Text>
           </HomeContentTitle>
 
           <HomeContainerImage>

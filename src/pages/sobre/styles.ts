@@ -3,15 +3,16 @@ import { styled } from '@/styles/stitches.config';
 import Image from 'next/image';
 
 export const AboutContainer = styled('div', {
-  height: '100vh',
+  // height: '100vh',
 
   display: 'flex',
   flexDirection: 'column',
+  overflow: 'hidden',
 });
 
 export const AboutContent = styled('div', {
   width: '100%',
-  maxWidth: 1280,
+  // maxWidth: 1280,
 
   display: 'flex',
 
@@ -25,7 +26,7 @@ export const AboutContentImage = styled(Image, {
   height: '412px',
   flexShrink: 0,
 
-  borderRadius: '0.5rem',
+  borderRadius: '0.25rem',
 });
 
 export const AboutRectangleImage = styled('div', {

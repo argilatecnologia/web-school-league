@@ -6,6 +6,9 @@ export const HomeContainer = styled('div', {
 
   display: 'flex',
   flexDirection: 'column',
+  overflow: 'hidden',
+
+  marginTop: '8rem',
 });
 
 export const HomeContent = styled('div', {
@@ -28,9 +31,11 @@ export const HomeContentTitle = styled('div', {
   height: 'auto',
 
   display: 'flex',
-  flexDirection: 'row',
+  flexDirection: 'column',
 
+  gap: '1rem',
   margin: '2rem 0 0 8rem',
+  textAlign: 'center',
 
   // border: '1px solid blue',
 });
@@ -48,18 +53,18 @@ export const HomeContainerImage = styled('div', {
     background: '$blue100',
     position: 'absolute',
     top: '-12.8%',
-    left: '13%',
+    left: '12%',
     zIndex: 0,
 
-    borderRadius: '0.5rem',
+    borderRadius: '0.25rem',
   },
 });
 
 export const HomeContentImage = styled(Image, {
-  width: '561px',
-  height: '375px',
+  width: '35rem',
+  height: '23.4rem',
 
-  borderRadius: '0.5rem',
+  borderRadius: '0.25rem',
 
   position: 'relative',
 });

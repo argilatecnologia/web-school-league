@@ -16,6 +16,12 @@ export const HeaderContainer = styled('header', {
   margin: '0 auto',
   marginTop: '2rem',
 
+  position: 'fixed',
+  top: 0,
+  left: 0,
+  zIndex: 100,
+  background: '$white25',
+
   // border: '1px solid red',
 });
 
