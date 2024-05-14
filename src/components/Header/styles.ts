@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const HeaderContainer = styled('header', {
   width: '100%',
-  height: '6rem',
+  // height: '6rem',
 
   // maxWidth: 1370,
 
@@ -12,9 +12,6 @@ export const HeaderContainer = styled('header', {
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'space-between',
-
-  margin: '0 auto',
-  marginTop: '2rem',
 
   position: 'fixed',
   top: 0,
@@ -41,6 +38,8 @@ export const HeaderContent = styled('div', {
 });
 
 export const HeaderContentImage = styled(Image, {
-  width: '8.75rem',
+  width: '7.75rem',
   height: '5.625rem',
+
+  paddingTop: '1rem',
 });

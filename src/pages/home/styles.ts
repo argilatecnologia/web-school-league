@@ -1,7 +1,7 @@
 import { styled } from '@/styles/stitches.config';
 import Image from 'next/image';
 
-export const HomeContainer = styled('div', {
+export const HomeContainer = styled('section', {
   height: '100vh',
 
   display: 'flex',

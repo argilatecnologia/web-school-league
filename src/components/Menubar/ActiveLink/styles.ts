@@ -27,7 +27,7 @@ export const ActiveLinkContent = styled(Link, {
     width: 0,
     height: '3px',
 
-    marginTop: '0.85rem',
+    marginTop: '0.80rem',
     left: 0,
 
     background: 'transparent',
@@ -53,7 +53,7 @@ export const ActiveLinkContent = styled(Link, {
           width: 'stretch',
           height: '3px',
 
-          marginTop: '0.85rem',
+          marginTop: '0.80rem',
           left: 3,
 
           background: '$orange600',

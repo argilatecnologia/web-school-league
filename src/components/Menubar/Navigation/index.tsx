@@ -1,7 +1,12 @@
 import { useMemo } from 'react';
 
 import { ActiveLink } from '../ActiveLink';
-import { NavigationContainer } from './styles';
+import {
+  NavigationContainer,
+  NavigationContentCloseMenu,
+  NavigationContentMenu,
+  NavigationContentShowMenu,
+} from './styles';
 
 interface INavigationItens {
   label: string;
@@ -40,15 +45,19 @@ const Navigation = () => {
 
   return (
     <NavigationContainer>
-      {navItens.map(({ label, href, shouldMatchExactHref }) => (
-        <ActiveLink
-          key={label}
-          href={href}
-          shouldMatchExactHref={shouldMatchExactHref}
-        >
-          {label}
-        </ActiveLink>
-      ))}
+      <NavigationContentMenu className="show">
+        {navItens.map(({ label, href, shouldMatchExactHref }) => (
+          <ActiveLink
+            key={label}
+            href={href}
+            shouldMatchExactHref={shouldMatchExactHref}
+          >
+            {label}
+          </ActiveLink>
+        ))}
+      </NavigationContentMenu>
+      <NavigationContentShowMenu>...</NavigationContentShowMenu>
+      <NavigationContentCloseMenu>x</NavigationContentCloseMenu>
     </NavigationContainer>
   );
 };
