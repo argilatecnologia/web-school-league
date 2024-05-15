@@ -1,6 +1,6 @@
 import { Header } from '@/components/Header';
 
-import backgroundHomeImg from '../../assets/backgroung-home-img.png';
+import backgroundHomeImg from '../../assets/background-home.png';
 
 import Head from 'next/head';
 

@@ -7,6 +7,7 @@ import {
   NavigationContentMenu,
   NavigationContentShowMenu,
 } from './styles';
+import { List, X } from 'phosphor-react';
 
 interface INavigationItens {
   label: string;
@@ -26,7 +27,7 @@ const NAVIGATION_ITENS: INavigationItens[] = [
   },
   {
     label: 'Jogos',
-    href: '/#',
+    href: '/jogos',
   },
   // {
   //   label: 'Fotos',
@@ -43,21 +44,28 @@ const Navigation = () => {
     return NAVIGATION_ITENS;
   }, []);
 
+  const isActive = false;
+
   return (
     <NavigationContainer>
-      <NavigationContentMenu className="show">
-        {navItens.map(({ label, href, shouldMatchExactHref }) => (
-          <ActiveLink
-            key={label}
-            href={href}
-            shouldMatchExactHref={shouldMatchExactHref}
-          >
-            {label}
-          </ActiveLink>
-        ))}
-      </NavigationContentMenu>
-      <NavigationContentShowMenu>...</NavigationContentShowMenu>
-      <NavigationContentCloseMenu>x</NavigationContentCloseMenu>
+      {/* <NavigationContentMenu className="show"> */}
+      {navItens.map(({ label, href, shouldMatchExactHref }) => (
+        <ActiveLink
+          key={label}
+          href={href}
+          shouldMatchExactHref={shouldMatchExactHref}
+        >
+          {label}
+        </ActiveLink>
+      ))}
+
+      {/* <NavigationContentShowMenu className="icon-menu">
+          <List size={24} />
+        </NavigationContentShowMenu>
+        <NavigationContentCloseMenu className="icon-close">
+          <X size={24} />
+        </NavigationContentCloseMenu> */}
+      {/* </NavigationContentMenu> */}
     </NavigationContainer>
   );
 };

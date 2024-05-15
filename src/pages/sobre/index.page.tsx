@@ -1,16 +1,17 @@
 import { Header } from '@/components/Header';
 import Head from 'next/head';
 
+import backgroundImg from '../../assets/background-about.png';
+
+import { Heading, Text } from '@/components/Typography';
+
 import {
   AboutContainer,
   AboutContent,
-  AboutRectangleImage,
+  AboutContainerImage,
   AboutContentImage,
   AboutContentTitle,
 } from './styles';
-
-import backgroundImg from '../../assets/background-img.png';
-import { Heading, Text } from '@/components/Typography';
 
 export default function About() {
   return (
@@ -22,9 +23,9 @@ export default function About() {
       <Header />
 
       <AboutContent>
-        <AboutRectangleImage>
+        <AboutContainerImage>
           <AboutContentImage src={backgroundImg} alt="" />
-        </AboutRectangleImage>
+        </AboutContainerImage>
 
         <AboutContentTitle>
           <Heading size="lg" color="gray-700">

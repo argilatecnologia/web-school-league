@@ -35,6 +35,8 @@ export const HeaderContent = styled('div', {
   borderBottomStyle: 'solid',
 
   padding: '0 2.5rem',
+
+  boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.1)',
 });
 
 export const HeaderContentImage = styled(Image, {

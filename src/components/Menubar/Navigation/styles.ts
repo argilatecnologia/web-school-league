@@ -35,8 +35,54 @@ export const NavigationContentMenu = styled('div', {
     gap: '3rem',
     placeContent: 'center',
   },
+
+  // '&.show .icon-close': {
+  //   opacity: 1,
+  //   visibility: 'visible',
+  // },
 });
 
-export const NavigationContentShowMenu = styled('div', {});
+export const NavigationContentShowMenu = styled('div', {
+  '&.icon-menu': {
+    color: '$orange600',
+  },
+});
 
-export const NavigationContentCloseMenu = styled('div', {});
+export const NavigationContentCloseMenu = styled('div', {
+  visibility: 'visible',
+  opacity: 1,
+
+  svg: {
+    position: 'absolute',
+    right: '2rem',
+    color: '$orange600',
+  },
+
+  '&.icon-close': {
+    visibility: 'hidden',
+    opacity: 0,
+
+    svg: {
+      position: 'absolute',
+      right: '2rem',
+      color: '$orange600',
+    },
+  },
+
+  variants: {
+    active: {
+      true: {
+        // svg: {
+        //   visibility: 'visible',
+        //   opacity: 1,
+        //   position: 'absolute',
+        //   right: '2rem',
+        //   color: '$orange600',
+        // },
+        visibility: 'visible',
+      },
+    },
+  },
+
+  // border: '1px solid red',
+});

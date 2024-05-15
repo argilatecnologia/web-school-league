@@ -16,34 +16,44 @@ export const AboutContainer = styled('section', {
 
 export const AboutContent = styled('div', {
   width: '100%',
-  // maxWidth: 1280,
 
   display: 'flex',
   flexDirection: 'row',
 
   gap: '4rem',
 
-  margin: '0 auto',
-  marginTop: '1rem',
-  // padding: '2rem 0',
+  // border: '1px solid red',
+});
+
+export const AboutContainerImage = styled('div', {
+  position: 'relative',
+  // left: '3rem',
+
+  marginTop: '4rem',
+
+  '&::before': {
+    // fazer assim, senão não funciona no Stitches
+    content: "''",
+
+    width: '100%',
+    height: '60%',
+    background: '$blue100',
+    position: 'absolute',
+    top: '-5.3%',
+    left: '-18%',
+    zIndex: 0,
+
+    borderRadius: '0.25rem',
+  },
 });
 
 export const AboutContentImage = styled(Image, {
-  width: '617px',
-  height: '412px',
+  width: '35rem',
+  height: '23.4rem',
 
   borderRadius: '0.25rem',
-});
 
-export const AboutRectangleImage = styled('div', {
-  width: '581px',
-  height: '405px',
-  flexShrink: 0,
-
-  margin: 'auto',
-
-  borderRadius: '0.25rem',
-  background: '#CCF4E6',
+  position: 'relative',
 });
 
 export const AboutContentTitle = styled('div', {
@@ -51,5 +61,8 @@ export const AboutContentTitle = styled('div', {
   flexDirection: 'column',
 
   margin: '0 auto',
-  padding: '2rem 1rem',
+  padding: '2rem 4rem 2rem 0',
+  gap: '1rem',
+
+  textAlign: 'justify',
 });
