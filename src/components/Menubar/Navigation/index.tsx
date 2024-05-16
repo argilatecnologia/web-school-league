@@ -22,12 +22,12 @@ const NAVIGATION_ITENS: INavigationItens[] = [
     shouldMatchExactHref: true,
   },
   {
-    label: 'Sobre',
-    href: '/sobre',
+    label: 'Quem somos',
+    href: '/quemsomos',
   },
   {
-    label: 'Jogos',
-    href: '/jogos',
+    label: 'Parceria',
+    href: '/parceria',
   },
   // {
   //   label: 'Fotos',

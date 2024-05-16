@@ -1,7 +1,7 @@
 import { styled } from '@/styles/stitches.config';
 import Image from 'next/image';
 
-export const GameContainer = styled('section', {
+export const PartnershipContainer = styled('section', {
   height: '100vh',
 
   display: 'flex',
@@ -11,9 +11,8 @@ export const GameContainer = styled('section', {
   marginTop: '8rem',
 });
 
-export const GameContent = styled('div', {
+export const PartnershipContent = styled('div', {
   width: '100%',
-  // maxWidth: 1280,
 
   display: 'flex',
   flexDirection: 'row',
@@ -27,7 +26,7 @@ export const GameContent = styled('div', {
   // border: '1px solid blue',
 });
 
-export const GameContentTitle = styled('div', {
+export const PartnershipContentTitle = styled('div', {
   height: 'auto',
 
   display: 'flex',
@@ -40,7 +39,7 @@ export const GameContentTitle = styled('div', {
   // border: '1px solid blue',
 });
 
-export const GameContainerImage = styled('div', {
+export const PartnershipContainerImage = styled('div', {
   position: 'relative',
   right: '3rem',
 
@@ -60,7 +59,7 @@ export const GameContainerImage = styled('div', {
   },
 });
 
-export const GameContentImage = styled(Image, {
+export const PartnershipContentImage = styled(Image, {
   width: '35rem',
   height: '23.4rem',
 

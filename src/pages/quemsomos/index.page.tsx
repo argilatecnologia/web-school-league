@@ -13,7 +13,7 @@ import {
   AboutContentTitle,
 } from './styles';
 
-export default function About() {
+export default function WhoWeAre() {
   return (
     <AboutContainer>
       <Head>
@@ -28,8 +28,8 @@ export default function About() {
         </AboutContainerImage>
 
         <AboutContentTitle>
-          <Heading size="lg" color="gray-700">
-            Sobre nós
+          <Heading size="3xl" color="gray-700">
+            Quem somos
           </Heading>
 
           <Text size="md" color="gray-700">

@@ -16,7 +16,7 @@ export const ActiveLinkContent = styled(Link, {
   position: 'relative',
 
   padding: '0 0.25rem',
-  lineHeight: '3rem',
+  lineHeight: '4rem',
 
   '&::after': {
     // fazer assim, senão não funciona no Stitches
@@ -27,7 +27,7 @@ export const ActiveLinkContent = styled(Link, {
     width: 0,
     height: '3px',
 
-    marginTop: '0.80rem',
+    marginTop: '0.85rem',
     left: 0,
 
     background: 'transparent',
@@ -53,7 +53,7 @@ export const ActiveLinkContent = styled(Link, {
           width: 'stretch',
           height: '3px',
 
-          marginTop: '0.80rem',
+          marginTop: '0.85rem',
           left: 3,
 
           background: '$orange600',

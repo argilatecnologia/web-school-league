@@ -25,6 +25,8 @@ export const {
       lg: '1.125rem', // 18px
       xl: '1.25rem', // 20px
       '2xl': '1.5rem', // 24px
+      '3xl': '1.75rem', // 28px
+      '4xl': '2rem', // 32px
     },
 
     fontWeights: {

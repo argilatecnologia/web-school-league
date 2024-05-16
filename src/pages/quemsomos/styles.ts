@@ -9,7 +9,7 @@ export const AboutContainer = styled('section', {
   flexDirection: 'column',
   overflow: 'hidden',
 
-  marginTop: '8rem',
+  marginTop: '9rem',
 
   // border: '1px solid red',
 });
@@ -27,9 +27,7 @@ export const AboutContent = styled('div', {
 
 export const AboutContainerImage = styled('div', {
   position: 'relative',
-  // left: '3rem',
-
-  marginTop: '4rem',
+  marginTop: '6rem',
 
   '&::before': {
     // fazer assim, senão não funciona no Stitches
@@ -60,9 +58,9 @@ export const AboutContentTitle = styled('div', {
   display: 'flex',
   flexDirection: 'column',
 
-  margin: '0 auto',
-  padding: '2rem 4rem 2rem 0',
   gap: '1rem',
-
+  margin: '2rem 2.25rem 0 0',
   textAlign: 'justify',
+
+  // border: '1px solid red',
 });

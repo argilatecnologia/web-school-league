@@ -4,9 +4,7 @@ import Image from 'next/image';
 
 export const HeaderContainer = styled('header', {
   width: '100%',
-  // height: '6rem',
-
-  // maxWidth: 1370,
+  height: '8rem',
 
   display: 'flex',
   flexDirection: 'row',
@@ -23,7 +21,8 @@ export const HeaderContainer = styled('header', {
 });
 
 export const HeaderContent = styled('div', {
-  width: '100vw',
+  width: '100%',
+  height: '8rem',
 
   display: 'flex',
   flexDirection: 'row',
@@ -37,6 +36,8 @@ export const HeaderContent = styled('div', {
   padding: '0 2.5rem',
 
   boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.1)',
+
+  // border: '1px solid blue',
 });
 
 export const HeaderContentImage = styled(Image, {

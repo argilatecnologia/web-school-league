@@ -68,6 +68,12 @@ export const Heading = styled('h1', {
       lg: {
         fontSize: '$2xl',
       },
+      '3xl': {
+        fontSize: '$3xl',
+      },
+      '4xl': {
+        fontSize: '$4xl',
+      },
     },
 
     color: {

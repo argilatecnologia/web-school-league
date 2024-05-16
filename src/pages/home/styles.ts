@@ -8,7 +8,7 @@ export const HomeContainer = styled('section', {
   flexDirection: 'column',
   overflow: 'hidden',
 
-  marginTop: '8rem',
+  marginTop: '9rem',
 });
 
 export const HomeContent = styled('div', {
@@ -18,7 +18,7 @@ export const HomeContent = styled('div', {
   display: 'flex',
   flexDirection: 'row',
 
-  gap: '10rem',
+  gap: '8rem',
 
   margin: '0 auto',
   marginTop: '4rem',
@@ -28,13 +28,11 @@ export const HomeContent = styled('div', {
 });
 
 export const HomeContentTitle = styled('div', {
-  height: 'auto',
-
   display: 'flex',
   flexDirection: 'column',
 
   gap: '1rem',
-  margin: '2rem 0 0 8rem',
+  margin: '2rem 0 0 6rem',
   textAlign: 'center',
 
   // border: '1px solid blue',
@@ -42,7 +40,7 @@ export const HomeContentTitle = styled('div', {
 
 export const HomeContainerImage = styled('div', {
   position: 'relative',
-  right: '3rem',
+  right: '2.5rem',
 
   '&::before': {
     // fazer assim, senão não funciona no Stitches
@@ -53,7 +51,7 @@ export const HomeContainerImage = styled('div', {
     background: '$blue100',
     position: 'absolute',
     top: '-12.8%',
-    left: '12%',
+    left: '10%',
     zIndex: 0,
 
     borderRadius: '0.25rem',
