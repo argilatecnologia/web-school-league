@@ -14,58 +14,67 @@ import {
   ContactInformations,
   ContactDetailsInformations,
 } from './styles';
+import { Footer } from '@/components/Footer';
 
 export default function Contact() {
   return (
-    <ContactContainer>
-      <Head>
-        <title>Contato | Liga Escolar</title>
-      </Head>
+    <>
+      <ContactContainer>
+        <Head>
+          <title>Contato | Liga Escolar</title>
+        </Head>
 
-      <Header />
+        <Header />
 
-      <ContactContent>
-        <ContactContentTitle>
-          <Heading size="4xl" color="gray-700">
-            Entre em contato com a gente. {<br />} Será um prazer atendê-lo(a)!
-          </Heading>
-          <Text size="md" color="gray-700">
-            Entre em contato com a Liga Escolar, queremos tirar suas dúvidas,{' '}
-            {<br />} ouvir suas críticas e sugestões.
-          </Text>
-
-          <ContactButtonLink>
-            <Link href="#">
-              <WhatsappLogo size={24} />
-              Entrar em contato
-            </Link>
-          </ContactButtonLink>
-        </ContactContentTitle>
-
-        <ContactInformations>
-          <ContactDetailsInformations>
-            <Phone size={24} />
-            <Text size="sm" color="gray-700">
-              81 99313-9096
+        <ContactContent>
+          <ContactContentTitle>
+            <Heading size="4xl" color="gray-700">
+              Entre em contato com a gente. {<br />} Será um prazer
+              atendê-lo(a)!
+            </Heading>
+            <Text size="md" color="gray-700">
+              Entre em contato com a Liga Escolar, queremos tirar suas dúvidas,{' '}
+              {<br />} ouvir suas críticas e sugestões.
             </Text>
-          </ContactDetailsInformations>
 
-          <ContactDetailsInformations>
-            <MapPin size={24} />
-            <Text size="sm" color="gray-700">
-              R. Pedro Lasserre de Vasconcelos, 81 - São Francisco {<br />}
-              Caruaru - PE
-            </Text>
-          </ContactDetailsInformations>
+            <ContactButtonLink>
+              <Link
+                href="https://api.whatsapp.com/send?phone=+5581993139096&text=Olá! Gostaria de mais informações sobre a liga escolar."
+                target="_blank"
+              >
+                <WhatsappLogo size={24} />
+                Entrar em contato
+              </Link>
+            </ContactButtonLink>
+          </ContactContentTitle>
 
-          <ContactDetailsInformations>
-            <EnvelopeSimple size={24} />
-            <Text size="sm" color="gray-700">
-              email@example.com
-            </Text>
-          </ContactDetailsInformations>
-        </ContactInformations>
-      </ContactContent>
-    </ContactContainer>
+          <ContactInformations>
+            <ContactDetailsInformations>
+              <Phone size={24} />
+              <Text size="sm" color="gray-700">
+                81 99313-9096
+              </Text>
+            </ContactDetailsInformations>
+
+            <ContactDetailsInformations>
+              <MapPin size={24} />
+              <Text size="sm" color="gray-700">
+                R. Pedro Lasserre de Vasconcelos, 81 - São Francisco {<br />}
+                Caruaru - PE
+              </Text>
+            </ContactDetailsInformations>
+
+            <ContactDetailsInformations>
+              <EnvelopeSimple size={24} />
+              <Text size="sm" color="gray-700">
+                email@example.com
+              </Text>
+            </ContactDetailsInformations>
+          </ContactInformations>
+        </ContactContent>
+      </ContactContainer>
+
+      <Footer />
+    </>
   );
 }

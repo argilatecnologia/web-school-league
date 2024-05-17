@@ -9,27 +9,28 @@ import {
   PartnershipContent,
   PartnershipContentTitle,
 } from './styles';
+import { Footer } from '@/components/Footer';
 
 export default function Partnership() {
   return (
-    <PartnershipContainer>
-      <Head>
-        <title>Parceria | Liga Escolar</title>
-      </Head>
+    <>
+      <PartnershipContainer>
+        <Head>
+          <title>Parceria | Liga Escolar</title>
+        </Head>
 
-      <Header />
+        <Header />
 
-      <PartnershipContent>
-        <PartnershipContentTitle>
-          <Heading size="lg" color="gray-700">
-            Listar os jogos aqui
-          </Heading>
-        </PartnershipContentTitle>
+        <PartnershipContent>
+          <PartnershipContentTitle>
+            <Heading size="lg" color="gray-700">
+              Listar os jogos aqui
+            </Heading>
+          </PartnershipContentTitle>
+        </PartnershipContent>
+      </PartnershipContainer>
 
-        {/* <HomeContainerImage>
-            <HomeContentImage src={backgroundHomeImg} alt="" />
-          </HomeContainerImage> */}
-      </PartnershipContent>
-    </PartnershipContainer>
+      <Footer />
+    </>
   );
 }

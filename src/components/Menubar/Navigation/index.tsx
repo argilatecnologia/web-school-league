@@ -1,13 +1,8 @@
 import { useMemo } from 'react';
 
 import { ActiveLink } from '../ActiveLink';
-import {
-  NavigationContainer,
-  NavigationContentCloseMenu,
-  NavigationContentMenu,
-  NavigationContentShowMenu,
-} from './styles';
-import { List, X } from 'phosphor-react';
+
+import { NavigationContainer } from './styles';
 
 interface INavigationItens {
   label: string;
@@ -44,7 +39,7 @@ const Navigation = () => {
     return NAVIGATION_ITENS;
   }, []);
 
-  const isActive = false;
+  // const isActive = false;
 
   return (
     <NavigationContainer>

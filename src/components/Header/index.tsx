@@ -1,8 +1,10 @@
-import { HeaderContainer, HeaderContent, HeaderContentImage } from './styles';
+import Link from 'next/link';
+
+import { Menubar } from '../Menubar';
 
 import logoSchoolLeagueImg from '../../assets/logo-liga-escolar.jpg';
-import { Menubar } from '../Menubar';
-import Link from 'next/link';
+
+import { HeaderContainer, HeaderContent, HeaderContentImage } from './styles';
 
 const Header = () => {
   return (
