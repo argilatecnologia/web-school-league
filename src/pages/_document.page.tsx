@@ -4,8 +4,9 @@ import { getCssText } from '../styles/stitches.config';
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="pt">
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />

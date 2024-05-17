@@ -9,6 +9,10 @@ export const HomeContainer = styled('section', {
   overflow: 'hidden',
 
   marginTop: '9rem',
+
+  '@sm': {
+    // Styles for sm
+  },
 });
 
 export const HomeContent = styled('div', {

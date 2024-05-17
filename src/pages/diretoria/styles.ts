@@ -1,7 +1,7 @@
 import { styled } from '@/styles/stitches.config';
 import Image from 'next/image';
 
-export const PartnershipContainer = styled('section', {
+export const DirectorshipContainer = styled('section', {
   height: '100vh',
 
   display: 'flex',
@@ -11,7 +11,7 @@ export const PartnershipContainer = styled('section', {
   marginTop: '9rem',
 });
 
-export const PartnershipContent = styled('div', {
+export const DirectorshipContent = styled('div', {
   width: '100%',
 
   display: 'flex',
@@ -23,7 +23,7 @@ export const PartnershipContent = styled('div', {
   // border: '1px solid orange',
 });
 
-export const PartnershipContentTitle = styled('div', {
+export const DirectorshipContentTitle = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -31,7 +31,7 @@ export const PartnershipContentTitle = styled('div', {
   marginTop: '2rem',
 });
 
-export const PartnersLogoContainer = styled('div', {
+export const DirectorsLogoContainer = styled('div', {
   height: '100%',
 
   display: 'inline-grid',
@@ -40,7 +40,16 @@ export const PartnersLogoContainer = styled('div', {
   gap: '2.5rem',
 });
 
-export const PartnersLogoContentImage = styled(Image, {
+export const DirectorsNameContent = styled('div', {
+  height: '100%',
+
+  display: 'inline-grid',
+  gridTemplateColumns: 'repeat(7, 1fr)',
+
+  gap: '2.5rem',
+});
+
+export const DirectorsLogoContentImage = styled(Image, {
   width: '7.5rem',
   height: '7.5rem',
 

@@ -24,10 +24,10 @@ const NAVIGATION_ITENS: INavigationItens[] = [
     label: 'Parceria',
     href: '/parceria',
   },
-  // {
-  //   label: 'Fotos',
-  //   href: '/#',
-  // },
+  {
+    label: 'Diretoria',
+    href: '/diretoria',
+  },
   {
     label: 'Contato',
     href: '/contato',
