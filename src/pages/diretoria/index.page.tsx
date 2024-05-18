@@ -1,18 +1,20 @@
 import Head from 'next/head';
 
-import { Heading } from '@/components/Typography';
+import { Heading, Text } from '@/components/Typography';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
-import fakeLogoImg from '../../assets/fake-logo.png';
+import fakeAvatarImg from '../../assets/man-avatar.png';
 
 import {
-  DirectorsLogoContainer,
-  DirectorsLogoContentImage,
   DirectorshipContainer,
   DirectorshipContent,
   DirectorshipContentTitle,
+  DirectorshipGridContainer,
+  DirectorshipGridContent,
+  DirectorsContentDetails,
+  DirectorsLogoContentImage,
 } from './styles';
 
 export default function Directorship() {
@@ -32,19 +34,34 @@ export default function Directorship() {
             </Heading>
           </DirectorshipContentTitle>
 
-          <DirectorsLogoContainer>
-            <DirectorsLogoContentImage src={fakeLogoImg} alt="" />
-
-            <DirectorsLogoContentImage src={fakeLogoImg} alt="" />
-            <DirectorsLogoContentImage src={fakeLogoImg} alt="" />
-            <DirectorsLogoContentImage src={fakeLogoImg} alt="" />
-            <DirectorsLogoContentImage src={fakeLogoImg} alt="" />
-            <DirectorsLogoContentImage src={fakeLogoImg} alt="" />
-            <DirectorsLogoContentImage src={fakeLogoImg} alt="" />
-            <DirectorsLogoContentImage src={fakeLogoImg} alt="" />
-            <DirectorsLogoContentImage src={fakeLogoImg} alt="" />
-            <DirectorsLogoContentImage src={fakeLogoImg} alt="" />
-          </DirectorsLogoContainer>
+          <DirectorshipGridContainer>
+            <DirectorshipGridContent>
+              <DirectorsContentDetails>
+                <DirectorsLogoContentImage src={fakeAvatarImg} alt="" />
+                <Text size="md" color="gray-700">
+                  Severino Júnior
+                </Text>
+              </DirectorsContentDetails>
+              <DirectorsContentDetails>
+                <DirectorsLogoContentImage src={fakeAvatarImg} alt="" />
+                <Text size="md" color="gray-700">
+                  João
+                </Text>
+              </DirectorsContentDetails>
+              <DirectorsContentDetails>
+                <DirectorsLogoContentImage src={fakeAvatarImg} alt="" />
+                <Text size="md" color="gray-700">
+                  José
+                </Text>
+              </DirectorsContentDetails>
+              <DirectorsContentDetails>
+                <DirectorsLogoContentImage src={fakeAvatarImg} alt="" />
+                <Text size="md" color="gray-700">
+                  Antônio
+                </Text>
+              </DirectorsContentDetails>
+            </DirectorshipGridContent>
+          </DirectorshipGridContainer>
         </DirectorshipContent>
       </DirectorshipContainer>
 

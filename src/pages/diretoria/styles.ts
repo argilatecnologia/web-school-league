@@ -31,22 +31,34 @@ export const DirectorshipContentTitle = styled('div', {
   marginTop: '2rem',
 });
 
-export const DirectorsLogoContainer = styled('div', {
-  height: '100%',
+export const DirectorshipGridContainer = styled('div', {
+  display: 'flex',
+  flexDirection: 'columns',
 
-  display: 'inline-grid',
-  gridTemplateColumns: 'repeat(7, 1fr)',
+  justifyContent: 'center',
 
-  gap: '2.5rem',
+  border: '1px solid green',
 });
 
-export const DirectorsNameContent = styled('div', {
-  height: '100%',
-
+export const DirectorshipGridContent = styled('div', {
   display: 'inline-grid',
-  gridTemplateColumns: 'repeat(7, 1fr)',
+  gridTemplateRows: 'minmax(200px, 1fr)',
+
+  // repeat(auto-fit, minmax(100px, auto));
 
   gap: '2.5rem',
+
+  border: '1px solid red',
+});
+
+export const DirectorsContentDetails = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+
+  gap: '0.5rem',
+
+  // border: '1px solid blue',
 });
 
 export const DirectorsLogoContentImage = styled(Image, {
