@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import { Header } from '@/components/Header';
 import { Heading, Text } from '@/components/Typography';
+import { Footer } from '@/components/Footer';
 
 import backgroundImg from '../../assets/background-about.png';
 
@@ -12,7 +13,6 @@ import {
   AboutContentImage,
   AboutContentTitle,
 } from './styles';
-import { Footer } from '@/components/Footer';
 
 export default function WhoWeAre() {
   return (

@@ -59,7 +59,7 @@ export const AboutContentTitle = styled('div', {
   flexDirection: 'column',
 
   gap: '1rem',
-  margin: '2rem 2.25rem 0 0',
+  margin: '2rem 2.25rem 0.75rem 0',
   textAlign: 'justify',
 
   // border: '1px solid red',

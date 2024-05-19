@@ -8,11 +8,13 @@ import { Footer } from '@/components/Footer';
 import fakeLogoImg from '../../assets/fake-logo.png';
 
 import {
-  PartnersLogoContainer,
-  PartnersLogoContentImage,
   PartnershipContainer,
   PartnershipContent,
   PartnershipContentTitle,
+  PartnershipDivContainer,
+  PartnershipGridContent,
+  PartnersContentDetails,
+  PartnersLogoContentImage,
 } from './styles';
 
 export default function Partnership() {
@@ -32,22 +34,16 @@ export default function Partnership() {
             </Heading>
           </PartnershipContentTitle>
 
-          <PartnersLogoContainer>
-            <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-            <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-            <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-            <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-            <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-            <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-            <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-            <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-            <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-            <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-            <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-            <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-            <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-            <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-          </PartnersLogoContainer>
+          <PartnershipDivContainer>
+            <PartnershipGridContent>
+              <PartnersContentDetails>
+                <PartnersLogoContentImage src={fakeLogoImg} alt="" />
+              </PartnersContentDetails>
+              <PartnersContentDetails>
+                <PartnersLogoContentImage src={fakeLogoImg} alt="" />
+              </PartnersContentDetails>
+            </PartnershipGridContent>
+          </PartnershipDivContainer>
         </PartnershipContent>
       </PartnershipContainer>
 

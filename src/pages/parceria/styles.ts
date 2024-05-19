@@ -18,26 +18,44 @@ export const PartnershipContent = styled('div', {
   flexDirection: 'column',
   alignItems: 'center',
 
-  gap: '2.5rem',
+  gap: '2rem',
 
   // border: '1px solid orange',
 });
 
 export const PartnershipContentTitle = styled('div', {
   display: 'flex',
-  flexDirection: 'column',
   alignItems: 'center',
 
   marginTop: '2rem',
 });
 
-export const PartnersLogoContainer = styled('div', {
-  height: '100%',
+export const PartnershipDivContainer = styled('div', {
+  display: 'flex',
 
-  display: 'inline-grid',
-  gridTemplateColumns: 'repeat(7, 1fr)',
+  justifyContent: 'center',
 
-  gap: '2.5rem',
+  padding: '1rem',
+  gap: '0.75rem',
+
+  // border: '1px solid green',
+});
+
+export const PartnershipGridContent = styled('div', {
+  display: 'grid',
+  gridTemplateColumns: '1fr auto',
+
+  gap: '1.5rem',
+});
+
+export const PartnersContentDetails = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+
+  gap: '0.5rem',
+
+  // border: '1px solid blue',
 });
 
 export const PartnersLogoContentImage = styled(Image, {

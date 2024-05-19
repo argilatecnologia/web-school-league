@@ -1,7 +1,7 @@
 import { styled } from '@/styles/stitches.config';
 import Image from 'next/image';
 
-export const DirectorshipContainer = styled('section', {
+export const AssociatedCollegesContainer = styled('section', {
   height: '100vh',
 
   display: 'flex',
@@ -9,11 +9,9 @@ export const DirectorshipContainer = styled('section', {
   overflow: 'hidden',
 
   marginTop: '9rem',
-
-  // border: '1px solid blue',
 });
 
-export const DirectorshipContent = styled('div', {
+export const AssociatedCollegesContent = styled('div', {
   width: '100%',
 
   display: 'flex',
@@ -25,14 +23,14 @@ export const DirectorshipContent = styled('div', {
   // border: '1px solid orange',
 });
 
-export const DirectorshipContentTitle = styled('div', {
+export const AssociatedCollegesContentTitle = styled('div', {
   display: 'flex',
   alignItems: 'center',
 
   marginTop: '2rem',
 });
 
-export const DirectorshipDivContainer = styled('div', {
+export const AssociatedCollegesDivContainer = styled('div', {
   display: 'flex',
 
   justifyContent: 'center',
@@ -43,16 +41,14 @@ export const DirectorshipDivContainer = styled('div', {
   // border: '1px solid green',
 });
 
-export const DirectorshipGridContent = styled('div', {
+export const AssociatedCollegesGridContent = styled('div', {
   display: 'grid',
   gridTemplateColumns: '1fr auto',
 
   gap: '1.5rem',
-
-  // border: '1px solid red',
 });
 
-export const DirectorsContentDetails = styled('div', {
+export const AssociatedCollegesContentDetails = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -62,7 +58,7 @@ export const DirectorsContentDetails = styled('div', {
   // border: '1px solid blue',
 });
 
-export const DirectorsLogoContentImage = styled(Image, {
+export const AssociatedCollegesLogoContentImage = styled(Image, {
   width: '7.5rem',
   height: '7.5rem',
 

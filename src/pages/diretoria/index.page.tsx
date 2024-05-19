@@ -11,7 +11,7 @@ import {
   DirectorshipContainer,
   DirectorshipContent,
   DirectorshipContentTitle,
-  DirectorshipGridContainer,
+  DirectorshipDivContainer,
   DirectorshipGridContent,
   DirectorsContentDetails,
   DirectorsLogoContentImage,
@@ -22,7 +22,7 @@ export default function Directorship() {
     <>
       <DirectorshipContainer>
         <Head>
-          <title>Parceria | Liga Escolar</title>
+          <title>Diretoria | Liga Escolar</title>
         </Head>
 
         <Header />
@@ -34,12 +34,12 @@ export default function Directorship() {
             </Heading>
           </DirectorshipContentTitle>
 
-          <DirectorshipGridContainer>
+          <DirectorshipDivContainer>
             <DirectorshipGridContent>
               <DirectorsContentDetails>
                 <DirectorsLogoContentImage src={fakeAvatarImg} alt="" />
                 <Text size="md" color="gray-700">
-                  Severino Júnior
+                  Júnior
                 </Text>
               </DirectorsContentDetails>
               <DirectorsContentDetails>
@@ -48,20 +48,8 @@ export default function Directorship() {
                   João
                 </Text>
               </DirectorsContentDetails>
-              <DirectorsContentDetails>
-                <DirectorsLogoContentImage src={fakeAvatarImg} alt="" />
-                <Text size="md" color="gray-700">
-                  José
-                </Text>
-              </DirectorsContentDetails>
-              <DirectorsContentDetails>
-                <DirectorsLogoContentImage src={fakeAvatarImg} alt="" />
-                <Text size="md" color="gray-700">
-                  Antônio
-                </Text>
-              </DirectorsContentDetails>
             </DirectorshipGridContent>
-          </DirectorshipGridContainer>
+          </DirectorshipDivContainer>
         </DirectorshipContent>
       </DirectorshipContainer>
 
