@@ -1,7 +1,5 @@
 import Head from 'next/head';
 
-import { Heading } from '@/components/Typography';
-
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
@@ -29,9 +27,9 @@ export default function AssociatedColleges() {
 
         <AssociatedCollegesContent>
           <AssociatedCollegesContentTitle>
-            <Heading size="3xl" color="gray-700">
+            {/* <Heading size="3xl" color="gray-700">
               Colégios Associados
-            </Heading>
+            </Heading> */}
           </AssociatedCollegesContentTitle>
 
           <AssociatedCollegesDivContainer>

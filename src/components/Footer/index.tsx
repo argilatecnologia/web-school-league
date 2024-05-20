@@ -1,4 +1,7 @@
+import Link from 'next/link';
+
 import { FacebookLogo, InstagramLogo, YoutubeLogo } from 'phosphor-react';
+
 import { Text } from '../Typography';
 
 import {
@@ -7,7 +10,6 @@ import {
   FooterDetailsInformations,
   FooterInformations,
 } from './styles';
-import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -19,6 +21,12 @@ const Footer = () => {
           </Text>
           <Text size="sm" color="white-25">
             Todos os direitos reservados.
+          </Text>
+          <Text size="sm" color="white-25">
+            Desenvolvido por{' '}
+            <Link href="#" target="_blank">
+              Argila Tecnologia
+            </Link>
           </Text>
         </FooterInformations>
 

@@ -2,7 +2,7 @@ import { styled } from '@/styles/stitches.config';
 import Image from 'next/image';
 
 export const AssociatedCollegesContainer = styled('section', {
-  height: '100vh',
+  height: '100%',
 
   display: 'flex',
   flexDirection: 'column',

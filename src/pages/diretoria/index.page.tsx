@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { Heading, Text } from '@/components/Typography';
+import { Text } from '@/components/Typography';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -29,9 +29,9 @@ export default function Directorship() {
 
         <DirectorshipContent>
           <DirectorshipContentTitle>
-            <Heading size="3xl" color="gray-700">
+            {/* <Heading size="3xl" color="gray-700">
               Diretoria
-            </Heading>
+            </Heading> */}
           </DirectorshipContentTitle>
 
           <DirectorshipDivContainer>

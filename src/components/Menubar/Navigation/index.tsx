@@ -21,12 +21,20 @@ const NAVIGATION_ITENS: INavigationItens[] = [
     href: '/quemsomos',
   },
   {
+    label: 'Edições anteriores',
+    href: '/edicoesanteriores',
+  },
+  {
     label: 'Parceria',
     href: '/parceria',
   },
   {
     label: 'Diretoria',
     href: '/diretoria',
+  },
+  {
+    label: 'Colégios associados',
+    href: '/colegiosassociados',
   },
   {
     label: 'Contato',

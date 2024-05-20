@@ -1,7 +1,7 @@
 import { styled } from '@/styles/stitches.config';
 import Image from 'next/image';
 
-export const DirectorshipContainer = styled('section', {
+export const PreviousEditionsContainer = styled('section', {
   height: '100%',
 
   display: 'flex',
@@ -9,11 +9,9 @@ export const DirectorshipContainer = styled('section', {
   overflow: 'hidden',
 
   marginTop: '9rem',
-
-  // border: '1px solid blue',
 });
 
-export const DirectorshipContent = styled('div', {
+export const PreviousEditionsContent = styled('div', {
   width: '100%',
 
   display: 'flex',
@@ -25,47 +23,51 @@ export const DirectorshipContent = styled('div', {
   // border: '1px solid orange',
 });
 
-export const DirectorshipContentTitle = styled('div', {
+export const PreviousEditionsContentTitle = styled('div', {
   display: 'flex',
   alignItems: 'center',
 
-  marginTop: '2rem',
+  marginTop: '0.5rem',
 });
 
-export const DirectorshipDivContainer = styled('div', {
+export const PreviousEditionsDivContainer = styled('div', {
+  width: '100%',
   display: 'flex',
 
   justifyContent: 'center',
 
-  padding: '1rem',
+  padding: '0 2.75rem 1rem 2.75rem',
   gap: '0.75rem',
 
   // border: '1px solid green',
 });
 
-export const DirectorshipGridContent = styled('div', {
+export const PreviousEditionsGridContent = styled('div', {
+  width: '100%',
+
   display: 'grid',
-  gridTemplateColumns: '1fr auto',
+  gridTemplateColumns: 'repeat(5, auto)',
 
   gap: '1.5rem',
 
   // border: '1px solid red',
 });
 
-export const DirectorsContentDetails = styled('div', {
+export const PreviousEditionsContentDetails = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
 
   gap: '0.5rem',
 
-  // border: '1px solid blue',
+  borderRadius: '0.25rem',
+
+  border: '1px solid $gray300',
 });
 
-export const DirectorsLogoContentImage = styled(Image, {
-  width: '7.5rem',
-  height: '7.5rem',
+export const PreviousEditionsLogoContentImage = styled(Image, {
+  width: '14.5rem',
+  height: '12.5rem',
 
   borderRadius: '0.25rem',
-  border: '1px solid $gray200',
 });

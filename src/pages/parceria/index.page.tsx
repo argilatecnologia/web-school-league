@@ -42,6 +42,18 @@ export default function Partnership() {
               <PartnersContentDetails>
                 <PartnersLogoContentImage src={fakeLogoImg} alt="" />
               </PartnersContentDetails>
+              <PartnersContentDetails>
+                <PartnersLogoContentImage src={fakeLogoImg} alt="" />
+              </PartnersContentDetails>
+              <PartnersContentDetails>
+                <PartnersLogoContentImage src={fakeLogoImg} alt="" />
+              </PartnersContentDetails>
+              <PartnersContentDetails>
+                <PartnersLogoContentImage src={fakeLogoImg} alt="" />
+              </PartnersContentDetails>
+              <PartnersContentDetails>
+                <PartnersLogoContentImage src={fakeLogoImg} alt="" />
+              </PartnersContentDetails>
             </PartnershipGridContent>
           </PartnershipDivContainer>
         </PartnershipContent>

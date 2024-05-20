@@ -2,7 +2,7 @@ import { styled } from '@/styles/stitches.config';
 import Image from 'next/image';
 
 export const PartnershipContainer = styled('section', {
-  height: '100vh',
+  height: '100%',
 
   display: 'flex',
   flexDirection: 'column',
@@ -31,21 +31,26 @@ export const PartnershipContentTitle = styled('div', {
 });
 
 export const PartnershipDivContainer = styled('div', {
+  width: '100%',
   display: 'flex',
 
   justifyContent: 'center',
 
-  padding: '1rem',
+  padding: '0 2.75rem 1rem 2.75rem',
   gap: '0.75rem',
 
   // border: '1px solid green',
 });
 
 export const PartnershipGridContent = styled('div', {
+  width: '100%',
+
   display: 'grid',
-  gridTemplateColumns: '1fr auto',
+  gridTemplateColumns: 'repeat(6, auto)',
 
   gap: '1.5rem',
+
+  // border: '1px solid red',
 });
 
 export const PartnersContentDetails = styled('div', {
