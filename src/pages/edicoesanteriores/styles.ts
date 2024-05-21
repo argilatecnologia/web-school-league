@@ -9,9 +9,7 @@ export const PreviousEditionsContainer = styled('section', {
   flexDirection: 'column',
   overflow: 'hidden',
 
-  marginTop: '9rem',
-
-  border: '1px solid red',
+  border: '1px solid black',
 });
 
 export const PreviousEditionsContent = styled('div', {
@@ -23,7 +21,9 @@ export const PreviousEditionsContent = styled('div', {
 
   gap: '2rem',
 
-  border: '1px solid orange',
+  minHeight: 'calc(100vh - 170px)',
+
+  border: '1px solid red',
 });
 
 export const PreviousEditionsDivContainer = styled('div', {

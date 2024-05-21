@@ -27,7 +27,9 @@ export const HomeContent = styled('div', {
   marginTop: '4rem',
   padding: '3rem 0',
 
-  // border: '1px solid blue',
+  minHeight: 'calc(100vh - 10.625rem)',
+
+  // border: '1px solid ',
 });
 
 export const HomeContentTitle = styled('div', {

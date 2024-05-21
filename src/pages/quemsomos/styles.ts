@@ -21,6 +21,8 @@ export const AboutContent = styled('div', {
   gap: '4rem',
   padding: '3rem 0',
 
+  minHeight: 'calc(100vh - 10.625rem)',
+
   // border: '1px solid red',
 });
 

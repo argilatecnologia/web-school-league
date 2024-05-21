@@ -21,6 +21,8 @@ export const ContactContent = styled('div', {
   margin: '0 auto',
   padding: '6rem 0',
 
+  minHeight: 'calc(100vh - 10.625rem)',
+
   // border: '1px solid red',
 });
 

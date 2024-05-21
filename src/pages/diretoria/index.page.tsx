@@ -10,11 +10,10 @@ import fakeAvatarImg from '../../assets/man-avatar.png';
 import {
   DirectorshipContainer,
   DirectorshipContent,
-  DirectorshipContentTitle,
-  DirectorshipDivContainer,
-  DirectorshipGridContent,
-  DirectorsContentDetails,
-  DirectorsLogoContentImage,
+  DirectorshipInformations,
+  DirectorshipDetailsInformations,
+  DirectorshipDetails,
+  DirectorshipImage,
 } from './styles';
 
 export default function Directorship() {
@@ -28,32 +27,56 @@ export default function Directorship() {
         <Header />
 
         <DirectorshipContent>
-          <DirectorshipContentTitle>
-            {/* <Heading size="3xl" color="gray-700">
-              Diretoria
-            </Heading> */}
-          </DirectorshipContentTitle>
-
-          <DirectorshipDivContainer>
-            <DirectorshipGridContent>
-              <DirectorsContentDetails>
-                <DirectorsLogoContentImage src={fakeAvatarImg} alt="" />
+          <DirectorshipInformations>
+            <DirectorshipDetailsInformations>
+              <DirectorshipDetails>
+                <DirectorshipImage src={fakeAvatarImg} alt="" />
                 <Text size="md" color="gray-700">
                   Júnior
                 </Text>
-              </DirectorsContentDetails>
-              <DirectorsContentDetails>
-                <DirectorsLogoContentImage src={fakeAvatarImg} alt="" />
+              </DirectorshipDetails>
+              <DirectorshipDetails>
+                <DirectorshipImage src={fakeAvatarImg} alt="" />
+                <Text size="md" color="gray-700">
+                  José
+                </Text>
+              </DirectorshipDetails>
+              <DirectorshipDetails>
+                <DirectorshipImage src={fakeAvatarImg} alt="" />
                 <Text size="md" color="gray-700">
                   João
                 </Text>
-              </DirectorsContentDetails>
-            </DirectorshipGridContent>
-          </DirectorshipDivContainer>
+              </DirectorshipDetails>
+              {/* <DirectorshipDetails>
+                <DirectorshipImage src={fakeAvatarImg} alt="" />
+                <Text size="md" color="gray-700">
+                  Júnior
+                </Text>
+              </DirectorshipDetails>
+              <DirectorshipDetails>
+                <DirectorshipImage src={fakeAvatarImg} alt="" />
+                <Text size="md" color="gray-700">
+                  Júnior
+                </Text>
+              </DirectorshipDetails>
+              <DirectorshipDetails>
+                <DirectorshipImage src={fakeAvatarImg} alt="" />
+                <Text size="md" color="gray-700">
+                  Júnior
+                </Text>
+              </DirectorshipDetails>
+              <DirectorshipDetails>
+                <DirectorshipImage src={fakeAvatarImg} alt="" />
+                <Text size="md" color="gray-700">
+                  Júnior
+                </Text>
+              </DirectorshipDetails> */}
+            </DirectorshipDetailsInformations>
+          </DirectorshipInformations>
         </DirectorshipContent>
-      </DirectorshipContainer>
 
-      <Footer />
+        <Footer />
+      </DirectorshipContainer>
     </>
   );
 }

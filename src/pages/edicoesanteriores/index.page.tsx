@@ -27,7 +27,7 @@ export default function PreviousEditions() {
 
         <PreviousEditionsContent>
           <PreviousEditionsDivContainer>
-            {/* <PreviousEditionsGridContent>
+            <PreviousEditionsGridContent>
               <PreviousEditionsContentDetails>
                 <PreviousEditionsLogoContentImage src={fakeLogoImg} alt="" />
                 <Heading size="lg" color="gray-700">
@@ -58,12 +58,12 @@ export default function PreviousEditions() {
                   Título
                 </Heading>
               </PreviousEditionsContentDetails>
-            </PreviousEditionsGridContent> */}
+            </PreviousEditionsGridContent>
           </PreviousEditionsDivContainer>
         </PreviousEditionsContent>
-      </PreviousEditionsContainer>
 
-      <Footer />
+        <Footer />
+      </PreviousEditionsContainer>
     </>
   );
 }

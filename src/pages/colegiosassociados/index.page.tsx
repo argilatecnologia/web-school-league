@@ -9,7 +9,7 @@ import {
   AssociatedCollegesContainer,
   AssociatedCollegesContent,
   AssociatedCollegesInformations,
-  AssociatedCollegesLogoContentImage,
+  AssociatedCollegesImage,
   AssociatedCollegesDetailsInformations,
 } from './styles';
 
@@ -26,55 +26,77 @@ export default function AssociatedColleges() {
         <AssociatedCollegesContent>
           <AssociatedCollegesInformations>
             <AssociatedCollegesDetailsInformations>
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+            </AssociatedCollegesDetailsInformations>
+            {/* <AssociatedCollegesDetailsInformations>
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
             </AssociatedCollegesDetailsInformations>
             <AssociatedCollegesDetailsInformations>
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
             </AssociatedCollegesDetailsInformations>
             <AssociatedCollegesDetailsInformations>
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
             </AssociatedCollegesDetailsInformations>
             <AssociatedCollegesDetailsInformations>
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
             </AssociatedCollegesDetailsInformations>
             <AssociatedCollegesDetailsInformations>
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
             </AssociatedCollegesDetailsInformations>
+            <AssociatedCollegesDetailsInformations>
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+            </AssociatedCollegesDetailsInformations>
+            <AssociatedCollegesDetailsInformations>
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+            </AssociatedCollegesDetailsInformations> */}
           </AssociatedCollegesInformations>
         </AssociatedCollegesContent>
 
