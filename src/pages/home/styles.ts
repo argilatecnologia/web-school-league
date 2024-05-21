@@ -28,8 +28,6 @@ export const HomeContent = styled('div', {
   padding: '3rem 0',
 
   minHeight: 'calc(100vh - 10.625rem)',
-
-  // border: '1px solid ',
 });
 
 export const HomeContentTitle = styled('div', {
@@ -39,8 +37,6 @@ export const HomeContentTitle = styled('div', {
   gap: '1rem',
   margin: '2rem 0 0 6rem',
   textAlign: 'center',
-
-  // border: '1px solid blue',
 });
 
 export const HomeContainerImage = styled('div', {

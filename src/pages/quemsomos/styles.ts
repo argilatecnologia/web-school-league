@@ -8,8 +8,6 @@ export const AboutContainer = styled('section', {
   display: 'flex',
   flexDirection: 'column',
   overflow: 'hidden',
-
-  // border: '1px solid black',
 });
 
 export const AboutContent = styled('div', {
@@ -22,8 +20,6 @@ export const AboutContent = styled('div', {
   padding: '3rem 0',
 
   minHeight: 'calc(100vh - 10.625rem)',
-
-  // border: '1px solid red',
 });
 
 export const AboutContainerImage = styled('div', {
@@ -62,6 +58,4 @@ export const AboutContentTitle = styled('div', {
   gap: '1rem',
   margin: '2rem 2.25rem 0.75rem 0',
   textAlign: 'justify',
-
-  // border: '1px solid red',
 });

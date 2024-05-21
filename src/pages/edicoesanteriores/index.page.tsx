@@ -9,10 +9,10 @@ import fakeLogoImg from '../../assets/fake-logo.png';
 import {
   PreviousEditionsContainer,
   PreviousEditionsContent,
-  PreviousEditionsDivContainer,
-  PreviousEditionsGridContent,
-  PreviousEditionsContentDetails,
-  PreviousEditionsLogoContentImage,
+  PreviousEditionsInformations,
+  PreviousEditionsDetailsInformations,
+  PreviousEditionsDetails,
+  PreviousEditionsImage,
 } from './styles';
 
 export default function PreviousEditions() {
@@ -26,40 +26,60 @@ export default function PreviousEditions() {
         <Header />
 
         <PreviousEditionsContent>
-          <PreviousEditionsDivContainer>
-            <PreviousEditionsGridContent>
-              <PreviousEditionsContentDetails>
-                <PreviousEditionsLogoContentImage src={fakeLogoImg} alt="" />
-                <Heading size="lg" color="gray-700">
-                  Título
+          <PreviousEditionsInformations>
+            <PreviousEditionsDetailsInformations>
+              <PreviousEditionsDetails>
+                <PreviousEditionsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
                 </Heading>
-              </PreviousEditionsContentDetails>
-              <PreviousEditionsContentDetails>
-                <PreviousEditionsLogoContentImage src={fakeLogoImg} alt="" />
-                <Heading size="lg" color="gray-700">
-                  Título
+              </PreviousEditionsDetails>
+              <PreviousEditionsDetails>
+                <PreviousEditionsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
                 </Heading>
-              </PreviousEditionsContentDetails>
-              <PreviousEditionsContentDetails>
-                <PreviousEditionsLogoContentImage src={fakeLogoImg} alt="" />
-                <Heading size="lg" color="gray-700">
-                  Título
+              </PreviousEditionsDetails>
+              <PreviousEditionsDetails>
+                <PreviousEditionsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
                 </Heading>
-              </PreviousEditionsContentDetails>
-              <PreviousEditionsContentDetails>
-                <PreviousEditionsLogoContentImage src={fakeLogoImg} alt="" />
-                <Heading size="lg" color="gray-700">
-                  Título
+              </PreviousEditionsDetails>
+              <PreviousEditionsDetails>
+                <PreviousEditionsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
                 </Heading>
-              </PreviousEditionsContentDetails>
-              <PreviousEditionsContentDetails>
-                <PreviousEditionsLogoContentImage src={fakeLogoImg} alt="" />
-                <Heading size="lg" color="gray-700">
-                  Título
+              </PreviousEditionsDetails>
+            </PreviousEditionsDetailsInformations>
+            {/* <PreviousEditionsDetailsInformations>
+              <PreviousEditionsDetails>
+                <PreviousEditionsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
                 </Heading>
-              </PreviousEditionsContentDetails>
-            </PreviousEditionsGridContent>
-          </PreviousEditionsDivContainer>
+              </PreviousEditionsDetails>
+              <PreviousEditionsDetails>
+                <PreviousEditionsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
+                </Heading>
+              </PreviousEditionsDetails>
+              <PreviousEditionsDetails>
+                <PreviousEditionsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
+                </Heading>
+              </PreviousEditionsDetails>
+              <PreviousEditionsDetails>
+                <PreviousEditionsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
+                </Heading>
+              </PreviousEditionsDetails>
+            </PreviousEditionsDetailsInformations> */}
+          </PreviousEditionsInformations>
         </PreviousEditionsContent>
 
         <Footer />

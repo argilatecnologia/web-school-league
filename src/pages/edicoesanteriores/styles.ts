@@ -8,8 +8,6 @@ export const PreviousEditionsContainer = styled('section', {
   display: 'flex',
   flexDirection: 'column',
   overflow: 'hidden',
-
-  border: '1px solid black',
 });
 
 export const PreviousEditionsContent = styled('div', {
@@ -19,51 +17,42 @@ export const PreviousEditionsContent = styled('div', {
   flexDirection: 'column',
   alignItems: 'center',
 
-  gap: '2rem',
+  margin: '0 auto',
+  padding: '3rem 0',
 
-  minHeight: 'calc(100vh - 170px)',
-
-  border: '1px solid red',
+  minHeight: 'calc(100vh - 10.625rem)',
 });
 
-export const PreviousEditionsDivContainer = styled('div', {
-  width: '100%',
+export const PreviousEditionsInformations = styled('div', {
   display: 'flex',
+  flexDirection: 'column',
 
-  justifyContent: 'center',
-
-  padding: '0 2.75rem 1rem 2.75rem',
-  gap: '0.75rem',
-
-  border: '1px solid green',
+  gap: '2.5rem',
+  margin: '1rem 2.75rem 0',
 });
 
-export const PreviousEditionsGridContent = styled('div', {
-  width: '100%',
+export const PreviousEditionsDetailsInformations = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
 
-  display: 'grid',
-  gridTemplateColumns: 'repeat(5, auto)',
-
-  gap: '1.5rem',
-
-  // border: '1px solid red',
+  margin: '0 auto',
+  gap: '2.5rem',
 });
 
-export const PreviousEditionsContentDetails = styled('div', {
+export const PreviousEditionsDetails = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
 
-  gap: '0.5rem',
+  margin: '0 auto',
+  gap: '1rem',
 
   borderRadius: '0.25rem',
-
-  border: '1px solid $gray300',
+  border: '1px solid $gray400',
 });
 
-export const PreviousEditionsLogoContentImage = styled(Image, {
-  width: '14.5rem',
+export const PreviousEditionsImage = styled(Image, {
+  width: '16.875rem',
   height: '12.5rem',
-
-  borderRadius: '0.25rem',
 });

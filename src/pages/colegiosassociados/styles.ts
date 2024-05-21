@@ -1,4 +1,5 @@
 import { styled } from '@/styles/stitches.config';
+
 import Image from 'next/image';
 
 export const AssociatedCollegesContainer = styled('section', {
@@ -7,8 +8,6 @@ export const AssociatedCollegesContainer = styled('section', {
   display: 'flex',
   flexDirection: 'column',
   overflow: 'hidden',
-
-  // border: '1px solid black',
 });
 
 export const AssociatedCollegesContent = styled('div', {
@@ -21,8 +20,6 @@ export const AssociatedCollegesContent = styled('div', {
   padding: '3rem 0',
 
   minHeight: 'calc(100vh - 10.625rem)',
-
-  // border: '1px solid red',
 });
 
 export const AssociatedCollegesInformations = styled('div', {
@@ -31,11 +28,9 @@ export const AssociatedCollegesInformations = styled('div', {
   display: 'flex',
   flexDirection: 'column',
 
-  gap: '1rem',
+  gap: '2rem',
 
   margin: '1rem 2.75rem 0',
-
-  border: '1px solid green',
 });
 
 export const AssociatedCollegesDetailsInformations = styled('div', {
@@ -46,8 +41,6 @@ export const AssociatedCollegesDetailsInformations = styled('div', {
   margin: '0 auto',
 
   gap: '2.5rem',
-
-  border: '1px solid $blue200',
 });
 
 export const AssociatedCollegesImage = styled(Image, {
@@ -55,5 +48,5 @@ export const AssociatedCollegesImage = styled(Image, {
   height: '7.5rem',
 
   borderRadius: '0.25rem',
-  border: '1px solid $gray300',
+  border: '1px solid $gray400',
 });

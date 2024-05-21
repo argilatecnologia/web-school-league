@@ -11,10 +11,9 @@ import {
   PartnershipContainer,
   PartnershipContent,
   PartnershipContentTitle,
-  PartnershipDivContainer,
-  PartnershipGridContent,
-  PartnersContentDetails,
-  PartnersLogoContentImage,
+  PartnershipInformations,
+  PartnersContentDetailsInformations,
+  PartnershipImage,
 } from './styles';
 
 export default function Partnership() {
@@ -34,28 +33,26 @@ export default function Partnership() {
             </Heading>
           </PartnershipContentTitle>
 
-          <PartnershipDivContainer>
-            <PartnershipGridContent>
-              <PartnersContentDetails>
-                <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-              </PartnersContentDetails>
-              <PartnersContentDetails>
-                <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-              </PartnersContentDetails>
-              <PartnersContentDetails>
-                <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-              </PartnersContentDetails>
-              <PartnersContentDetails>
-                <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-              </PartnersContentDetails>
-              <PartnersContentDetails>
-                <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-              </PartnersContentDetails>
-              <PartnersContentDetails>
-                <PartnersLogoContentImage src={fakeLogoImg} alt="" />
-              </PartnersContentDetails>
-            </PartnershipGridContent>
-          </PartnershipDivContainer>
+          <PartnershipInformations>
+            <PartnersContentDetailsInformations>
+              <PartnershipImage src={fakeLogoImg} alt="" />
+              <PartnershipImage src={fakeLogoImg} alt="" />
+              <PartnershipImage src={fakeLogoImg} alt="" />
+              <PartnershipImage src={fakeLogoImg} alt="" />
+              <PartnershipImage src={fakeLogoImg} alt="" />
+              <PartnershipImage src={fakeLogoImg} alt="" />
+              <PartnershipImage src={fakeLogoImg} alt="" />
+            </PartnersContentDetailsInformations>
+            <PartnersContentDetailsInformations>
+              <PartnershipImage src={fakeLogoImg} alt="" />
+              <PartnershipImage src={fakeLogoImg} alt="" />
+              <PartnershipImage src={fakeLogoImg} alt="" />
+              <PartnershipImage src={fakeLogoImg} alt="" />
+              <PartnershipImage src={fakeLogoImg} alt="" />
+              <PartnershipImage src={fakeLogoImg} alt="" />
+              <PartnershipImage src={fakeLogoImg} alt="" />
+            </PartnersContentDetailsInformations>
+          </PartnershipInformations>
         </PartnershipContent>
       </PartnershipContainer>
 
