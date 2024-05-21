@@ -42,7 +42,7 @@ export default function WhoWeAre() {
               massa vitae, vehicula risus.
               {<br />}
               {<br />}
-              In placerat, felis vitae sodales dictum, lacus quam pretium mi, ut
+              {/* In placerat, felis vitae sodales dictum, lacus quam pretium mi, ut
               pretium urna turpis eu dui. Vestibulum id ullamcorper nibh. Donec
               luctus, nunc finibus elementum suscipit, tortor augue vulputate
               sapien, vitae feugiat enim augue sed. Quisque id aliquam elit.{' '}
@@ -73,12 +73,14 @@ export default function WhoWeAre() {
               tincidunt. Curabitur fringilla, risus at feugiat feugiat, nisl
               nulla tincidunt tellus, elementum elementum lorem nisl eleifend
               dolor. Nullam eget dui at sem ullamcorper luctus.
+              {<br />}
+              {<br />} */}
             </Text>
           </AboutContentTitle>
         </AboutContent>
-      </AboutContainer>
 
-      <Footer />
+        <Footer />
+      </AboutContainer>
     </>
   );
 }

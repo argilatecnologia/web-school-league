@@ -2,7 +2,6 @@ import { styled } from '@/styles/stitches.config';
 
 export const FooterContainer = styled('footer', {
   width: '100%',
-  // height: '8rem',
 
   display: 'flex',
   flexDirection: 'row',
@@ -11,7 +10,9 @@ export const FooterContainer = styled('footer', {
 
   background: '$orange600',
 
-  border: '1px solid red',
+  marginTop: 'auto',
+
+  // border: '1px solid red',
 });
 
 export const FooterContent = styled('div', {
@@ -25,7 +26,7 @@ export const FooterContent = styled('div', {
 
   padding: '0 3.25rem',
 
-  border: '1px solid blue',
+  // border: '1px solid blue',
 });
 
 export const FooterInformations = styled('div', {

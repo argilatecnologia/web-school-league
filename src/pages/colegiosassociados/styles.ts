@@ -8,54 +8,45 @@ export const AssociatedCollegesContainer = styled('section', {
   flexDirection: 'column',
   overflow: 'hidden',
 
-  marginTop: '9rem',
+  // border: '1px solid black',
 });
 
 export const AssociatedCollegesContent = styled('div', {
   width: '100%',
 
   display: 'flex',
+  flexDirection: 'row',
+
+  gap: '10rem',
+
+  margin: '0 auto',
+  padding: '3rem 0',
+
+  border: '1px solid red',
+});
+
+export const AssociatedCollegesInformations = styled('div', {
+  width: '100%',
+  // height: '100vh',
+
+  display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
 
-  gap: '2rem',
-
-  // border: '1px solid orange',
-});
-
-export const AssociatedCollegesContentTitle = styled('div', {
-  display: 'flex',
-  alignItems: 'center',
-
-  marginTop: '2rem',
-});
-
-export const AssociatedCollegesDivContainer = styled('div', {
-  display: 'flex',
-
-  justifyContent: 'center',
-
-  padding: '1rem',
+  padding: '0 2.75rem 0 2.75rem',
   gap: '0.75rem',
 
-  // border: '1px solid green',
+  border: '1px solid green',
 });
 
-export const AssociatedCollegesGridContent = styled('div', {
-  display: 'grid',
-  gridTemplateColumns: '1fr auto',
+export const AssociatedCollegesDetailsInformations = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+
+  margin: '0 auto',
 
   gap: '1.5rem',
-});
 
-export const AssociatedCollegesContentDetails = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-
-  gap: '0.5rem',
-
-  // border: '1px solid blue',
+  border: '1px solid blue',
 });
 
 export const AssociatedCollegesLogoContentImage = styled(Image, {

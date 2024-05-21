@@ -38,9 +38,9 @@ export default function Home() {
             <HomeContentImage src={backgroundHomeImg} alt="" />
           </HomeContainerImage>
         </HomeContent>
-      </HomeContainer>
 
-      <Footer />
+        <Footer />
+      </HomeContainer>
     </>
   );
 }

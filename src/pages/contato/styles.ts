@@ -1,13 +1,13 @@
 import { styled } from '@/styles/stitches.config';
 
 export const ContactContainer = styled('section', {
-  height: '100vh',
+  height: '100%',
 
   display: 'flex',
   flexDirection: 'column',
   overflow: 'hidden',
 
-  marginTop: '8rem',
+  // border: '1px solid black',
 });
 
 export const ContactContent = styled('div', {
@@ -19,8 +19,9 @@ export const ContactContent = styled('div', {
   gap: '10rem',
 
   margin: '0 auto',
-  marginTop: '4rem',
-  padding: '2rem 0',
+  padding: '6rem 0',
+
+  // border: '1px solid red',
 });
 
 export const ContactContentTitle = styled('div', {

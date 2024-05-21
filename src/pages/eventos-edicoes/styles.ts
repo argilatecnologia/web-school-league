@@ -1,5 +1,4 @@
 import { styled } from '@/styles/stitches.config';
-
 import Image from 'next/image';
 
 export const PreviousEditionsContainer = styled('section', {
@@ -10,8 +9,6 @@ export const PreviousEditionsContainer = styled('section', {
   overflow: 'hidden',
 
   marginTop: '9rem',
-
-  border: '1px solid red',
 });
 
 export const PreviousEditionsContent = styled('div', {
@@ -23,7 +20,14 @@ export const PreviousEditionsContent = styled('div', {
 
   gap: '2rem',
 
-  border: '1px solid orange',
+  // border: '1px solid orange',
+});
+
+export const PreviousEditionsContentTitle = styled('div', {
+  display: 'flex',
+  alignItems: 'center',
+
+  marginTop: '0.5rem',
 });
 
 export const PreviousEditionsDivContainer = styled('div', {
@@ -35,7 +39,7 @@ export const PreviousEditionsDivContainer = styled('div', {
   padding: '0 2.75rem 1rem 2.75rem',
   gap: '0.75rem',
 
-  border: '1px solid green',
+  // border: '1px solid green',
 });
 
 export const PreviousEditionsGridContent = styled('div', {

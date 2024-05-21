@@ -8,11 +8,9 @@ import fakeLogoImg from '../../assets/fake-logo.png';
 import {
   AssociatedCollegesContainer,
   AssociatedCollegesContent,
-  AssociatedCollegesContentTitle,
-  AssociatedCollegesDivContainer,
-  AssociatedCollegesGridContent,
-  AssociatedCollegesContentDetails,
+  AssociatedCollegesInformations,
   AssociatedCollegesLogoContentImage,
+  AssociatedCollegesDetailsInformations,
 } from './styles';
 
 export default function AssociatedColleges() {
@@ -26,26 +24,62 @@ export default function AssociatedColleges() {
         <Header />
 
         <AssociatedCollegesContent>
-          <AssociatedCollegesContentTitle>
-            {/* <Heading size="3xl" color="gray-700">
-              Colégios Associados
-            </Heading> */}
-          </AssociatedCollegesContentTitle>
-
-          <AssociatedCollegesDivContainer>
-            <AssociatedCollegesGridContent>
-              <AssociatedCollegesContentDetails>
-                <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              </AssociatedCollegesContentDetails>
-              <AssociatedCollegesContentDetails>
-                <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
-              </AssociatedCollegesContentDetails>
-            </AssociatedCollegesGridContent>
-          </AssociatedCollegesDivContainer>
+          <AssociatedCollegesInformations>
+            <AssociatedCollegesDetailsInformations>
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+            </AssociatedCollegesDetailsInformations>
+            <AssociatedCollegesDetailsInformations>
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+            </AssociatedCollegesDetailsInformations>
+            <AssociatedCollegesDetailsInformations>
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+            </AssociatedCollegesDetailsInformations>
+            <AssociatedCollegesDetailsInformations>
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+            </AssociatedCollegesDetailsInformations>
+            <AssociatedCollegesDetailsInformations>
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesLogoContentImage src={fakeLogoImg} alt="" />
+            </AssociatedCollegesDetailsInformations>
+          </AssociatedCollegesInformations>
         </AssociatedCollegesContent>
-      </AssociatedCollegesContainer>
 
-      <Footer />
+        <Footer />
+      </AssociatedCollegesContainer>
     </>
   );
 }

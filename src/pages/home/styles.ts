@@ -2,22 +2,21 @@ import { styled } from '@/styles/stitches.config';
 import Image from 'next/image';
 
 export const HomeContainer = styled('section', {
-  height: '100vh',
+  height: '100%',
 
   display: 'flex',
   flexDirection: 'column',
   overflow: 'hidden',
 
-  marginTop: '9rem',
-
   '@sm': {
     // Styles for sm
   },
+
+  // border: '1px solid black',
 });
 
 export const HomeContent = styled('div', {
   width: '100%',
-  // maxWidth: 1280,
 
   display: 'flex',
   flexDirection: 'row',
@@ -26,7 +25,7 @@ export const HomeContent = styled('div', {
 
   margin: '0 auto',
   marginTop: '4rem',
-  padding: '2rem 0',
+  padding: '3rem 0',
 
   // border: '1px solid blue',
 });

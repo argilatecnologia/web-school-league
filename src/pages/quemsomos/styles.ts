@@ -9,9 +9,7 @@ export const AboutContainer = styled('section', {
   flexDirection: 'column',
   overflow: 'hidden',
 
-  marginTop: '9rem',
-
-  // border: '1px solid red',
+  // border: '1px solid black',
 });
 
 export const AboutContent = styled('div', {
@@ -21,6 +19,7 @@ export const AboutContent = styled('div', {
   flexDirection: 'row',
 
   gap: '4rem',
+  padding: '3rem 0',
 
   // border: '1px solid red',
 });
@@ -37,7 +36,7 @@ export const AboutContainerImage = styled('div', {
     height: '60%',
     background: '$blue100',
     position: 'absolute',
-    top: '-5.3%',
+    top: '-12.8%',
     left: '-18%',
     zIndex: 0,
 

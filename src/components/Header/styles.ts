@@ -11,10 +11,10 @@ export const HeaderContainer = styled('header', {
   alignItems: 'center',
   justifyContent: 'space-between',
 
-  position: 'fixed',
-  top: 0,
-  left: 0,
-  zIndex: 100,
+  // position: 'fixed',
+  // top: 0,
+  // left: 0,
+  // zIndex: 100,
   background: '$white25',
 
   // border: '1px solid red',
@@ -44,5 +44,5 @@ export const HeaderContentImage = styled(Image, {
   width: '7.75rem',
   height: '5.625rem',
 
-  paddingTop: '1rem',
+  // paddingTop: '1rem',
 });

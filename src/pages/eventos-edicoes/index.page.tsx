@@ -9,6 +9,7 @@ import fakeLogoImg from '../../assets/fake-logo.png';
 import {
   PreviousEditionsContainer,
   PreviousEditionsContent,
+  PreviousEditionsContentTitle,
   PreviousEditionsDivContainer,
   PreviousEditionsGridContent,
   PreviousEditionsContentDetails,
@@ -26,8 +27,10 @@ export default function PreviousEditions() {
         <Header />
 
         <PreviousEditionsContent>
+          <PreviousEditionsContentTitle />
+
           <PreviousEditionsDivContainer>
-            {/* <PreviousEditionsGridContent>
+            <PreviousEditionsGridContent>
               <PreviousEditionsContentDetails>
                 <PreviousEditionsLogoContentImage src={fakeLogoImg} alt="" />
                 <Heading size="lg" color="gray-700">
@@ -58,7 +61,7 @@ export default function PreviousEditions() {
                   Título
                 </Heading>
               </PreviousEditionsContentDetails>
-            </PreviousEditionsGridContent> */}
+            </PreviousEditionsGridContent>
           </PreviousEditionsDivContainer>
         </PreviousEditionsContent>
       </PreviousEditionsContainer>

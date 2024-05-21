@@ -4,10 +4,9 @@ export const MenubarContainer = styled('menu', {
   display: 'flex',
   flexDirection: 'row',
 
-  height: '50px',
+  height: '3.125rem',
 
   marginTop: '1.25rem',
-  // marginLeft: '3.95rem',
 
   // border: '1px solid red',
 });

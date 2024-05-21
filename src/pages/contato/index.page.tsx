@@ -72,9 +72,9 @@ export default function Contact() {
             </ContactDetailsInformations>
           </ContactInformations>
         </ContactContent>
-      </ContactContainer>
 
-      <Footer />
+        <Footer />
+      </ContactContainer>
     </>
   );
 }
