@@ -7,6 +7,23 @@ export const globalStyles = globalCss({
     padding: 0,
 
     boxSizing: 'border-box',
+
+    scrollbarWidth: 'thin',
+    scrollbarColor: 'orange orange',
+  },
+
+  '*::-webkit-scrollbar': {
+    width: '6px',
+  },
+
+  '*::-webkit-scrollbar-track': {
+    background: '$orange600',
+  },
+
+  '*::-webkit-scrollbar-thumb': {
+    backgroundColor: '$orange600',
+    borderRadius: '10px',
+    border: '3px solid $orange600',
   },
 
   body: {
