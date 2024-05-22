@@ -1,3 +1,4 @@
+import { Heading } from '@/components/Typography';
 import { styled } from '@/styles/stitches.config';
 import Image from 'next/image';
 
@@ -36,10 +37,34 @@ export const HomeContentTitle = styled('div', {
   margin: '2rem 0 0 6rem',
   textAlign: 'center',
 
-  '@media(min-width: 1900px)': {
+  // Media Queries <= 1024px
+  '@media(width <= 1024px)': {
     margin: '0 auto',
     marginTop: '2rem',
+    marginLeft: '3rem',
+
+    [`>${Heading}`]: {
+      fontSize: '$lg',
+    },
+
+    border: '1px solid red',
   },
+
+  // '@media(min-width: 1024px)': {
+  //   margin: '0 auto',
+  //   marginTop: '2rem',
+
+  //   // border: '1px solid blue',
+  // },
+
+  // '@media(min-width: 1366px)': {
+  //   // border: '1px solid black',
+  // },
+
+  // '@media(min-width: 1900px)': {
+  //   margin: '0 auto',
+  //   marginTop: '2rem',
+  // },
 });
 
 export const HomeContainerImage = styled('div', {
@@ -61,17 +86,35 @@ export const HomeContainerImage = styled('div', {
     borderRadius: '0.25rem',
   },
 
-  '@media(min-width: 1900px)': {
-    position: 'relative',
-    right: '15rem',
+  // Media Queries
+  // '@media(max-width: 1024px)': {
+  //   right: '5rem',
 
-    '&::before': {
-      height: '33%',
-      top: '-4%',
-    },
+  //   '&::before': {
+  //     height: '33%',
+  //     top: '-4%',
+  //   },
+  // },
 
-    // border: '1px solid green',
-  },
+  // '@media(min-width: 1024px)': {
+  //   right: '5rem',
+
+  //   '&::before': {
+  //     height: '33%',
+  //     top: '-4%',
+  //   },
+  // },
+
+  // '@media(min-width: 1900px)': {
+  //   right: '15rem',
+
+  //   '&::before': {
+  //     height: '33%',
+  //     top: '-4%',
+  //   },
+
+  //   // border: '1px solid green',
+  // },
 });
 
 export const HomeContentImage = styled(Image, {
@@ -81,4 +124,20 @@ export const HomeContentImage = styled(Image, {
   borderRadius: '0.25rem',
 
   position: 'relative',
+
+  // Media Queries
+  // '@media(max-width: 1024px)': {
+  //   width: '30rem',
+  //   height: '20.4rem',
+  // },
+
+  // '@media(min-width: 1024px)': {
+  //   width: '30rem',
+  //   height: '20.4rem',
+  // },
+
+  // '@media(min-width: 1900px)': {
+  //   width: '40rem',
+  //   height: '25.4rem',
+  // },
 });
