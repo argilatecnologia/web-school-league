@@ -8,22 +8,24 @@ export const globalStyles = globalCss({
 
     boxSizing: 'border-box',
 
-    scrollbarWidth: 'thin',
-    scrollbarColor: 'orange orange',
+    /* Works on Firefox */
+    scrollbarWidth: 'thin' /* "auto" or "thin" */,
+    scrollbarColor: 'orange orange' /* scroll thumb and track */,
   },
 
+  /* Works on Chrome, Edge, and Safari */
   '*::-webkit-scrollbar': {
-    width: '6px',
+    width: '6px' /* width of the entire scrollbar */,
   },
 
   '*::-webkit-scrollbar-track': {
-    background: '$orange600',
+    background: '$orange600' /* color of the tracking area */,
   },
 
   '*::-webkit-scrollbar-thumb': {
-    backgroundColor: '$orange600',
-    borderRadius: '10px',
-    border: '3px solid $orange600',
+    backgroundColor: '$orange600' /* color of the scroll thumb */,
+    borderRadius: '10px' /* roundness of the scroll thumb */,
+    border: '3px solid $orange600' /* creates padding around scroll thumb */,
   },
 
   body: {

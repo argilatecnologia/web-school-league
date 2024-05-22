@@ -8,10 +8,6 @@ export const HomeContainer = styled('section', {
   flexDirection: 'column',
   overflow: 'hidden',
 
-  '@sm': {
-    // Styles for sm
-  },
-
   // border: '1px solid black',
 });
 
@@ -28,6 +24,8 @@ export const HomeContent = styled('div', {
   padding: '3rem 0',
 
   minHeight: 'calc(100vh - 10.625rem)',
+
+  // border: '1px solid red',
 });
 
 export const HomeContentTitle = styled('div', {
@@ -37,6 +35,11 @@ export const HomeContentTitle = styled('div', {
   gap: '1rem',
   margin: '2rem 0 0 6rem',
   textAlign: 'center',
+
+  '@media(min-width: 1900px)': {
+    margin: '0 auto',
+    marginTop: '2rem',
+  },
 });
 
 export const HomeContainerImage = styled('div', {
@@ -56,6 +59,18 @@ export const HomeContainerImage = styled('div', {
     zIndex: 0,
 
     borderRadius: '0.25rem',
+  },
+
+  '@media(min-width: 1900px)': {
+    position: 'relative',
+    right: '15rem',
+
+    '&::before': {
+      height: '33%',
+      top: '-4%',
+    },
+
+    // border: '1px solid green',
   },
 });
 
