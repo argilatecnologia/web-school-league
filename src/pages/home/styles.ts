@@ -127,8 +127,8 @@ export const HomeContainerImage = styled('div', {
     right: '8rem',
 
     '&::before': {
-      height: '47%',
-      top: '-5.5%',
+      height: '100%',
+      // top: '-12.5%',
     },
 
     // border: '1px solid green',
