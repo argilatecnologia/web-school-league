@@ -1,10 +1,11 @@
+import Head from 'next/head';
+
 import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { Heading, Text } from '@/components/Typography';
 
 import backgroundHomeImg from '../../assets/background-home.png';
 
-import Head from 'next/head';
-
-import { Heading, Text } from '@/components/Typography';
 import {
   HomeContainer,
   HomeContent,
@@ -12,7 +13,6 @@ import {
   HomeContainerImage,
   HomeContentImage,
 } from './styles';
-import { Footer } from '@/components/Footer';
 
 export default function Home() {
   return (

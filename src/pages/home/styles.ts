@@ -17,6 +17,7 @@ export const HomeContent = styled('div', {
 
   display: 'flex',
   flexDirection: 'row',
+  alignItems: 'center',
 
   gap: '8rem',
 
@@ -113,8 +114,8 @@ export const HomeContainerImage = styled('div', {
     right: '8rem',
 
     '&::before': {
-      height: '47%',
-      top: '-5%',
+      height: '100%',
+      top: '-10%',
     },
 
     // border: '1px solid green',
