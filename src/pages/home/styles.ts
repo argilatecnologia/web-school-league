@@ -37,18 +37,18 @@ export const HomeContentTitle = styled('div', {
   margin: '2rem 0 0 6rem',
   textAlign: 'center',
 
-  // Media Queries <= 1024px
-  '@media(width <= 1024px)': {
-    margin: '0 auto',
-    marginTop: '2rem',
-    marginLeft: '3rem',
+  /* Media Queries <= 1024px */
+  // '@media(width <= 1024px)': {
+  //   margin: '0 auto',
+  //   marginTop: '2rem',
+  //   marginLeft: '3rem',
 
-    [`>${Heading}`]: {
-      fontSize: '$lg',
-    },
+  //   [`>${Heading}`]: {
+  //     fontSize: '$lg',
+  //   },
 
-    border: '1px solid red',
-  },
+  //   border: '1px solid red',
+  // },
 
   // '@media(min-width: 1024px)': {
   //   margin: '0 auto',
@@ -61,10 +61,13 @@ export const HomeContentTitle = styled('div', {
   //   // border: '1px solid black',
   // },
 
-  // '@media(min-width: 1900px)': {
-  //   margin: '0 auto',
-  //   marginTop: '2rem',
-  // },
+  /* Media Queries >= 1536px */
+  '@media(width >= 1536px)': {
+    margin: '0 auto',
+    marginTop: '2rem',
+
+    // border: '1px solid red',
+  },
 });
 
 export const HomeContainerImage = styled('div', {
@@ -105,16 +108,17 @@ export const HomeContainerImage = styled('div', {
   //   },
   // },
 
-  // '@media(min-width: 1900px)': {
-  //   right: '15rem',
+  /* Media Queries >= 1536px */
+  '@media(width >= 1536px)': {
+    right: '8rem',
 
-  //   '&::before': {
-  //     height: '33%',
-  //     top: '-4%',
-  //   },
+    '&::before': {
+      height: '47%',
+      top: '-5%',
+    },
 
-  //   // border: '1px solid green',
-  // },
+    // border: '1px solid green',
+  },
 });
 
 export const HomeContentImage = styled(Image, {
@@ -136,8 +140,9 @@ export const HomeContentImage = styled(Image, {
   //   height: '20.4rem',
   // },
 
-  // '@media(min-width: 1900px)': {
-  //   width: '40rem',
-  //   height: '25.4rem',
-  // },
+  /* Media Queries >= 1536px */
+  '@media(width >= 1536px)': {
+    width: '40rem',
+    height: '25.4rem',
+  },
 });
