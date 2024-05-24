@@ -163,19 +163,16 @@ export const HomeContentImage = styled(Image, {
 
 export const HomePartners = styled('div', {
   display: 'flex',
-  flexDirection: 'row',
+  flexDirection: 'column',
 
   gap: '2rem',
-
   margin: '0 2.75rem 0',
-
-  // border: '1px solid blue',
 });
 
 export const HomePartnersTitle = styled('div', {
   display: 'flex',
   alignItems: 'center',
-  textAlign: 'right',
+  justifyContent: 'center',
 
   marginBottom: '1rem',
 });

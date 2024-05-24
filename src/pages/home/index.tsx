@@ -52,7 +52,7 @@ export default function Home() {
           <HomePartners>
             <HomePartnersTitle>
               <Heading size="3xl" color="gray-700">
-                Trabalhamos com os {<br />} Melhores Parceiros
+                Trabalhamos com os Melhores Parceiros
               </Heading>
             </HomePartnersTitle>
 
