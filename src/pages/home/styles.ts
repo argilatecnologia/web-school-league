@@ -16,26 +16,41 @@ export const HomeContent = styled('div', {
   width: '100%',
 
   display: 'flex',
-  flexDirection: 'row',
-  alignItems: 'center',
+  flexDirection: 'column',
 
-  gap: '8rem',
+  gap: '6rem',
 
   margin: '0 auto',
   marginTop: '4rem',
-  padding: '3rem 0',
+  padding: '2.5rem 0',
 
   minHeight: 'calc(100vh - 10.625rem)',
 
   // border: '1px solid red',
+
+  /* Media Queries >= 1536px */
+  '@media(width >= 1536px)': {
+    padding: '5rem 0',
+  },
+});
+
+export const HomeContentCenter = styled('div', {
+  width: '100%',
+
+  display: 'flex',
+  flexDirection: 'row',
+
+  // border: '1px solid black',
 });
 
 export const HomeContentTitle = styled('div', {
   display: 'flex',
   flexDirection: 'column',
+  justifyContent: 'center',
 
   gap: '1rem',
-  margin: '2rem 0 0 6rem',
+  margin: '0 auto',
+  marginLeft: '6rem',
   textAlign: 'center',
 
   /* Media Queries <= 1024px */
@@ -66,14 +81,12 @@ export const HomeContentTitle = styled('div', {
   '@media(width >= 1536px)': {
     margin: '0 auto',
     marginTop: '2rem',
-
-    // border: '1px solid red',
   },
 });
 
 export const HomeContainerImage = styled('div', {
   position: 'relative',
-  right: '2.5rem',
+  right: '8rem',
 
   '&::before': {
     // fazer assim, senão não funciona no Stitches
@@ -114,8 +127,8 @@ export const HomeContainerImage = styled('div', {
     right: '8rem',
 
     '&::before': {
-      height: '100%',
-      top: '-10%',
+      height: '47%',
+      top: '-5.5%',
     },
 
     // border: '1px solid green',
@@ -145,5 +158,48 @@ export const HomeContentImage = styled(Image, {
   '@media(width >= 1536px)': {
     width: '40rem',
     height: '25.4rem',
+  },
+});
+
+export const HomePartners = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+
+  gap: '2rem',
+
+  margin: '0 2.75rem 0',
+
+  // border: '1px solid blue',
+});
+
+export const HomePartnersTitle = styled('div', {
+  display: 'flex',
+  alignItems: 'center',
+  textAlign: 'right',
+
+  marginBottom: '1rem',
+});
+
+export const HomePartnersDetails = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+
+  margin: '0 auto',
+
+  gap: '2.5rem',
+});
+
+export const HomePartnersImage = styled(Image, {
+  width: '12.5rem',
+  height: '8.5rem',
+
+  borderRadius: '0.25rem',
+  border: '1px solid $gray400',
+
+  /* Media Queries >= 1536px */
+  '@media(width >= 1536px)': {
+    width: '15.625rem',
+    height: '9.375rem',
   },
 });
