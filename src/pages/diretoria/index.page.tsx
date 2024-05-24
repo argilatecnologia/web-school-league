@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { Text } from '@/components/Typography';
+import { Heading, Text } from '@/components/Typography';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -10,6 +10,7 @@ import fakeAvatarImg from '../../assets/man-avatar.png';
 import {
   DirectorshipContainer,
   DirectorshipContent,
+  DirectorshipContentTitle,
   DirectorshipInformations,
   DirectorshipDetailsInformations,
   DirectorshipDetails,
@@ -27,6 +28,12 @@ export default function Directorship() {
         <Header />
 
         <DirectorshipContent>
+          <DirectorshipContentTitle>
+            <Heading size="3xl" color="gray-700">
+              Nossos diretores
+            </Heading>
+          </DirectorshipContentTitle>
+
           <DirectorshipInformations>
             <DirectorshipDetailsInformations>
               <DirectorshipDetails>
@@ -47,12 +54,6 @@ export default function Directorship() {
                   João
                 </Text>
               </DirectorshipDetails>
-              {/* <DirectorshipDetails>
-                <DirectorshipImage src={fakeAvatarImg} alt="" />
-                <Text size="md" color="gray-700">
-                  Júnior
-                </Text>
-              </DirectorshipDetails>
               <DirectorshipDetails>
                 <DirectorshipImage src={fakeAvatarImg} alt="" />
                 <Text size="md" color="gray-700">
@@ -62,7 +63,13 @@ export default function Directorship() {
               <DirectorshipDetails>
                 <DirectorshipImage src={fakeAvatarImg} alt="" />
                 <Text size="md" color="gray-700">
-                  Júnior
+                  José
+                </Text>
+              </DirectorshipDetails>
+              <DirectorshipDetails>
+                <DirectorshipImage src={fakeAvatarImg} alt="" />
+                <Text size="md" color="gray-700">
+                  João
                 </Text>
               </DirectorshipDetails>
               <DirectorshipDetails>
@@ -70,7 +77,7 @@ export default function Directorship() {
                 <Text size="md" color="gray-700">
                   Júnior
                 </Text>
-              </DirectorshipDetails> */}
+              </DirectorshipDetails>
             </DirectorshipDetailsInformations>
           </DirectorshipInformations>
         </DirectorshipContent>

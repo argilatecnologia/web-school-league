@@ -20,13 +20,18 @@ export const PartnershipContent = styled('div', {
   padding: '3rem 0',
 
   minHeight: 'calc(100vh - 10.625rem)',
+
+  /* Media Queries >= 1536px */
+  '@media(width >= 1536px)': {
+    padding: '4rem 0',
+  },
 });
 
 export const PartnershipContentTitle = styled('div', {
   display: 'flex',
   alignItems: 'center',
 
-  marginBottom: '1rem',
+  marginBottom: '1.5rem',
 });
 
 export const PartnershipInformations = styled('div', {
@@ -36,8 +41,6 @@ export const PartnershipInformations = styled('div', {
   gap: '2rem',
 
   margin: '1rem 2.75rem 0',
-
-  // border: '1px solid green',
 });
 
 export const PartnersContentDetailsInformations = styled('div', {
@@ -48,8 +51,6 @@ export const PartnersContentDetailsInformations = styled('div', {
   margin: '0 auto',
 
   gap: '2.5rem',
-
-  // border: '1px solid blue',
 });
 
 export const PartnershipImage = styled(Image, {
@@ -58,4 +59,10 @@ export const PartnershipImage = styled(Image, {
 
   borderRadius: '0.25rem',
   border: '1px solid $gray400',
+
+  /* Media Queries >= 1536px */
+  '@media(width >= 1536px)': {
+    width: '9rem',
+    height: '9rem',
+  },
 });

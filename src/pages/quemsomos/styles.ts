@@ -24,7 +24,7 @@ export const AboutContent = styled('div', {
 
 export const AboutContainerImage = styled('div', {
   position: 'relative',
-  marginTop: '6rem',
+  marginTop: '10rem',
 
   '&::before': {
     // fazer assim, senão não funciona no Stitches
@@ -35,10 +35,20 @@ export const AboutContainerImage = styled('div', {
     background: '$blue100',
     position: 'absolute',
     top: '-12.8%',
-    left: '-18%',
+    left: '-12%',
     zIndex: 0,
 
     borderRadius: '0.25rem',
+  },
+
+  /* Media Queries >= 1536px */
+  '@media(width >= 1536px)': {
+    marginTop: '14rem',
+
+    '&::before': {
+      height: '50%',
+      top: '-6.5%',
+    },
   },
 });
 

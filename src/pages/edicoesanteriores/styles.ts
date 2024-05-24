@@ -55,4 +55,10 @@ export const PreviousEditionsDetails = styled('div', {
 export const PreviousEditionsImage = styled(Image, {
   width: '16.875rem',
   height: '12.5rem',
+
+  /* Media Queries >= 1536px */
+  '@media(width >= 1536px)': {
+    width: '19.375rem',
+    height: '12.5rem',
+  },
 });

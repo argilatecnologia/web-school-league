@@ -15,15 +15,22 @@ export const ContactContent = styled('div', {
 
   display: 'flex',
   flexDirection: 'row',
+  justifyContent: 'center',
 
-  gap: '10rem',
+  gap: '12rem',
 
   margin: '0 auto',
-  padding: '6rem 0',
+  padding: '4rem 0',
 
   minHeight: 'calc(100vh - 10.625rem)',
 
-  // border: '1px solid red',
+  border: '1px solid red',
+
+  /* Media Queries >= 1536px */
+  '@media(width >= 1536px)': {
+    padding: '10rem 0',
+    gap: '14rem',
+  },
 });
 
 export const ContactContentTitle = styled('div', {
@@ -31,10 +38,13 @@ export const ContactContentTitle = styled('div', {
   flexDirection: 'column',
 
   gap: '1rem',
-  margin: '2rem 0 0 8rem',
+  margin: '2rem 0 0 3rem',
   textAlign: 'left',
 
-  // border: '1px solid red',
+  /* Media Queries >= 1536px */
+  '@media(width >= 1536px)': {
+    margin: '2rem 0 0 6rem',
+  },
 });
 
 export const ContactButtonLink = styled('div', {

@@ -8,8 +8,6 @@ export const HomeContainer = styled('section', {
   display: 'flex',
   flexDirection: 'column',
   overflow: 'hidden',
-
-  // border: '1px solid black',
 });
 
 export const HomeContent = styled('div', {

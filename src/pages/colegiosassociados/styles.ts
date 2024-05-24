@@ -14,12 +14,24 @@ export const AssociatedCollegesContent = styled('div', {
   width: '100%',
 
   display: 'flex',
-  flexDirection: 'row',
+  flexDirection: 'column',
+  alignItems: 'center',
 
-  margin: '0 auto',
   padding: '3rem 0',
 
   minHeight: 'calc(100vh - 10.625rem)',
+
+  /* Media Queries >= 1536px */
+  '@media(width >= 1536px)': {
+    padding: '4rem 0',
+  },
+});
+
+export const AssociatedCollegesTitle = styled('div', {
+  display: 'flex',
+  alignItems: 'center',
+
+  marginBottom: '1.5rem',
 });
 
 export const AssociatedCollegesInformations = styled('div', {
@@ -49,4 +61,10 @@ export const AssociatedCollegesImage = styled(Image, {
 
   borderRadius: '0.25rem',
   border: '1px solid $gray400',
+
+  /* Media Queries >= 1536px */
+  '@media(width >= 1536px)': {
+    width: '9rem',
+    height: '9rem',
+  },
 });

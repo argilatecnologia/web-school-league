@@ -15,11 +15,23 @@ export const DirectorshipContent = styled('div', {
 
   display: 'flex',
   flexDirection: 'column',
+  alignItems: 'center',
 
-  margin: '0 auto',
   padding: '3rem 0',
 
   minHeight: 'calc(100vh - 10.625rem)',
+
+  /* Media Queries >= 1536px */
+  '@media(width >= 1536px)': {
+    padding: '4rem 0',
+  },
+});
+
+export const DirectorshipContentTitle = styled('div', {
+  display: 'flex',
+  alignItems: 'center',
+
+  marginBottom: '1.5rem',
 });
 
 export const DirectorshipInformations = styled('div', {
@@ -37,7 +49,7 @@ export const DirectorshipDetailsInformations = styled('div', {
   alignItems: 'center',
 
   margin: '0 auto',
-  gap: '3rem',
+  gap: '2.5rem',
 });
 
 export const DirectorshipDetails = styled('div', {
@@ -57,4 +69,10 @@ export const DirectorshipImage = styled(Image, {
   height: '7.5rem',
 
   marginTop: '0.125rem',
+
+  /* Media Queries >= 1536px */
+  '@media(width >= 1536px)': {
+    width: '9rem',
+    height: '9rem',
+  },
 });
