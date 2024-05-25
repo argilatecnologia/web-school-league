@@ -26,8 +26,14 @@ export const HomeContent = styled('div', {
 
   // border: '1px solid red',
 
-  /* Media Queries >= 1536px */
-  '@media(width >= 1536px)': {
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    gap: '7rem',
+    padding: '5rem 0',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
     padding: '5rem 0',
   },
 });
@@ -37,8 +43,6 @@ export const HomeContentCenter = styled('div', {
 
   display: 'flex',
   flexDirection: 'row',
-
-  // border: '1px solid black',
 });
 
 export const HomeContentTitle = styled('div', {
@@ -48,7 +52,6 @@ export const HomeContentTitle = styled('div', {
 
   gap: '1rem',
   margin: '0 auto',
-  marginLeft: '6rem',
   textAlign: 'center',
 
   /* Media Queries <= 1024px */
@@ -71,12 +74,13 @@ export const HomeContentTitle = styled('div', {
   //   // border: '1px solid blue',
   // },
 
-  // '@media(min-width: 1366px)': {
-  //   // border: '1px solid black',
-  // },
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    margin: '0 auto',
+  },
 
-  /* Media Queries >= 1536px */
-  '@media(width >= 1536px)': {
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
     margin: '0 auto',
     marginTop: '2rem',
   },
@@ -120,16 +124,18 @@ export const HomeContainerImage = styled('div', {
   //   },
   // },
 
-  /* Media Queries >= 1536px */
-  '@media(width >= 1536px)': {
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    right: '7rem',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
     right: '8rem',
 
     '&::before': {
       height: '100%',
-      // top: '-12.5%',
     },
-
-    // border: '1px solid green',
   },
 });
 
@@ -147,13 +153,14 @@ export const HomeContentImage = styled(Image, {
   //   height: '20.4rem',
   // },
 
-  // '@media(min-width: 1024px)': {
-  //   width: '30rem',
-  //   height: '20.4rem',
-  // },
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    width: '32rem',
+    height: '21.4rem',
+  },
 
-  /* Media Queries >= 1536px */
-  '@media(width >= 1536px)': {
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
     width: '40rem',
     height: '25.4rem',
   },
@@ -192,8 +199,8 @@ export const HomePartnersImage = styled(Image, {
   borderRadius: '0.25rem',
   border: '1px solid $gray400',
 
-  /* Media Queries >= 1536px */
-  '@media(width >= 1536px)': {
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
     width: '15.625rem',
     height: '9.375rem',
   },

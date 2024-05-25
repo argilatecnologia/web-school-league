@@ -24,10 +24,10 @@ export const ContactContent = styled('div', {
 
   minHeight: 'calc(100vh - 10.625rem)',
 
-  border: '1px solid red',
+  // border: '1px solid red',
 
-  /* Media Queries >= 1536px */
-  '@media(width >= 1536px)': {
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
     padding: '10rem 0',
     gap: '14rem',
   },
@@ -41,8 +41,8 @@ export const ContactContentTitle = styled('div', {
   margin: '2rem 0 0 3rem',
   textAlign: 'left',
 
-  /* Media Queries >= 1536px */
-  '@media(width >= 1536px)': {
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
     margin: '2rem 0 0 6rem',
   },
 });

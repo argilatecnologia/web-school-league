@@ -41,8 +41,13 @@ export const AboutContainerImage = styled('div', {
     borderRadius: '0.25rem',
   },
 
-  /* Media Queries >= 1536px */
-  '@media(width >= 1536px)': {
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    marginTop: '12.5rem',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
     marginTop: '14rem',
 
     '&::before': {
@@ -59,6 +64,12 @@ export const AboutContentImage = styled(Image, {
   borderRadius: '0.25rem',
 
   position: 'relative',
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    width: '32rem',
+    height: '21.4rem',
+  },
 });
 
 export const AboutContentTitle = styled('div', {
