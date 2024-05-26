@@ -21,6 +21,11 @@ export const PartnershipContent = styled('div', {
 
   minHeight: 'calc(100vh - 10.625rem)',
 
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    // padding: '3rem 0',
+  },
+
   /* Media Queries >= 1536px */
   '@media(width >= 1536px)': {
     padding: '4rem 0',
@@ -59,6 +64,12 @@ export const PartnershipImage = styled(Image, {
 
   borderRadius: '0.25rem',
   border: '1px solid $gray400',
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    width: '7.25rem',
+    height: '7.25rem',
+  },
 
   /* Media Queries >= 1536px */
   '@media(width >= 1536px)': {
