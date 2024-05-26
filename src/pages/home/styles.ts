@@ -1,4 +1,4 @@
-import { Heading } from '@/components/Typography';
+import { Heading, Text } from '@/components/Typography';
 import { styled } from '@/styles/stitches.config';
 import Image from 'next/image';
 
@@ -26,6 +26,21 @@ export const HomeContent = styled('div', {
 
   // border: '1px solid red',
 
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    // padding: '3rem 0',
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    // padding: '3rem 0',
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    // padding: '3rem 0',
+  },
+
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
     gap: '7rem',
@@ -43,6 +58,22 @@ export const HomeContentCenter = styled('div', {
 
   display: 'flex',
   flexDirection: 'row',
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+
+    gap: '5rem',
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    display: 'flex',
+    flexDirection: 'row',
+
+    gap: '4rem',
+  },
 });
 
 export const HomeContentTitle = styled('div', {
@@ -54,35 +85,46 @@ export const HomeContentTitle = styled('div', {
   margin: '0 auto',
   textAlign: 'center',
 
-  /* Media Queries <= 1024px */
-  // '@media(width <= 1024px)': {
-  //   margin: '0 auto',
-  //   marginTop: '2rem',
-  //   marginLeft: '3rem',
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    marginLeft: '2.5rem',
 
-  //   [`>${Heading}`]: {
-  //     fontSize: '$lg',
-  //   },
+    [`>${Heading}`]: {
+      fontSize: '$md',
+    },
 
-  //   border: '1px solid red',
-  // },
+    [`>${Text}`]: {
+      fontSize: '$xs',
+    },
+  },
 
-  // '@media(min-width: 1024px)': {
-  //   margin: '0 auto',
-  //   marginTop: '2rem',
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    margin: '0 auto',
+    marginLeft: '3rem',
 
-  //   // border: '1px solid blue',
-  // },
+    [`>${Heading}`]: {
+      fontSize: '$xl',
+    },
+  },
 
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
     margin: '0 auto',
+
+    [`>${Heading}`]: {
+      fontSize: '$3xl',
+    },
   },
 
   /* Media Queries min-width: 1536px */
   '@media(min-width: 1536px)': {
     margin: '0 auto',
     marginTop: '2rem',
+
+    [`>${Heading}`]: {
+      fontSize: '$3xl',
+    },
   },
 });
 
@@ -105,28 +147,29 @@ export const HomeContainerImage = styled('div', {
     borderRadius: '0.25rem',
   },
 
-  // Media Queries
-  // '@media(max-width: 1024px)': {
-  //   right: '5rem',
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    right: '3rem',
 
-  //   '&::before': {
-  //     height: '33%',
-  //     top: '-4%',
-  //   },
-  // },
+    '&::before': {
+      width: '94%',
+      left: '10%',
+    },
+  },
 
-  // '@media(min-width: 1024px)': {
-  //   right: '5rem',
-
-  //   '&::before': {
-  //     height: '33%',
-  //     top: '-4%',
-  //   },
-  // },
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    right: '6rem',
+  },
 
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
     right: '7rem',
+
+    '&::before': {
+      height: '100%',
+      left: '15%',
+    },
   },
 
   /* Media Queries min-width: 1536px */
@@ -147,16 +190,22 @@ export const HomeContentImage = styled(Image, {
 
   position: 'relative',
 
-  // Media Queries
-  // '@media(max-width: 1024px)': {
-  //   width: '30rem',
-  //   height: '20.4rem',
-  // },
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    width: '20rem',
+    height: '12.4rem',
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    width: '29rem',
+    height: '19.4rem',
+  },
 
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
-    width: '32rem',
-    height: '21.4rem',
+    width: '37rem',
+    height: '23.4rem',
   },
 
   /* Media Queries min-width: 1536px */

@@ -21,6 +21,8 @@ export const PreviousEditionsContent = styled('div', {
   padding: '3rem 0',
 
   minHeight: 'calc(100vh - 10.625rem)',
+
+  // border: '1px solid black',
 });
 
 export const PreviousEditionsInformations = styled('div', {
@@ -29,6 +31,8 @@ export const PreviousEditionsInformations = styled('div', {
 
   gap: '2.5rem',
   margin: '1rem 2.75rem 0',
+
+  // border: '1px solid blue',
 });
 
 export const PreviousEditionsDetailsInformations = styled('div', {
@@ -38,6 +42,30 @@ export const PreviousEditionsDetailsInformations = styled('div', {
 
   margin: '0 auto',
   gap: '2.5rem',
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 1fr)',
+
+    // border: '1px solid green',
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4, 1fr)',
+
+    // border: '1px solid blue',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(5, 1fr)',
+
+    // border: '1px solid green',
+  },
 });
 
 export const PreviousEditionsDetails = styled('div', {
@@ -50,11 +78,50 @@ export const PreviousEditionsDetails = styled('div', {
 
   borderRadius: '0.25rem',
   border: '1px solid $gray400',
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    height: '17rem',
+    display: 'grid',
+    gridTemplateRows: 'repeat(3, 1fr)',
+
+    gap: '1.5rem',
+
+    textAlign: 'center',
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    height: '17rem',
+    display: 'grid',
+    gridTemplateRows: 'repeat(4, 1fr)',
+
+    gap: '1.5rem',
+
+    textAlign: 'center',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    height: '17rem',
+    display: 'grid',
+    gridTemplateRows: 'repeat(5, 1fr)',
+
+    gap: '1.5rem',
+
+    textAlign: 'center',
+  },
 });
 
 export const PreviousEditionsImage = styled(Image, {
   width: '16.875rem',
   height: '12.5rem',
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    width: '15rem',
+    height: '12rem',
+  },
 
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {

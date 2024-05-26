@@ -26,6 +26,12 @@ export const ContactContent = styled('div', {
 
   // border: '1px solid red',
 
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    padding: '8rem 0',
+    gap: '4rem',
+  },
+
   /* Media Queries min-width: 1536px */
   '@media(min-width: 1536px)': {
     padding: '10rem 0',
@@ -40,6 +46,10 @@ export const ContactContentTitle = styled('div', {
   gap: '1rem',
   margin: '2rem 0 0 3rem',
   textAlign: 'left',
+
+  '@media(min-width: 1024px)': {
+    margin: '2rem 0 0 1.5rem',
+  },
 
   /* Media Queries min-width: 1536px */
   '@media(min-width: 1536px)': {

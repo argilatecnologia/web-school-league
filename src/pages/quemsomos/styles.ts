@@ -65,6 +65,14 @@ export const AboutContentImage = styled(Image, {
 
   position: 'relative',
 
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    width: '29rem',
+    height: '19.4rem',
+
+    border: '1px solid red',
+  },
+
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
     width: '32rem',
