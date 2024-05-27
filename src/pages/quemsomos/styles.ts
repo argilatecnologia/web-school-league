@@ -2,6 +2,8 @@ import { styled } from '@/styles/stitches.config';
 
 import Image from 'next/image';
 
+import { Heading } from '@/components/Typography';
+
 export const AboutContainer = styled('section', {
   height: '100%',
 
@@ -41,9 +43,39 @@ export const AboutContainerImage = styled('div', {
     borderRadius: '0.25rem',
   },
 
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    // marginTop: '12.5rem',
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    marginTop: '14rem',
+
+    '&::before': {
+      height: '50%',
+      top: '-6.5%',
+    },
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    marginTop: '14rem',
+
+    '&::before': {
+      height: '50%',
+      top: '-6.5%',
+    },
+  },
+
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
-    marginTop: '12.5rem',
+    marginTop: '14rem',
+
+    '&::before': {
+      height: '50%',
+      top: '-6.5%',
+    },
   },
 
   /* Media Queries min-width: 1536px */
@@ -65,16 +97,26 @@ export const AboutContentImage = styled(Image, {
 
   position: 'relative',
 
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    width: '26rem',
+    height: '16.4rem',
+  },
+
   /* Media Queries min-width: 1024px */
   '@media(min-width: 1024px)': {
     width: '29rem',
     height: '19.4rem',
-
-    border: '1px solid red',
   },
 
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
+    width: '32rem',
+    height: '21.4rem',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
     width: '32rem',
     height: '21.4rem',
   },
@@ -87,4 +129,39 @@ export const AboutContentTitle = styled('div', {
   gap: '1rem',
   margin: '2rem 2.25rem 0.75rem 0',
   textAlign: 'justify',
+
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    [`>${Heading}`]: {
+      fontSize: '$xl',
+    },
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    [`>${Heading}`]: {
+      fontSize: '$xl',
+    },
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    [`>${Heading}`]: {
+      fontSize: '$xl',
+    },
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    [`>${Heading}`]: {
+      fontSize: '$3xl',
+    },
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    [`>${Heading}`]: {
+      fontSize: '$3xl',
+    },
+  },
 });

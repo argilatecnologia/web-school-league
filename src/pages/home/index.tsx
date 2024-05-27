@@ -61,6 +61,7 @@ export default function Home() {
               <HomePartnersImage src={logoParternHomeImg02} alt="" />
               <HomePartnersImage src={logoParternHomeImg03} alt="" />
               <HomePartnersImage src={logoParternHomeImg01} alt="" />
+              {/* <HomePartnersImage src={logoParternHomeImg02} alt="" /> */}
             </HomePartnersDetails>
           </HomePartners>
         </HomeContent>

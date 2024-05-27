@@ -48,7 +48,7 @@ export const PreviousEditionsDetailsInformations = styled('div', {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
 
-    // border: '1px solid green',
+    // border: '1px solid red',
   },
 
   /* Media Queries min-width: 1280px */

@@ -1,6 +1,8 @@
-import { Heading, Text } from '@/components/Typography';
 import { styled } from '@/styles/stitches.config';
+
 import Image from 'next/image';
+
+import { Heading, Text } from '@/components/Typography';
 
 export const HomeContainer = styled('section', {
   height: '100%',
@@ -28,23 +30,23 @@ export const HomeContent = styled('div', {
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
-    // padding: '3rem 0',
+    padding: '3rem 0',
   },
 
   /* Media Queries min-width: 768px */
   '@media(min-width: 768px)': {
-    // padding: '3rem 0',
+    padding: '3rem 0',
   },
 
   /* Media Queries min-width: 1024px */
   '@media(min-width: 1024px)': {
-    // padding: '3rem 0',
+    padding: '3rem 0',
   },
 
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
     gap: '7rem',
-    padding: '5rem 0',
+    padding: '3rem 0',
   },
 
   /* Media Queries min-width: 1536px */
@@ -59,12 +61,26 @@ export const HomeContentCenter = styled('div', {
   display: 'flex',
   flexDirection: 'row',
 
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(1, 1fr)',
+
+    gap: '4rem',
+  },
+
   /* Media Queries min-width: 768px */
   '@media(min-width: 768px)': {
     display: 'grid',
     gridTemplateColumns: 'repeat(2, 1fr)',
 
-    gap: '5rem',
+    gap: '0.5rem',
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    display: 'flex',
+    flexDirection: 'row',
   },
 
   /* Media Queries min-width: 1280px */
@@ -72,7 +88,15 @@ export const HomeContentCenter = styled('div', {
     display: 'flex',
     flexDirection: 'row',
 
-    gap: '4rem',
+    gap: '5rem',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    display: 'flex',
+    flexDirection: 'row',
+
+    gap: '5rem',
   },
 });
 
@@ -85,26 +109,42 @@ export const HomeContentTitle = styled('div', {
   margin: '0 auto',
   textAlign: 'center',
 
-  /* Media Queries min-width: 768px */
-  '@media(min-width: 768px)': {
-    marginLeft: '2.5rem',
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    margin: '0 auto',
 
     [`>${Heading}`]: {
-      fontSize: '$md',
+      fontSize: '$xl',
     },
 
     [`>${Text}`]: {
-      fontSize: '$xs',
+      fontSize: '$md',
+    },
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    marginLeft: '3rem',
+
+    [`>${Heading}`]: {
+      fontSize: '$xl',
+    },
+
+    [`>${Text}`]: {
+      fontSize: '$md',
     },
   },
 
   /* Media Queries min-width: 1024px */
   '@media(min-width: 1024px)': {
-    margin: '0 auto',
     marginLeft: '3rem',
 
     [`>${Heading}`]: {
       fontSize: '$xl',
+    },
+
+    [`>${Text}`]: {
+      fontSize: '$md',
     },
   },
 
@@ -115,6 +155,10 @@ export const HomeContentTitle = styled('div', {
     [`>${Heading}`]: {
       fontSize: '$3xl',
     },
+
+    [`>${Text}`]: {
+      fontSize: '$md',
+    },
   },
 
   /* Media Queries min-width: 1536px */
@@ -124,6 +168,10 @@ export const HomeContentTitle = styled('div', {
 
     [`>${Heading}`]: {
       fontSize: '$3xl',
+    },
+
+    [`>${Text}`]: {
+      fontSize: '$lg',
     },
   },
 });
@@ -147,19 +195,34 @@ export const HomeContainerImage = styled('div', {
     borderRadius: '0.25rem',
   },
 
-  /* Media Queries min-width: 768px */
-  '@media(min-width: 768px)': {
-    right: '3rem',
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    right: '1rem',
 
     '&::before': {
-      width: '94%',
-      left: '10%',
+      width: '75%',
+      left: '20%',
+    },
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    right: '1rem',
+
+    '&::before': {
+      width: '83%',
+      left: '15%',
     },
   },
 
   /* Media Queries min-width: 1024px */
   '@media(min-width: 1024px)': {
     right: '6rem',
+
+    '&::before': {
+      width: '100%',
+      left: '10%',
+    },
   },
 
   /* Media Queries min-width: 1280px */
@@ -168,7 +231,7 @@ export const HomeContainerImage = styled('div', {
 
     '&::before': {
       height: '100%',
-      left: '15%',
+      left: '10%',
     },
   },
 
@@ -189,6 +252,15 @@ export const HomeContentImage = styled(Image, {
   borderRadius: '0.25rem',
 
   position: 'relative',
+
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    display: 'flex',
+    margin: '0 auto',
+
+    width: '30rem',
+    height: '20.4rem',
+  },
 
   /* Media Queries min-width: 768px */
   '@media(min-width: 768px)': {
@@ -229,6 +301,41 @@ export const HomePartnersTitle = styled('div', {
   justifyContent: 'center',
 
   marginBottom: '1rem',
+
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    [`>${Heading}`]: {
+      fontSize: '$xl',
+    },
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    [`>${Heading}`]: {
+      fontSize: '$xl',
+    },
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    [`>${Heading}`]: {
+      fontSize: '$xl',
+    },
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    [`>${Heading}`]: {
+      fontSize: '$3xl',
+    },
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    [`>${Heading}`]: {
+      fontSize: '$3xl',
+    },
+  },
 });
 
 export const HomePartnersDetails = styled('div', {
@@ -239,6 +346,36 @@ export const HomePartnersDetails = styled('div', {
   margin: '0 auto',
 
   gap: '2.5rem',
+
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4, 1fr)',
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4, 1fr)',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4, 1fr)',
+  },
 });
 
 export const HomePartnersImage = styled(Image, {
@@ -247,6 +384,30 @@ export const HomePartnersImage = styled(Image, {
 
   borderRadius: '0.25rem',
   border: '1px solid $gray400',
+
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    width: '11.5rem',
+    height: '7.5rem',
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    width: '11.5rem',
+    height: '7.5rem',
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    width: '12.5rem',
+    height: '8.5rem',
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    width: '15.625rem',
+    height: '9.375rem',
+  },
 
   /* Media Queries min-width: 1536px */
   '@media(min-width: 1536px)': {
