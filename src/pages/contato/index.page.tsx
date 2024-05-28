@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 import { Heading, Text } from '@/components/Typography';
 
 import { EnvelopeSimple, MapPin, Phone, WhatsappLogo } from 'phosphor-react';
@@ -14,7 +15,6 @@ import {
   ContactInformations,
   ContactDetailsInformations,
 } from './styles';
-import { Footer } from '@/components/Footer';
 
 export default function Contact() {
   return (
@@ -33,8 +33,8 @@ export default function Contact() {
               atendê-lo(a)!
             </Heading>
             <Text size="md" color="gray-700">
-              Entre em contato com a Liga Escolar, queremos tirar suas dúvidas,{' '}
-              {<br />} ouvir suas críticas e sugestões.
+              Entre em contato com a Liga Escolar, queremos {<br />} tirar suas
+              dúvidas, ouvir suas críticas e sugestões.
             </Text>
 
             <ContactButtonLink>
@@ -67,7 +67,7 @@ export default function Contact() {
             <ContactDetailsInformations>
               <EnvelopeSimple size={24} />
               <Text size="sm" color="gray-700">
-                email@example.com
+                contato@example.com
               </Text>
             </ContactDetailsInformations>
           </ContactInformations>

@@ -21,8 +21,28 @@ export const DirectorshipContent = styled('div', {
 
   minHeight: 'calc(100vh - 10.625rem)',
 
-  /* Media Queries >= 1536px */
-  '@media(width >= 1536px)': {
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    padding: '3rem 0',
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    padding: '3rem 0',
+  },
+
+  /* Media Queries min-width: 1040px */
+  '@media(min-width: 1040px)': {
+    padding: '3rem 0',
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    padding: '3rem 0',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
     padding: '4rem 0',
   },
 });
