@@ -63,10 +63,10 @@ export const HomeContentCenter = styled('div', {
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
-    display: 'grid',
+    flexDirection: 'column-reverse',
     gridTemplateColumns: 'repeat(1, 1fr)',
 
-    gap: '4rem',
+    gap: '3rem',
   },
 
   /* Media Queries min-width: 768px */
@@ -201,7 +201,7 @@ export const HomeContainerImage = styled('div', {
 
     '&::before': {
       width: '75%',
-      left: '20%',
+      left: '18%',
     },
   },
 
@@ -258,8 +258,8 @@ export const HomeContentImage = styled(Image, {
     display: 'flex',
     margin: '0 auto',
 
-    width: '30rem',
-    height: '20.4rem',
+    width: '33rem',
+    height: '22.4rem',
   },
 
   /* Media Queries min-width: 768px */

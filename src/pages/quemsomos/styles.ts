@@ -22,6 +22,16 @@ export const AboutContent = styled('div', {
   padding: '3rem 0',
 
   minHeight: 'calc(100vh - 10.625rem)',
+
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(1, 1fr)',
+
+    gap: '1rem',
+
+    border: '1px solid red',
+  },
 });
 
 export const AboutContainerImage = styled('div', {
@@ -45,7 +55,13 @@ export const AboutContainerImage = styled('div', {
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
-    // marginTop: '12.5rem',
+    marginTop: '4rem',
+
+    '&::before': {
+      // height: '90%',
+      top: '-6.5%',
+      left: '-28%',
+    },
   },
 
   /* Media Queries min-width: 768px */
@@ -97,6 +113,14 @@ export const AboutContentImage = styled(Image, {
 
   position: 'relative',
 
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    width: '35rem',
+    height: '23.4rem',
+
+    border: '1px solid red',
+  },
+
   /* Media Queries min-width: 768px */
   '@media(min-width: 768px)': {
     width: '26rem',
@@ -135,6 +159,8 @@ export const AboutContentTitle = styled('div', {
     [`>${Heading}`]: {
       fontSize: '$xl',
     },
+
+    border: '1px solid blue',
   },
 
   /* Media Queries min-width: 768px */
