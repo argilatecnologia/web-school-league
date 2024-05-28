@@ -21,8 +21,6 @@ export const PreviousEditionsContent = styled('div', {
   padding: '3rem 0',
 
   minHeight: 'calc(100vh - 10.625rem)',
-
-  // border: '1px solid black',
 });
 
 export const PreviousEditionsInformations = styled('div', {
@@ -30,9 +28,7 @@ export const PreviousEditionsInformations = styled('div', {
   flexDirection: 'column',
 
   gap: '2.5rem',
-  margin: '1rem 2.75rem 0',
-
-  // border: '1px solid blue',
+  margin: '3rem 2.75rem 0',
 });
 
 export const PreviousEditionsDetailsInformations = styled('div', {
@@ -41,30 +37,36 @@ export const PreviousEditionsDetailsInformations = styled('div', {
   alignItems: 'center',
 
   margin: '0 auto',
-  gap: '2.5rem',
+  gap: '2.75rem',
+
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+  },
 
   /* Media Queries min-width: 1024px */
   '@media(min-width: 1024px)': {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
-
-    // border: '1px solid red',
   },
 
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
     display: 'grid',
     gridTemplateColumns: 'repeat(4, 1fr)',
-
-    // border: '1px solid blue',
   },
 
   /* Media Queries min-width: 1536px */
   '@media(min-width: 1536px)': {
     display: 'grid',
     gridTemplateColumns: 'repeat(5, 1fr)',
-
-    // border: '1px solid green',
   },
 });
 
@@ -79,9 +81,31 @@ export const PreviousEditionsDetails = styled('div', {
   borderRadius: '0.25rem',
   border: '1px solid $gray400',
 
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    height: '19rem',
+    display: 'grid',
+    gridTemplateRows: 'repeat(2, 1fr)',
+
+    gap: '1.5rem',
+
+    textAlign: 'center',
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    height: '19rem',
+    display: 'grid',
+    gridTemplateRows: 'repeat(2, 1fr)',
+
+    gap: '1.5rem',
+
+    textAlign: 'center',
+  },
+
   /* Media Queries min-width: 1024px */
   '@media(min-width: 1024px)': {
-    height: '17rem',
+    height: '19rem',
     display: 'grid',
     gridTemplateRows: 'repeat(3, 1fr)',
 
@@ -92,7 +116,7 @@ export const PreviousEditionsDetails = styled('div', {
 
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
-    height: '17rem',
+    height: '19rem',
     display: 'grid',
     gridTemplateRows: 'repeat(4, 1fr)',
 
@@ -103,7 +127,7 @@ export const PreviousEditionsDetails = styled('div', {
 
   /* Media Queries min-width: 1536px */
   '@media(min-width: 1536px)': {
-    height: '17rem',
+    height: '19rem',
     display: 'grid',
     gridTemplateRows: 'repeat(5, 1fr)',
 
@@ -117,21 +141,43 @@ export const PreviousEditionsImage = styled(Image, {
   width: '16.875rem',
   height: '12.5rem',
 
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    padding: '0.125rem',
+
+    width: '18rem',
+    height: '14rem',
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    padding: '0.125rem',
+
+    width: '18rem',
+    height: '14rem',
+  },
+
   /* Media Queries min-width: 1024px */
   '@media(min-width: 1024px)': {
-    width: '15rem',
-    height: '12rem',
+    padding: '0.125rem',
+
+    width: '18rem',
+    height: '14rem',
   },
 
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
-    width: '15.5rem',
-    height: '12rem',
+    padding: '0.125rem',
+
+    width: '16.5rem',
+    height: '14rem',
   },
 
   /* Media Queries min-width: 1536px */
   '@media(min-width: 1536px)': {
-    width: '19.375rem',
-    height: '12.5rem',
+    padding: '0.125rem',
+
+    width: '16rem',
+    height: '14rem',
   },
 });

@@ -74,7 +74,7 @@ export const HomeContentCenter = styled('div', {
     display: 'grid',
     gridTemplateColumns: 'repeat(2, 1fr)',
 
-    gap: '0.5rem',
+    gap: '5rem',
   },
 
   /* Media Queries min-width: 1024px */
@@ -200,8 +200,8 @@ export const HomeContainerImage = styled('div', {
     right: '1rem',
 
     '&::before': {
-      width: '75%',
-      left: '18%',
+      width: '93%',
+      left: '10%',
     },
   },
 
@@ -255,11 +255,8 @@ export const HomeContentImage = styled(Image, {
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
-    display: 'flex',
-    margin: '0 auto',
-
-    width: '33rem',
-    height: '22.4rem',
+    width: '39rem',
+    height: '26rem',
   },
 
   /* Media Queries min-width: 768px */
@@ -384,6 +381,8 @@ export const HomePartnersImage = styled(Image, {
 
   borderRadius: '0.25rem',
   border: '1px solid $gray400',
+
+  padding: '0.5rem',
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {

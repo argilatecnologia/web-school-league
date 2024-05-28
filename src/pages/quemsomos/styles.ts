@@ -2,7 +2,7 @@ import { styled } from '@/styles/stitches.config';
 
 import Image from 'next/image';
 
-import { Heading } from '@/components/Typography';
+import { Heading, Text } from '@/components/Typography';
 
 export const AboutContainer = styled('section', {
   height: '100%',
@@ -29,8 +29,30 @@ export const AboutContent = styled('div', {
     gridTemplateColumns: 'repeat(1, 1fr)',
 
     gap: '1rem',
+  },
 
-    border: '1px solid red',
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    display: 'flex',
+    flexDirection: 'reverve-row',
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    display: 'flex',
+    flexDirection: 'reverve-row',
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    display: 'flex',
+    flexDirection: 'reverve-row',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    display: 'flex',
+    flexDirection: 'reverve-row',
   },
 });
 
@@ -58,9 +80,8 @@ export const AboutContainerImage = styled('div', {
     marginTop: '4rem',
 
     '&::before': {
-      // height: '90%',
       top: '-6.5%',
-      left: '-28%',
+      left: '-10%',
     },
   },
 
@@ -69,8 +90,9 @@ export const AboutContainerImage = styled('div', {
     marginTop: '14rem',
 
     '&::before': {
-      height: '50%',
-      top: '-6.5%',
+      height: '40%',
+      left: '-10%',
+      top: '-5%',
     },
   },
 
@@ -115,16 +137,14 @@ export const AboutContentImage = styled(Image, {
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
-    width: '35rem',
-    height: '23.4rem',
-
-    border: '1px solid red',
+    width: '42rem',
+    height: '27rem',
   },
 
   /* Media Queries min-width: 768px */
   '@media(min-width: 768px)': {
-    width: '26rem',
-    height: '16.4rem',
+    width: '25rem',
+    height: '17.4rem',
   },
 
   /* Media Queries min-width: 1024px */
@@ -141,8 +161,8 @@ export const AboutContentImage = styled(Image, {
 
   /* Media Queries min-width: 1536px */
   '@media(min-width: 1536px)': {
-    width: '32rem',
-    height: '21.4rem',
+    width: '35rem',
+    height: '23.4rem',
   },
 });
 
@@ -151,29 +171,47 @@ export const AboutContentTitle = styled('div', {
   flexDirection: 'column',
 
   gap: '1rem',
-  margin: '2rem 2.25rem 0.75rem 0',
+  margin: '2rem 0 0.75rem 0',
   textAlign: 'justify',
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
+    margin: '0 auto',
+
+    padding: '1rem',
+
     [`>${Heading}`]: {
-      fontSize: '$xl',
+      textAlign: 'center',
+      fontSize: '$2xl',
     },
 
-    border: '1px solid blue',
+    [`>${Text}`]: {
+      textAlign: 'justify',
+      fontSize: '$md',
+    },
   },
 
   /* Media Queries min-width: 768px */
   '@media(min-width: 768px)': {
     [`>${Heading}`]: {
-      fontSize: '$xl',
+      fontSize: '$2xl',
+    },
+
+    [`>${Text}`]: {
+      textAlign: 'justify',
+      fontSize: '$md',
     },
   },
 
   /* Media Queries min-width: 1024px */
   '@media(min-width: 1024px)': {
     [`>${Heading}`]: {
-      fontSize: '$xl',
+      fontSize: '$2xl',
+    },
+
+    [`>${Text}`]: {
+      textAlign: 'justify',
+      fontSize: '$md',
     },
   },
 
@@ -182,12 +220,22 @@ export const AboutContentTitle = styled('div', {
     [`>${Heading}`]: {
       fontSize: '$3xl',
     },
+
+    [`>${Text}`]: {
+      textAlign: 'justify',
+      fontSize: '$lg',
+    },
   },
 
   /* Media Queries min-width: 1536px */
   '@media(min-width: 1536px)': {
     [`>${Heading}`]: {
       fontSize: '$3xl',
+    },
+
+    [`>${Text}`]: {
+      textAlign: 'justify',
+      fontSize: '$xl',
     },
   },
 });
