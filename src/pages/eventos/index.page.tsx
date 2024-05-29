@@ -2,71 +2,149 @@ import Head from 'next/head';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { Heading } from '@/components/Typography';
+import { Heading, Text } from '@/components/Typography';
 
 import fakeLogoImg from '../../assets/fake-logo.png';
 
 import {
-  PreviousEditionsContainer,
-  PreviousEditionsContent,
-  PreviousEditionsContentTitle,
-  PreviousEditionsDivContainer,
-  PreviousEditionsGridContent,
-  PreviousEditionsContentDetails,
-  PreviousEditionsLogoContentImage,
+  EventsContainer,
+  EventsContent,
+  EventsContentTitle,
+  EventsInformations,
+  EventsDetailsInformations,
+  EventsDetails,
+  EventsImage,
 } from './styles';
 
-export default function PreviousEditions() {
+export default function Events() {
   return (
     <>
-      <PreviousEditionsContainer>
+      <EventsContainer>
         <Head>
-          <title>Edições Anteriores | Liga Escolar</title>
+          <title>Eventos | Liga Escolar</title>
         </Head>
 
         <Header />
 
-        <PreviousEditionsContent>
-          <PreviousEditionsContentTitle />
+        <EventsContent>
+          <EventsContentTitle>
+            <Heading size="3xl" color="gray-700">
+              JOGOS E EVENTOS PARA NÃO PERDER
+            </Heading>
 
-          <PreviousEditionsDivContainer>
-            <PreviousEditionsGridContent>
-              <PreviousEditionsContentDetails>
-                <PreviousEditionsLogoContentImage src={fakeLogoImg} alt="" />
-                <Heading size="lg" color="gray-700">
-                  Título
-                </Heading>
-              </PreviousEditionsContentDetails>
-              <PreviousEditionsContentDetails>
-                <PreviousEditionsLogoContentImage src={fakeLogoImg} alt="" />
-                <Heading size="lg" color="gray-700">
-                  Título
-                </Heading>
-              </PreviousEditionsContentDetails>
-              <PreviousEditionsContentDetails>
-                <PreviousEditionsLogoContentImage src={fakeLogoImg} alt="" />
-                <Heading size="lg" color="gray-700">
-                  Título
-                </Heading>
-              </PreviousEditionsContentDetails>
-              <PreviousEditionsContentDetails>
-                <PreviousEditionsLogoContentImage src={fakeLogoImg} alt="" />
-                <Heading size="lg" color="gray-700">
-                  Título
-                </Heading>
-              </PreviousEditionsContentDetails>
-              <PreviousEditionsContentDetails>
-                <PreviousEditionsLogoContentImage src={fakeLogoImg} alt="" />
-                <Heading size="lg" color="gray-700">
-                  Título
-                </Heading>
-              </PreviousEditionsContentDetails>
-            </PreviousEditionsGridContent>
-          </PreviousEditionsDivContainer>
-        </PreviousEditionsContent>
-      </PreviousEditionsContainer>
+            <Text size="md" color="gray-700">
+              Acompanhe os jogos e eventos mais importantes da Liga Escolar
+            </Text>
+          </EventsContentTitle>
 
-      <Footer />
+          <EventsInformations>
+            <EventsDetailsInformations>
+              <EventsDetails>
+                <EventsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
+                </Heading>
+
+                <Text size="md" color="gray-700">
+                  Data - Hora
+                </Text>
+              </EventsDetails>
+              <EventsDetails>
+                <EventsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
+                </Heading>
+
+                <Text size="md" color="gray-700">
+                  Data - Hora
+                </Text>
+              </EventsDetails>
+              <EventsDetails>
+                <EventsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
+                </Heading>
+
+                <Text size="md" color="gray-700">
+                  Data - Hora
+                </Text>
+              </EventsDetails>
+              <EventsDetails>
+                <EventsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
+                </Heading>
+
+                <Text size="md" color="gray-700">
+                  Data - Hora
+                </Text>
+              </EventsDetails>
+              <EventsDetails>
+                <EventsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
+                </Heading>
+
+                <Text size="md" color="gray-700">
+                  Data - Hora
+                </Text>
+              </EventsDetails>
+              <EventsDetails>
+                <EventsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
+                </Heading>
+
+                <Text size="md" color="gray-700">
+                  Data - Hora
+                </Text>
+              </EventsDetails>
+              <EventsDetails>
+                <EventsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
+                </Heading>
+
+                <Text size="md" color="gray-700">
+                  Data - Hora
+                </Text>
+              </EventsDetails>
+              <EventsDetails>
+                <EventsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
+                </Heading>
+
+                <Text size="md" color="gray-700">
+                  Data - Hora
+                </Text>
+              </EventsDetails>
+              <EventsDetails>
+                <EventsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
+                </Heading>
+
+                <Text size="md" color="gray-700">
+                  Data - Hora
+                </Text>
+              </EventsDetails>
+              <EventsDetails>
+                <EventsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
+                </Heading>
+
+                <Text size="md" color="gray-700">
+                  Data - Hora
+                </Text>
+              </EventsDetails>
+            </EventsDetailsInformations>
+          </EventsInformations>
+        </EventsContent>
+
+        <Footer />
+      </EventsContainer>
     </>
   );
 }

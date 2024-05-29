@@ -30,7 +30,7 @@ export default function Directorship() {
         <DirectorshipContent>
           <DirectorshipContentTitle>
             <Heading size="3xl" color="gray-700">
-              Nossos diretores
+              NOSSOS DIRETORES
             </Heading>
           </DirectorshipContentTitle>
 

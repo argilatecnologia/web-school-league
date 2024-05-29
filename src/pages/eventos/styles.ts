@@ -1,73 +1,233 @@
 import { styled } from '@/styles/stitches.config';
+
+import { Heading, Text } from '@/components/Typography';
+
 import Image from 'next/image';
 
-export const PreviousEditionsContainer = styled('section', {
+export const EventsContainer = styled('section', {
   height: '100%',
 
   display: 'flex',
   flexDirection: 'column',
   overflow: 'hidden',
-
-  marginTop: '9rem',
 });
 
-export const PreviousEditionsContent = styled('div', {
+export const EventsContent = styled('div', {
   width: '100%',
 
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
 
-  gap: '2rem',
+  margin: '0 auto',
+  padding: '3rem 0',
 
-  // border: '1px solid orange',
+  minHeight: 'calc(100vh - 10.625rem)',
 });
 
-export const PreviousEditionsContentTitle = styled('div', {
+export const EventsContentTitle = styled('div', {
   display: 'flex',
+  flexDirection: 'column',
+
   alignItems: 'center',
 
-  marginTop: '0.5rem',
+  marginBottom: '1.5rem',
 });
 
-export const PreviousEditionsDivContainer = styled('div', {
-  width: '100%',
+export const EventsInformations = styled('div', {
   display: 'flex',
+  flexDirection: 'column',
 
-  justifyContent: 'center',
-
-  padding: '0 2.75rem 1rem 2.75rem',
-  gap: '0.75rem',
-
-  // border: '1px solid green',
+  gap: '2.5rem',
+  margin: '3rem 2.75rem 0',
 });
 
-export const PreviousEditionsGridContent = styled('div', {
-  width: '100%',
+export const EventsDetailsInformations = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
 
-  display: 'grid',
-  gridTemplateColumns: 'repeat(5, auto)',
+  margin: '0 auto',
+  gap: '2.75rem',
 
-  gap: '1.5rem',
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+  },
 
-  // border: '1px solid red',
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 1fr)',
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4, 1fr)',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(5, 1fr)',
+  },
 });
 
-export const PreviousEditionsContentDetails = styled('div', {
+export const EventsDetails = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
 
-  gap: '0.5rem',
+  margin: '0 auto',
 
   borderRadius: '0.25rem',
+  border: '1px solid $gray400',
 
-  border: '1px solid $gray300',
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    height: '20rem',
+    display: 'grid',
+    gridTemplateRows: 'repeat(2, 1fr)',
+
+    textAlign: 'center',
+
+    [`${Heading}`]: {
+      paddingTop: '1rem',
+      fontSize: '$xl',
+    },
+
+    [`${Text}`]: {
+      paddingBottom: '1rem',
+      fontSize: '$lg',
+    },
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    height: '20rem',
+    display: 'grid',
+    gridTemplateRows: 'repeat(2, 1fr)',
+
+    textAlign: 'center',
+
+    [`${Heading}`]: {
+      paddingTop: '1rem',
+      fontSize: '$xl',
+    },
+
+    [`${Text}`]: {
+      paddingBottom: '1rem',
+      fontSize: '$lg',
+    },
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    height: '20rem',
+    display: 'grid',
+    gridTemplateRows: 'repeat(3, 1fr)',
+
+    textAlign: 'center',
+
+    [`${Heading}`]: {
+      paddingTop: '1rem',
+      fontSize: '$xl',
+    },
+
+    [`${Text}`]: {
+      paddingBottom: '1rem',
+      fontSize: '$lg',
+    },
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    height: '20rem',
+    display: 'grid',
+    gridTemplateRows: 'repeat(4, 1fr)',
+
+    textAlign: 'center',
+
+    [`${Heading}`]: {
+      paddingTop: '1rem',
+      fontSize: '$xl',
+    },
+
+    [`${Text}`]: {
+      paddingBottom: '1rem',
+      fontSize: '$lg',
+    },
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    height: '20rem',
+    display: 'grid',
+    gridTemplateRows: 'repeat(5, 1fr)',
+
+    textAlign: 'center',
+
+    [`${Heading}`]: {
+      paddingTop: '1rem',
+      fontSize: '$xl',
+    },
+
+    [`${Text}`]: {
+      paddingBottom: '1rem',
+      fontSize: '$lg',
+    },
+  },
 });
 
-export const PreviousEditionsLogoContentImage = styled(Image, {
-  width: '14.5rem',
+export const EventsImage = styled(Image, {
+  width: '16.875rem',
   height: '12.5rem',
 
-  borderRadius: '0.25rem',
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    padding: '0.125rem',
+
+    width: '18rem',
+    height: '14rem',
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    padding: '0.125rem',
+
+    width: '18rem',
+    height: '14rem',
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    padding: '0.125rem',
+
+    width: '18rem',
+    height: '14rem',
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    padding: '0.125rem',
+
+    width: '16.5rem',
+    height: '14rem',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    padding: '0.125rem',
+
+    width: '16rem',
+    height: '14rem',
+  },
 });

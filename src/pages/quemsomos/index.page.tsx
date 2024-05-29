@@ -19,7 +19,7 @@ export default function WhoWeAre() {
     <>
       <AboutContainer>
         <Head>
-          <title>Sobre | Liga Escolar</title>
+          <title>Quem Somos | Liga Escolar</title>
         </Head>
 
         <Header />

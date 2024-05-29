@@ -28,7 +28,7 @@ export default function AssociatedColleges() {
         <AssociatedCollegesContent>
           <AssociatedCollegesTitle>
             <Heading size="3xl" color="gray-700">
-              Nossos colégios associados
+              NOSSOS COLÉGIOS ASSOCIADOS
             </Heading>
           </AssociatedCollegesTitle>
 

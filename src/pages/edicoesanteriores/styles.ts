@@ -23,6 +23,15 @@ export const PreviousEditionsContent = styled('div', {
   minHeight: 'calc(100vh - 10.625rem)',
 });
 
+export const PreviousEditionsContentTitle = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+
+  alignItems: 'center',
+
+  marginBottom: '1.5rem',
+});
+
 export const PreviousEditionsInformations = styled('div', {
   display: 'flex',
   flexDirection: 'column',

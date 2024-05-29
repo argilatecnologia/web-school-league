@@ -49,6 +49,8 @@ export const PartnershipContent = styled('div', {
 
 export const PartnershipContentTitle = styled('div', {
   display: 'flex',
+  flexDirection: 'column',
+
   alignItems: 'center',
 
   marginBottom: '1.5rem',

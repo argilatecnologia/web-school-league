@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { Heading } from '@/components/Typography';
+import { Heading, Text } from '@/components/Typography';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -29,8 +29,12 @@ export default function Partnership() {
         <PartnershipContent>
           <PartnershipContentTitle>
             <Heading size="3xl" color="gray-700">
-              Nossos parceiros
+              NOSSOS PARCEIROS
             </Heading>
+
+            <Text size="md" color="gray-700">
+              Veja quem apoia os mais diversos esportes da Liga Escolar
+            </Text>
           </PartnershipContentTitle>
 
           <PartnershipInformations>

@@ -2,13 +2,14 @@ import Head from 'next/head';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { Heading } from '@/components/Typography';
+import { Heading, Text } from '@/components/Typography';
 
 import fakeLogoImg from '../../assets/fake-logo.png';
 
 import {
   PreviousEditionsContainer,
   PreviousEditionsContent,
+  PreviousEditionsContentTitle,
   PreviousEditionsInformations,
   PreviousEditionsDetailsInformations,
   PreviousEditionsDetails,
@@ -26,6 +27,16 @@ export default function PreviousEditions() {
         <Header />
 
         <PreviousEditionsContent>
+          <PreviousEditionsContentTitle>
+            <Heading size="3xl" color="gray-700">
+              FIQUE POR DENTRO DAS EDIÇÕES ANTERIORES
+            </Heading>
+
+            <Text size="md" color="gray-700">
+              Veja os jogos e eventos que aconteceram da Liga Escolar
+            </Text>
+          </PreviousEditionsContentTitle>
+
           <PreviousEditionsInformations>
             <PreviousEditionsDetailsInformations>
               <PreviousEditionsDetails>

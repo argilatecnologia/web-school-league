@@ -178,7 +178,7 @@ export const AboutContentTitle = styled('div', {
   '@media(min-width: 640px)': {
     margin: '0 auto',
 
-    padding: '1rem',
+    padding: '1.5rem',
 
     [`>${Heading}`]: {
       textAlign: 'center',

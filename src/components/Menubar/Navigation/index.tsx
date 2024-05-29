@@ -12,8 +12,8 @@ interface INavigationItens {
 
 const NAVIGATION_ITENS: INavigationItens[] = [
   {
-    label: 'Início',
-    href: '/',
+    label: 'Histórico',
+    href: '/historico',
     shouldMatchExactHref: true,
   },
   {
@@ -21,8 +21,16 @@ const NAVIGATION_ITENS: INavigationItens[] = [
     href: '/quemsomos',
   },
   {
+    label: 'Eventos',
+    href: '/eventos',
+  },
+  {
     label: 'Edições anteriores',
     href: '/edicoesanteriores',
+  },
+  {
+    label: 'Calendário',
+    href: '/calendario',
   },
   {
     label: 'Parceria',
