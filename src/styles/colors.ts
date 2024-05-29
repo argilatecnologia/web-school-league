@@ -9,6 +9,7 @@ export const colors = {
   white500: '#969A9D',
   white600: '#6E7174',
   white700: '#5A5E60',
+  white750: '#515151',
   white800: '#3C3F41',
   white900: '#1B1E20',
 
