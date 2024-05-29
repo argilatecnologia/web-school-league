@@ -34,12 +34,6 @@ export default function PreviousEditions() {
                   Título do evento
                 </Heading>
               </PreviousEditionsDetails>
-              {/* <PreviousEditionsDetails>
-                <PreviousEditionsImage src={fakeLogoImg} alt="" />
-                <Heading size="md" color="gray-700">
-                  Título do evento
-                </Heading>
-              </PreviousEditionsDetails>
               <PreviousEditionsDetails>
                 <PreviousEditionsImage src={fakeLogoImg} alt="" />
                 <Heading size="md" color="gray-700">
@@ -87,7 +81,13 @@ export default function PreviousEditions() {
                 <Heading size="md" color="gray-700">
                   Título do evento
                 </Heading>
-              </PreviousEditionsDetails> */}
+              </PreviousEditionsDetails>
+              <PreviousEditionsDetails>
+                <PreviousEditionsImage src={fakeLogoImg} alt="" />
+                <Heading size="md" color="gray-700">
+                  Título do evento
+                </Heading>
+              </PreviousEditionsDetails>
             </PreviousEditionsDetailsInformations>
           </PreviousEditionsInformations>
         </PreviousEditionsContent>

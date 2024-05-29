@@ -17,8 +17,6 @@ export const ContactContent = styled('div', {
   flexDirection: 'row',
   justifyContent: 'center',
 
-  gap: '5rem',
-
   minHeight: 'calc(100vh - 10.625rem)',
 
   /* Media Queries min-width: 640px */
@@ -46,15 +44,14 @@ export const ContactContent = styled('div', {
   '@media(min-width: 1280px)': {
     flexDirection: 'row',
 
-    padding: '7rem 0',
-
-    border: '1px solid red',
+    paddingTop: '8rem',
   },
 
   /* Media Queries min-width: 1536px */
   '@media(min-width: 1536px)': {
-    padding: '10rem 0',
-    gap: '14rem',
+    flexDirection: 'row',
+
+    paddingTop: '8rem',
   },
 });
 
@@ -64,6 +61,8 @@ export const ContactContentTitle = styled('div', {
 
   gap: '1.5rem',
   margin: '2rem 0 0 2.5rem',
+  paddingBottom: '5rem',
+
   textAlign: 'left',
 
   /* Media Queries min-width: 640px */
@@ -94,10 +93,10 @@ export const ContactContentTitle = styled('div', {
 
   /* Media Queries min-width: 1024px */
   '@media(min-width: 1024px)': {
-    paddingRight: '8rem',
+    paddingRight: '10rem',
 
     [`>${Heading}`]: {
-      fontSize: '$3xl',
+      fontSize: '$2xl',
     },
 
     [`>${Text}`]: {
@@ -107,10 +106,10 @@ export const ContactContentTitle = styled('div', {
 
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
-    marginRight: '12.5rem',
+    paddingRight: '17rem',
 
     [`>${Heading}`]: {
-      fontSize: '$4xl',
+      fontSize: '$3xl',
     },
 
     [`>${Text}`]: {
@@ -120,7 +119,15 @@ export const ContactContentTitle = styled('div', {
 
   /* Media Queries min-width: 1536px */
   '@media(min-width: 1536px)': {
-    margin: '2rem 0 0 6rem',
+    paddingRight: '25rem',
+
+    [`>${Heading}`]: {
+      fontSize: '$4xl',
+    },
+
+    [`>${Text}`]: {
+      fontSize: '$xl',
+    },
   },
 });
 
@@ -177,7 +184,8 @@ export const ContactInformations = styled('div', {
 
   /* Media Queries min-width: 1024px */
   '@media(min-width: 1024px)': {
-    padding: '5rem 7rem 0 0',
+    paddingTop: '5rem',
+    paddingRight: '2rem',
 
     [`${Text}`]: {
       fontSize: '$md',
@@ -186,10 +194,21 @@ export const ContactInformations = styled('div', {
 
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
-    margin: '5rem 5rem 0 0',
+    paddingTop: '5rem',
+    paddingRight: '4rem',
 
     [`${Text}`]: {
       fontSize: '$lg',
+    },
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    paddingTop: '5rem',
+    paddingRight: '7rem',
+
+    [`${Text}`]: {
+      fontSize: '$xl',
     },
   },
 });
