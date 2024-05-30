@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -19,6 +20,11 @@ import {
 export default function Calendar() {
   return (
     <>
+      <NextSeo
+        title="Calendário | Liga Escolar "
+        description="Liga escolar de esportes olímpicos e paralímpicos da cidade de Caruaru e circunvizinhas."
+      />
+
       <CalendarContainer>
         <Head>
           <title>Calendário | Liga Escolar</title>

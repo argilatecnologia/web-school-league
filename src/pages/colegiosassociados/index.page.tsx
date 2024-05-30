@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -18,6 +19,11 @@ import {
 export default function AssociatedColleges() {
   return (
     <>
+      <NextSeo
+        title="Colégios Associados | Liga Escolar "
+        description="Liga escolar de esportes olímpicos e paralímpicos da cidade de Caruaru e circunvizinhas."
+      />
+
       <AssociatedCollegesContainer>
         <Head>
           <title>Colégios Associados | Liga Escolar</title>

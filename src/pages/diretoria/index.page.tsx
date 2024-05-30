@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import { Heading, Text } from '@/components/Typography';
 
@@ -20,6 +21,11 @@ import {
 export default function Directorship() {
   return (
     <>
+      <NextSeo
+        title="Diretoria | Liga Escolar "
+        description="Liga escolar de esportes olímpicos e paralímpicos da cidade de Caruaru e circunvizinhas."
+      />
+
       <DirectorshipContainer>
         <Head>
           <title>Diretoria | Liga Escolar</title>

@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import { Heading, Text } from '@/components/Typography';
 
@@ -19,6 +20,11 @@ import {
 export default function Partnership() {
   return (
     <>
+      <NextSeo
+        title="Parceria | Liga Escolar "
+        description="Liga escolar de esportes olímpicos e paralímpicos da cidade de Caruaru e circunvizinhas."
+      />
+
       <PartnershipContainer>
         <Head>
           <title>Parceria | Liga Escolar</title>

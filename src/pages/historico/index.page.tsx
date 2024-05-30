@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import { Header } from '@/components/Header';
 import { Heading, Text } from '@/components/Typography';
@@ -17,6 +18,11 @@ import {
 export default function WhoWeAre() {
   return (
     <>
+      <NextSeo
+        title="Histórico | Liga Escolar "
+        description="Liga escolar de esportes olímpicos e paralímpicos da cidade de Caruaru e circunvizinhas."
+      />
+
       <HistoricContainer>
         <Head>
           <title>Histórico | Liga Escolar</title>

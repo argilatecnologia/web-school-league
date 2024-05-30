@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -19,6 +20,11 @@ import {
 export default function Contact() {
   return (
     <>
+      <NextSeo
+        title="Contato | Liga Escolar "
+        description="Entre em contato com a Liga Escolar."
+      />
+
       <ContactContainer>
         <Head>
           <title>Contato | Liga Escolar</title>
