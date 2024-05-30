@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -25,6 +26,11 @@ import {
 export default function Home() {
   return (
     <>
+      <NextSeo
+        title="Esportes olímpicos e paralímpicos | Liga Escolar "
+        description="Liga escolar de esportes olímpicos e paralímpicos da cidade de Caruaru e circunvizinhas."
+      />
+
       <HomeContainer>
         <Head>
           <title>Início | Liga Escolar</title>
