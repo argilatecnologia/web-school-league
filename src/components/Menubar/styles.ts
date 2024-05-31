@@ -32,6 +32,9 @@ export const MenubarContainer = styled('section', {
   // backgroundColor: '$white25',
   background: `linear-gradient(90deg, #F9F9F9 0%, #F0F4F7 95%)`,
 
+  opacity: 0,
+  pointerEvents: 'none',
+
   svg: {
     position: 'absolute',
     top: '1rem',
@@ -45,5 +48,14 @@ export const MenubarContainer = styled('section', {
     justifyContent: 'center',
 
     gap: '0.25rem',
+  },
+
+  variants: {
+    isVisible: {
+      true: {
+        opacity: 1,
+        pointerEvents: 'auto',
+      },
+    },
   },
 });

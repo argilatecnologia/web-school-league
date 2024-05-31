@@ -22,8 +22,11 @@ import {
   HomePartnersDetails,
   HomePartnersImage,
 } from './styles';
+import { useState } from 'react';
 
 export default function Home() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
+
   return (
     <>
       <NextSeo
@@ -36,7 +39,10 @@ export default function Home() {
           <title>Início | Liga Escolar</title>
         </Head>
 
-        <Header />
+        <Header
+          menuIsVisible={menuIsVisible}
+          setMenuIsVisible={setMenuIsVisible}
+        />
 
         <HomeContent>
           <HomeContentCenter>

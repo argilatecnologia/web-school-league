@@ -55,11 +55,8 @@ const Navigation = () => {
     return NAVIGATION_ITENS;
   }, []);
 
-  // const isActive = false;
-
   return (
     <NavigationContainer>
-      {/* <NavigationContentMenu className="show"> */}
       {navItens.map(({ label, href, shouldMatchExactHref }) => (
         <ActiveLink
           key={label}

@@ -1,15 +1,18 @@
 import Link from 'next/link';
+import { List } from 'phosphor-react';
 
 import { Menubar } from '../Menubar';
 
 import logoSchoolLeagueImg from '../../assets/logo-liga-escolar.jpg';
 
 import { HeaderContainer, HeaderContent, HeaderContentImage } from './styles';
-import { useState } from 'react';
 
-const Header = () => {
-  const [menuIsVisible, setMenuIsVisible] = useState(true);
+interface IHeaderProps {
+  menuIsVisible: boolean;
+  setMenuIsVisible: (visible: boolean) => void;
+}
 
+const Header = ({ menuIsVisible = false, setMenuIsVisible }: IHeaderProps) => {
   return (
     <HeaderContainer>
       <HeaderContent>
@@ -20,6 +23,13 @@ const Header = () => {
         <Menubar
           menuIsVisible={menuIsVisible}
           setMenuIsVisible={setMenuIsVisible}
+        />
+
+        <List
+          size={30}
+          onClick={() => {
+            setMenuIsVisible(true);
+          }}
         />
       </HeaderContent>
     </HeaderContainer>
