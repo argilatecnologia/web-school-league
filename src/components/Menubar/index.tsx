@@ -1,9 +1,22 @@
+import { X } from 'phosphor-react';
 import { Navigation } from './Navigation';
+
 import { MenubarContainer } from './styles';
 
-const Menubar = () => {
+interface IMenubarProps {
+  menuIsVisible: boolean;
+  setMenuIsVisible: (visible: boolean) => void;
+}
+
+const Menubar = ({ menuIsVisible, setMenuIsVisible }: IMenubarProps) => {
   return (
-    <MenubarContainer>
+    <MenubarContainer isVisible={menuIsVisible}>
+      <X
+        size={30}
+        onClick={() => {
+          setMenuIsVisible(false);
+        }}
+      />
       <Navigation />
     </MenubarContainer>
   );

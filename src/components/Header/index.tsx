@@ -5,8 +5,11 @@ import { Menubar } from '../Menubar';
 import logoSchoolLeagueImg from '../../assets/logo-liga-escolar.jpg';
 
 import { HeaderContainer, HeaderContent, HeaderContentImage } from './styles';
+import { useState } from 'react';
 
 const Header = () => {
+  const [menuIsVisible, setMenuIsVisible] = useState(true);
+
   return (
     <HeaderContainer>
       <HeaderContent>
@@ -14,7 +17,10 @@ const Header = () => {
           <HeaderContentImage src={logoSchoolLeagueImg} alt="" />
         </Link>
 
-        <Menubar />
+        <Menubar
+          menuIsVisible={menuIsVisible}
+          setMenuIsVisible={setMenuIsVisible}
+        />
       </HeaderContent>
     </HeaderContainer>
   );

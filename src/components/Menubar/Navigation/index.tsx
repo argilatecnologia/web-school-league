@@ -69,14 +69,6 @@ const Navigation = () => {
           {label}
         </ActiveLink>
       ))}
-
-      {/* <NavigationContentShowMenu className="icon-menu">
-          <List size={24} />
-        </NavigationContentShowMenu>
-        <NavigationContentCloseMenu className="icon-close">
-          <X size={24} />
-        </NavigationContentCloseMenu> */}
-      {/* </NavigationContentMenu> */}
     </NavigationContainer>
   );
 };

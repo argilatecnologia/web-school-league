@@ -57,6 +57,6 @@ export const colors = {
   red100: '#E02020',
   red900: '#C53030',
 
-  'gradient-vertical': `linear-gradient(180deg, #FFC887 0%, #e96924 100%)`,
-  'gradient-horizontal': `linear-gradient(90deg, #FFC887 0%, #e96924 100%)`,
+  'gradient-vertical': `linear-gradient(180deg, #FFC887 0%, #E96924 100%)`,
+  'gradient-horizontal': `linear-gradient(90deg, #FFC887 0%, #E96924 100%)`,
 } as const;
