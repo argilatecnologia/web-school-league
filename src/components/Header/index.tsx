@@ -26,7 +26,7 @@ const Header = ({ menuIsVisible = false, setMenuIsVisible }: IHeaderProps) => {
         />
 
         <List
-          size={30}
+          size={40}
           onClick={() => {
             setMenuIsVisible(true);
           }}

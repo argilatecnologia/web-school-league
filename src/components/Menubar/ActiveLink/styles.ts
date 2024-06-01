@@ -16,7 +16,7 @@ export const ActiveLinkContent = styled(Link, {
   position: 'relative',
 
   padding: '0 0.25rem',
-  lineHeight: '4rem',
+  lineHeight: '2.3rem',
 
   '&::after': {
     // fazer assim, senão não funciona no Stitches

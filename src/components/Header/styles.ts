@@ -37,6 +37,12 @@ export const HeaderContent = styled('div', {
 
   boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.1)',
 
+  svg: {
+    position: 'absolute',
+    top: '3.5rem',
+    right: '3rem',
+  },
+
   // border: '1px solid blue',
 });
 
@@ -44,5 +50,5 @@ export const HeaderContentImage = styled(Image, {
   width: '7.75rem',
   height: '5.625rem',
 
-  // paddingTop: '1rem',
+  marginTop: '1.5rem',
 });

@@ -1,7 +1,8 @@
 import { X } from 'phosphor-react';
 import { Navigation } from './Navigation';
 
-import { MenubarContainer } from './styles';
+import { MenubarContainer, MenubarContainerMobile } from './styles';
+import { useEffect } from 'react';
 
 interface IMenubarProps {
   menuIsVisible: boolean;
@@ -9,16 +10,23 @@ interface IMenubarProps {
 }
 
 const Menubar = ({ menuIsVisible, setMenuIsVisible }: IMenubarProps) => {
+  useEffect(() => {
+    document.body.style.overflowY = menuIsVisible ? 'hidden' : 'auto';
+  }, [menuIsVisible]);
+
   return (
-    <MenubarContainer isVisible={menuIsVisible}>
+    // <MenubarContainer>
+    //   <Navigation />
+    // </MenubarContainer>
+    <MenubarContainerMobile isVisible={menuIsVisible}>
       <X
-        size={30}
+        size={40}
         onClick={() => {
           setMenuIsVisible(false);
         }}
       />
       <Navigation />
-    </MenubarContainer>
+    </MenubarContainerMobile>
   );
 };
 
