@@ -2,6 +2,8 @@ import { styled } from '@/styles/stitches.config';
 
 import Image from 'next/image';
 
+import { MenubarContainer } from '../Menubar/styles';
+
 export const HeaderContainer = styled('header', {
   width: '100%',
   height: '8rem',
@@ -18,6 +20,19 @@ export const HeaderContainer = styled('header', {
   background: '$white25',
 
   // border: '1px solid red',
+
+  /* Media Queries max-width: 640px */
+  '@media(max-width: 1280px)': {
+    [`${MenubarContainer}`]: {
+      display: 'none',
+    },
+  },
+
+  '@media(min-width: 1280px)': {
+    svg: {
+      display: 'none',
+    },
+  },
 });
 
 export const HeaderContent = styled('div', {

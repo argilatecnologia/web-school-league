@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
+import { useState } from 'react';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -22,7 +23,6 @@ import {
   HomePartnersDetails,
   HomePartnersImage,
 } from './styles';
-import { useState } from 'react';
 
 export default function Home() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);

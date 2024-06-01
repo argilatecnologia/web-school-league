@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
+import { useState } from 'react';
 
 import { Header } from '@/components/Header';
 import { Heading, Text } from '@/components/Typography';
@@ -16,6 +17,8 @@ import {
 } from './styles';
 
 export default function WhoWeAre() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
+
   return (
     <>
       <NextSeo
@@ -28,7 +31,10 @@ export default function WhoWeAre() {
           <title>Quem Somos | Liga Escolar</title>
         </Head>
 
-        <Header />
+        <Header
+          menuIsVisible={menuIsVisible}
+          setMenuIsVisible={setMenuIsVisible}
+        />
 
         <AboutContent>
           <AboutContainerImage>

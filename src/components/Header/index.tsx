@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { List } from 'phosphor-react';
 
 import { Menubar } from '../Menubar';
+import { MenubarMobile } from '../MenubarMobile';
 
 import logoSchoolLeagueImg from '../../assets/logo-liga-escolar.jpg';
 
@@ -20,7 +21,9 @@ const Header = ({ menuIsVisible = false, setMenuIsVisible }: IHeaderProps) => {
           <HeaderContentImage src={logoSchoolLeagueImg} alt="" />
         </Link>
 
-        <Menubar
+        <Menubar />
+
+        <MenubarMobile
           menuIsVisible={menuIsVisible}
           setMenuIsVisible={setMenuIsVisible}
         />
