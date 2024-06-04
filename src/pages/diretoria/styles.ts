@@ -1,5 +1,7 @@
 import { styled } from '@/styles/stitches.config';
 
+import { Heading } from '@/components/Typography';
+
 import Image from 'next/image';
 
 export const DirectorshipContainer = styled('section', {
@@ -65,8 +67,8 @@ export const DirectorshipContentTitle = styled('div', {
 
     textAlign: 'center',
 
-    [`${Text}`]: {
-      fontSize: '$md',
+    [`${Heading}`]: {
+      fontSize: '$xl',
     },
   },
 
@@ -77,8 +79,8 @@ export const DirectorshipContentTitle = styled('div', {
 
     textAlign: 'center',
 
-    [`${Text}`]: {
-      fontSize: '$lg',
+    [`${Heading}`]: {
+      fontSize: '$2xl',
     },
   },
 
@@ -89,8 +91,8 @@ export const DirectorshipContentTitle = styled('div', {
 
     textAlign: 'center',
 
-    [`${Text}`]: {
-      fontSize: '$lg',
+    [`${Heading}`]: {
+      fontSize: '$2xl',
     },
   },
 
@@ -98,8 +100,8 @@ export const DirectorshipContentTitle = styled('div', {
   '@media(min-width: 1024px)': {
     textAlign: 'center',
 
-    [`${Text}`]: {
-      fontSize: '$xl',
+    [`${Heading}`]: {
+      fontSize: '$3xl',
     },
   },
 
@@ -107,8 +109,8 @@ export const DirectorshipContentTitle = styled('div', {
   '@media(min-width: 1280px)': {
     textAlign: 'center',
 
-    [`${Text}`]: {
-      fontSize: '$xl',
+    [`${Heading}`]: {
+      fontSize: '$3xl',
     },
   },
 
@@ -116,8 +118,8 @@ export const DirectorshipContentTitle = styled('div', {
   '@media(min-width: 1536px)': {
     textAlign: 'center',
 
-    [`${Text}`]: {
-      fontSize: '$xl',
+    [`${Heading}`]: {
+      fontSize: '$3xl',
     },
   },
 });

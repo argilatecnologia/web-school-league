@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { Heading } from '@/components/Typography';
+import { Heading, Text } from '@/components/Typography';
 
 import fakeLogoImg from '../../assets/fake-logo.png';
 
@@ -15,6 +15,7 @@ import {
   AssociatedCollegesInformations,
   AssociatedCollegesImage,
   AssociatedCollegesDetailsInformations,
+  AssociatedCollegesDetails,
 } from './styles';
 
 export default function AssociatedColleges() {
@@ -46,13 +47,42 @@ export default function AssociatedColleges() {
 
           <AssociatedCollegesInformations>
             <AssociatedCollegesDetailsInformations>
-              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
-              <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+              <AssociatedCollegesDetails>
+                <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+                <Text size="md" color="gray-700">
+                  Diocesano
+                </Text>
+              </AssociatedCollegesDetails>
+              <AssociatedCollegesDetails>
+                <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+                <Text size="md" color="gray-700">
+                  Diocesano
+                </Text>
+              </AssociatedCollegesDetails>
+              <AssociatedCollegesDetails>
+                <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+                <Text size="md" color="gray-700">
+                  Diocesano
+                </Text>
+              </AssociatedCollegesDetails>
+              <AssociatedCollegesDetails>
+                <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+                <Text size="md" color="gray-700">
+                  Diocesano
+                </Text>
+              </AssociatedCollegesDetails>
+              <AssociatedCollegesDetails>
+                <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+                <Text size="md" color="gray-700">
+                  Diocesano
+                </Text>
+              </AssociatedCollegesDetails>
+              <AssociatedCollegesDetails>
+                <AssociatedCollegesImage src={fakeLogoImg} alt="" />
+                <Text size="md" color="gray-700">
+                  Diocesano
+                </Text>
+              </AssociatedCollegesDetails>
             </AssociatedCollegesDetailsInformations>
           </AssociatedCollegesInformations>
         </AssociatedCollegesContent>

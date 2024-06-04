@@ -15,6 +15,7 @@ import {
   PartnershipContentTitle,
   PartnershipInformations,
   PartnersContentDetailsInformations,
+  PartnersContentDetails,
   PartnershipImage,
 } from './styles';
 
@@ -51,14 +52,42 @@ export default function Partnership() {
 
           <PartnershipInformations>
             <PartnersContentDetailsInformations>
-              <PartnershipImage src={fakeLogoImg} alt="" />
-              <PartnershipImage src={fakeLogoImg} alt="" />
-              <PartnershipImage src={fakeLogoImg} alt="" />
-              <PartnershipImage src={fakeLogoImg} alt="" />
-              <PartnershipImage src={fakeLogoImg} alt="" />
-              <PartnershipImage src={fakeLogoImg} alt="" />
-              <PartnershipImage src={fakeLogoImg} alt="" />
-              <PartnershipImage src={fakeLogoImg} alt="" />
+              <PartnersContentDetails>
+                <PartnershipImage src={fakeLogoImg} alt="" />
+                <Text size="md" color="gray-700">
+                  TV Asa Branca
+                </Text>
+              </PartnersContentDetails>
+              <PartnersContentDetails>
+                <PartnershipImage src={fakeLogoImg} alt="" />
+                <Text size="md" color="gray-700">
+                  TV Asa Branca
+                </Text>
+              </PartnersContentDetails>
+              <PartnersContentDetails>
+                <PartnershipImage src={fakeLogoImg} alt="" />
+                <Text size="md" color="gray-700">
+                  TV Asa Branca
+                </Text>
+              </PartnersContentDetails>
+              <PartnersContentDetails>
+                <PartnershipImage src={fakeLogoImg} alt="" />
+                <Text size="md" color="gray-700">
+                  TV Asa Branca
+                </Text>
+              </PartnersContentDetails>
+              <PartnersContentDetails>
+                <PartnershipImage src={fakeLogoImg} alt="" />
+                <Text size="md" color="gray-700">
+                  TV Asa Branca
+                </Text>
+              </PartnersContentDetails>
+              <PartnersContentDetails>
+                <PartnershipImage src={fakeLogoImg} alt="" />
+                <Text size="md" color="gray-700">
+                  TV Asa Branca
+                </Text>
+              </PartnersContentDetails>
             </PartnersContentDetailsInformations>
           </PartnershipInformations>
         </PartnershipContent>

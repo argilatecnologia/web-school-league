@@ -1,5 +1,7 @@
 import { styled } from '@/styles/stitches.config';
 
+import { Heading } from '@/components/Typography';
+
 import Image from 'next/image';
 
 export const AssociatedCollegesContainer = styled('section', {
@@ -20,6 +22,11 @@ export const AssociatedCollegesContent = styled('div', {
   padding: '3rem 0',
 
   minHeight: 'calc(100vh - 10.625rem)',
+
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    padding: '3rem 0',
+  },
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
@@ -52,6 +59,69 @@ export const AssociatedCollegesTitle = styled('div', {
   alignItems: 'center',
 
   marginBottom: '1.5rem',
+
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    marginLeft: '1rem',
+    marginRight: '1rem',
+
+    textAlign: 'center',
+
+    [`${Heading}`]: {
+      fontSize: '$xl',
+    },
+  },
+
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    marginLeft: '1rem',
+    marginRight: '1rem',
+
+    textAlign: 'center',
+
+    [`${Heading}`]: {
+      fontSize: '$2xl',
+    },
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    marginLeft: '1rem',
+    marginRight: '1rem',
+
+    textAlign: 'center',
+
+    [`${Heading}`]: {
+      fontSize: '$2xl',
+    },
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    textAlign: 'center',
+
+    [`${Heading}`]: {
+      fontSize: '$3xl',
+    },
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    textAlign: 'center',
+
+    [`${Heading}`]: {
+      fontSize: '$3xl',
+    },
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    textAlign: 'center',
+
+    [`${Heading}`]: {
+      fontSize: '$3xl',
+    },
+  },
 });
 
 export const AssociatedCollegesInformations = styled('div', {
@@ -73,6 +143,12 @@ export const AssociatedCollegesDetailsInformations = styled('div', {
   margin: '0 auto',
 
   gap: '2.5rem',
+
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+  },
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
@@ -105,12 +181,31 @@ export const AssociatedCollegesDetailsInformations = styled('div', {
   },
 });
 
+export const AssociatedCollegesDetails = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+
+  margin: '0 auto',
+  gap: '1rem',
+
+  borderRadius: '0.25rem',
+  border: '1px solid $gray400',
+});
+
 export const AssociatedCollegesImage = styled(Image, {
   width: '7.5rem',
   height: '7.5rem',
 
   borderRadius: '0.25rem',
-  border: '1px solid $gray400',
+
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    padding: '0.125rem',
+
+    width: '8rem',
+    height: '8rem',
+  },
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
