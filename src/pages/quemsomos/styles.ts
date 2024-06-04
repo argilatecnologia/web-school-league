@@ -89,7 +89,7 @@ export const AboutContainerImage = styled('div', {
 
     '&::before': {
       top: '-6.5%',
-      left: '-10%',
+      left: '-12%',
     },
   },
 
@@ -155,7 +155,7 @@ export const AboutContentImage = styled(Image, {
 
   /* Media Queries min-width: 360px */
   '@media(min-width: 360px)': {
-    width: '22.5rem',
+    width: '25rem',
     height: '17rem',
   },
 
