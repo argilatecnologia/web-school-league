@@ -23,6 +23,14 @@ export const AboutContent = styled('div', {
 
   minHeight: 'calc(100vh - 10.625rem)',
 
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(1, 1fr)',
+
+    gap: '1rem',
+  },
+
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
     display: 'grid',
@@ -73,6 +81,16 @@ export const AboutContainerImage = styled('div', {
     zIndex: 0,
 
     borderRadius: '0.25rem',
+  },
+
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    marginTop: '3rem',
+
+    '&::before': {
+      top: '-6.5%',
+      left: '-10%',
+    },
   },
 
   /* Media Queries min-width: 640px */
@@ -135,6 +153,12 @@ export const AboutContentImage = styled(Image, {
 
   position: 'relative',
 
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    width: '22.5rem',
+    height: '17rem',
+  },
+
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
     width: '42rem',
@@ -173,6 +197,23 @@ export const AboutContentTitle = styled('div', {
   gap: '1rem',
   margin: '2rem 0 0.75rem 0',
   textAlign: 'justify',
+
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    margin: '0 auto',
+
+    padding: '1.5rem',
+
+    [`>${Heading}`]: {
+      textAlign: 'center',
+      fontSize: '$lg',
+    },
+
+    [`>${Text}`]: {
+      textAlign: 'justify',
+      fontSize: '$md',
+    },
+  },
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
+import { useState } from 'react';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -17,6 +18,8 @@ import {
 } from './styles';
 
 export default function AssociatedColleges() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
+
   return (
     <>
       <NextSeo
@@ -29,7 +32,10 @@ export default function AssociatedColleges() {
           <title>Colégios Associados | Liga Escolar</title>
         </Head>
 
-        <Header />
+        <Header
+          menuIsVisible={menuIsVisible}
+          setMenuIsVisible={setMenuIsVisible}
+        />
 
         <AssociatedCollegesContent>
           <AssociatedCollegesTitle>

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
+import { useState } from 'react';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -18,6 +19,8 @@ import {
 } from './styles';
 
 export default function PreviousEditions() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
+
   return (
     <>
       <NextSeo
@@ -30,7 +33,10 @@ export default function PreviousEditions() {
           <title>Edições Anteriores | Liga Escolar</title>
         </Head>
 
-        <Header />
+        <Header
+          menuIsVisible={menuIsVisible}
+          setMenuIsVisible={setMenuIsVisible}
+        />
 
         <PreviousEditionsContent>
           <PreviousEditionsContentTitle>

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
+import { useState } from 'react';
 
 import { Heading, Text } from '@/components/Typography';
 
@@ -19,6 +20,8 @@ import {
 } from './styles';
 
 export default function Directorship() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
+
   return (
     <>
       <NextSeo
@@ -31,7 +34,10 @@ export default function Directorship() {
           <title>Diretoria | Liga Escolar</title>
         </Head>
 
-        <Header />
+        <Header
+          menuIsVisible={menuIsVisible}
+          setMenuIsVisible={setMenuIsVisible}
+        />
 
         <DirectorshipContent>
           <DirectorshipContentTitle>

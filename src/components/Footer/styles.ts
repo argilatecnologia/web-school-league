@@ -27,6 +27,36 @@ export const FooterContent = styled('div', {
   padding: '0 3.25rem',
 
   // border: '1px solid blue',
+
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    padding: '0 2.5rem',
+  },
+
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    padding: '0 3.25rem',
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    padding: '0 3.25rem',
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    padding: '0 3.25rem',
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    padding: '0 3.25rem',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    padding: '0 3.25rem',
+  },
 });
 
 export const FooterInformations = styled('div', {
@@ -45,5 +75,47 @@ export const FooterDetailsInformations = styled('div', {
 
   svg: {
     color: '$white25',
+  },
+
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    flexDirection: 'column',
+
+    gap: '0.25rem',
+  },
+
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    flexDirection: 'row',
+
+    gap: '2rem',
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    flexDirection: 'row',
+
+    gap: '2rem',
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    flexDirection: 'row',
+
+    gap: '2rem',
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    flexDirection: 'row',
+
+    gap: '2rem',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    flexDirection: 'row',
+
+    gap: '2rem',
   },
 });

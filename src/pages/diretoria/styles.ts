@@ -21,6 +21,11 @@ export const DirectorshipContent = styled('div', {
 
   minHeight: 'calc(100vh - 10.625rem)',
 
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    padding: '3rem 0',
+  },
+
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
     padding: '3rem 0',
@@ -52,6 +57,69 @@ export const DirectorshipContentTitle = styled('div', {
   alignItems: 'center',
 
   marginBottom: '1.5rem',
+
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    marginLeft: '1rem',
+    marginRight: '1rem',
+
+    textAlign: 'center',
+
+    [`${Text}`]: {
+      fontSize: '$md',
+    },
+  },
+
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    marginLeft: '1rem',
+    marginRight: '1rem',
+
+    textAlign: 'center',
+
+    [`${Text}`]: {
+      fontSize: '$lg',
+    },
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    marginLeft: '1rem',
+    marginRight: '1rem',
+
+    textAlign: 'center',
+
+    [`${Text}`]: {
+      fontSize: '$lg',
+    },
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    textAlign: 'center',
+
+    [`${Text}`]: {
+      fontSize: '$xl',
+    },
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    textAlign: 'center',
+
+    [`${Text}`]: {
+      fontSize: '$xl',
+    },
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    textAlign: 'center',
+
+    [`${Text}`]: {
+      fontSize: '$xl',
+    },
+  },
 });
 
 export const DirectorshipInformations = styled('div', {
@@ -70,6 +138,12 @@ export const DirectorshipDetailsInformations = styled('div', {
 
   margin: '0 auto',
   gap: '2.5rem',
+
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+  },
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
@@ -119,6 +193,14 @@ export const DirectorshipImage = styled(Image, {
   height: '7.5rem',
 
   marginTop: '0.125rem',
+
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    padding: '0.125rem',
+
+    width: '8rem',
+    height: '8rem',
+  },
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {

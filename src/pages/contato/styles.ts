@@ -19,18 +19,23 @@ export const ContactContent = styled('div', {
 
   minHeight: 'calc(100vh - 10.625rem)',
 
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    flexDirection: 'column',
+  },
+
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
-    flexDirection: 'column',
+    flexDirection: 'row',
 
-    paddingBottom: '6rem',
+    paddingBottom: '8rem',
   },
 
   /* Media Queries min-width: 768px */
   '@media(min-width: 768px)': {
-    flexDirection: 'column',
+    flexDirection: 'row',
 
-    paddingBottom: '6rem',
+    paddingBottom: '8rem',
   },
 
   /* Media Queries min-width: 1024px */
@@ -65,9 +70,27 @@ export const ContactContentTitle = styled('div', {
 
   textAlign: 'left',
 
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    paddingRight: '0.25rem',
+
+    marginLeft: '2.5rem',
+    marginRight: '2.5rem',
+
+    [`>${Heading}`]: {
+      fontSize: '$xl',
+    },
+
+    [`>${Text}`]: {
+      fontSize: '$md',
+    },
+  },
+
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
-    paddingLeft: '0.5rem',
+    paddingRight: '0.5rem',
+
+    textAlign: 'left',
 
     [`>${Heading}`]: {
       fontSize: '$2xl',
@@ -80,7 +103,9 @@ export const ContactContentTitle = styled('div', {
 
   /* Media Queries min-width: 768px */
   '@media(min-width: 768px)': {
-    paddingLeft: '0.5rem',
+    paddingRight: '0.5rem',
+
+    textAlign: 'left',
 
     [`>${Heading}`]: {
       fontSize: '$2xl',
@@ -164,8 +189,21 @@ export const ContactInformations = styled('div', {
   gap: '1rem',
   marginLeft: '2.5rem',
 
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    paddingLeft: '0.25rem',
+
+    marginLeft: '2.5rem',
+    marginRight: '2.5rem',
+
+    [`${Text}`]: {
+      fontSize: '$md',
+    },
+  },
+
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
+    paddingTop: '5rem',
     paddingLeft: '0.5rem',
 
     [`${Text}`]: {
@@ -175,6 +213,7 @@ export const ContactInformations = styled('div', {
 
   /* Media Queries min-width: 768px */
   '@media(min-width: 768px)': {
+    paddingTop: '5rem',
     paddingLeft: '0.5rem',
 
     [`${Text}`]: {
