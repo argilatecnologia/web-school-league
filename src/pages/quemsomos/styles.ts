@@ -200,9 +200,8 @@ export const AboutContentTitle = styled('div', {
 
   /* Media Queries min-width: 360px */
   '@media(min-width: 360px)': {
-    margin: '0 auto',
-
-    padding: '1.5rem',
+    paddingLeft: '1.5rem',
+    paddingRight: '2rem',
 
     [`>${Heading}`]: {
       textAlign: 'center',
