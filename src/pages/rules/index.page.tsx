@@ -18,6 +18,7 @@ import {
   RuleMonthTitle,
   RuleDetailsInformations,
   RuleDetails,
+  ModalityTitle,
 } from './styles';
 
 export default function Rule() {
@@ -62,7 +63,11 @@ export default function Rule() {
 
               <RuleDetailsInformations>
                 <RuleDetails>
-                  <Link href="#">
+                  <Link
+                    href="/docs/REGULAMENTO_GERAL_LIGA_ESCOLAR_2024.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <DownloadSimple size={24} />
                     <Heading size="md" color="gray-700">
                       Regulamento Geral
@@ -72,30 +77,11 @@ export default function Rule() {
               </RuleDetailsInformations>
             </RuleContentInformations>
 
-            <RuleMonthTitle>
+            <ModalityTitle>
               <Heading size="lg" color="gray-700">
-                MODALIDADES COLETIVAS
+                <span style={{ color: '#E96924' }}>MODALIDADES COLETIVAS</span>
               </Heading>
-            </RuleMonthTitle>
-
-            <RuleContentInformations>
-              <RuleMonthTitle>
-                <Heading size="lg" color="gray-700">
-                  Futsal
-                </Heading>
-              </RuleMonthTitle>
-
-              <RuleDetailsInformations>
-                <RuleDetails>
-                  <Link href="#">
-                    <DownloadSimple size={24} />
-                    <Heading size="md" color="gray-700">
-                      Título do evento
-                    </Heading>
-                  </Link>
-                </RuleDetails>
-              </RuleDetailsInformations>
-            </RuleContentInformations>
+            </ModalityTitle>
 
             <RuleContentInformations>
               <RuleMonthTitle>
@@ -106,18 +92,168 @@ export default function Rule() {
 
               <RuleDetailsInformations>
                 <RuleDetails>
-                  <Heading size="md" color="gray-700">
-                    Título do evento
-                  </Heading>
+                  <Link
+                    href="/docs/NORMAS_ESPECIFICAS_BASQUETE.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <DownloadSimple size={24} />
+                    <Heading size="md" color="gray-700">
+                      Normas Específicas Basquete
+                    </Heading>
+                  </Link>
+                </RuleDetails>
+
+                <RuleDetails>
+                  <Link
+                    href="/docs/NORMAS_ESPECIFICAS_BASQUETE_3X3.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <DownloadSimple size={24} />
+                    <Heading size="md" color="gray-700">
+                      Normas Específicas Basquete 3X3
+                    </Heading>
+                  </Link>
                 </RuleDetails>
               </RuleDetailsInformations>
             </RuleContentInformations>
 
-            <RuleMonthTitle>
+            <RuleContentInformations>
+              <RuleMonthTitle>
+                <Heading size="lg" color="gray-700">
+                  Futsal
+                </Heading>
+              </RuleMonthTitle>
+
+              <RuleDetailsInformations>
+                <RuleDetails>
+                  <Link
+                    href="/docs/NORMAS_ESPECIFICAS_FUTSAL.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <DownloadSimple size={24} />
+                    <Heading size="md" color="gray-700">
+                      Normas Específicas Futsal
+                    </Heading>
+                  </Link>
+                </RuleDetails>
+
+                <RuleDetails>
+                  <Link
+                    href="/docs/NORMAS_ESPECIFICAS_FUT7.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <DownloadSimple size={24} />
+                    <Heading size="md" color="gray-700">
+                      Normas Específicas Fut7
+                    </Heading>
+                  </Link>
+                </RuleDetails>
+              </RuleDetailsInformations>
+            </RuleContentInformations>
+
+            <RuleContentInformations>
+              <RuleMonthTitle>
+                <Heading size="lg" color="gray-700">
+                  Handebol
+                </Heading>
+              </RuleMonthTitle>
+
+              <RuleDetailsInformations>
+                <RuleDetails>
+                  <Link
+                    href="/docs/NORMAS_ESPECIFICAS_HANDEBOL.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <DownloadSimple size={24} />
+                    <Heading size="md" color="gray-700">
+                      Normas Específicas Handebol
+                    </Heading>
+                  </Link>
+                </RuleDetails>
+              </RuleDetailsInformations>
+            </RuleContentInformations>
+
+            <RuleContentInformations>
+              <RuleMonthTitle>
+                <Heading size="lg" color="gray-700">
+                  Voleibol
+                </Heading>
+              </RuleMonthTitle>
+
+              <RuleDetailsInformations>
+                <RuleDetails>
+                  <Link
+                    href="/docs/NORMAS_ESPECIFICAS_VOLEIBOL.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <DownloadSimple size={24} />
+                    <Heading size="md" color="gray-700">
+                      Normas Específicas Voleibol
+                    </Heading>
+                  </Link>
+                </RuleDetails>
+              </RuleDetailsInformations>
+            </RuleContentInformations>
+
+            <ModalityTitle>
               <Heading size="lg" color="gray-700">
-                MODALIDADES INDIVIDUAIS
+                <span style={{ color: '#E96924' }}>
+                  MODALIDADES INDIVIDUAIS
+                </span>
               </Heading>
-            </RuleMonthTitle>
+            </ModalityTitle>
+
+            <RuleContentInformations>
+              <RuleMonthTitle>
+                <Heading size="lg" color="gray-700">
+                  Badminton
+                </Heading>
+              </RuleMonthTitle>
+
+              <RuleDetailsInformations>
+                <RuleDetails>
+                  <Link
+                    href="/docs/NORMAS_ESPECIFICAS_BADMINTON.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <DownloadSimple size={24} />
+                    <Heading size="md" color="gray-700">
+                      Normas Específicas Badminton
+                    </Heading>
+                  </Link>
+                </RuleDetails>
+              </RuleDetailsInformations>
+            </RuleContentInformations>
+
+            <RuleContentInformations>
+              <RuleMonthTitle>
+                <Heading size="lg" color="gray-700">
+                  Judô
+                </Heading>
+              </RuleMonthTitle>
+
+              <RuleDetailsInformations>
+                <RuleDetails>
+                  <Link
+                    href="/docs/NORMAS_ESPECIFICAS_JUDO.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <DownloadSimple size={24} />
+                    <Heading size="md" color="gray-700">
+                      Normas Específicas Judô
+                    </Heading>
+                  </Link>
+                </RuleDetails>
+              </RuleDetailsInformations>
+            </RuleContentInformations>
 
             <RuleContentInformations>
               <RuleMonthTitle>
@@ -128,9 +264,62 @@ export default function Rule() {
 
               <RuleDetailsInformations>
                 <RuleDetails>
-                  <Heading size="md" color="gray-700">
-                    Título do evento
-                  </Heading>
+                  <Link
+                    href="/docs/NORMAS_ESPECIFICAS_NATACAO.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <DownloadSimple size={24} />
+                    <Heading size="md" color="gray-700">
+                      Normas Específicas Natação
+                    </Heading>
+                  </Link>
+                </RuleDetails>
+              </RuleDetailsInformations>
+            </RuleContentInformations>
+
+            <RuleContentInformations>
+              <RuleMonthTitle>
+                <Heading size="lg" color="gray-700">
+                  Tênis de mesa
+                </Heading>
+              </RuleMonthTitle>
+
+              <RuleDetailsInformations>
+                <RuleDetails>
+                  <Link
+                    href="/docs/NORMAS_ESPECIFICAS_TENIS_DE_MESA.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <DownloadSimple size={24} />
+                    <Heading size="md" color="gray-700">
+                      Normas Específicas Tênis de mesa
+                    </Heading>
+                  </Link>
+                </RuleDetails>
+              </RuleDetailsInformations>
+            </RuleContentInformations>
+
+            <RuleContentInformations>
+              <RuleMonthTitle>
+                <Heading size="lg" color="gray-700">
+                  Xadrez
+                </Heading>
+              </RuleMonthTitle>
+
+              <RuleDetailsInformations>
+                <RuleDetails>
+                  <Link
+                    href="/docs/NORMAS_ESPECIFICAS_XADREZ.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <DownloadSimple size={24} />
+                    <Heading size="md" color="gray-700">
+                      Normas Específicas Xadrez
+                    </Heading>
+                  </Link>
                 </RuleDetails>
               </RuleDetailsInformations>
             </RuleContentInformations>

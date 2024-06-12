@@ -167,6 +167,11 @@ export const RuleMonthTitle = styled('div', {
   display: 'flex',
 });
 
+export const ModalityTitle = styled('div', {
+  display: 'flex',
+  marginTop: '1rem',
+});
+
 export const RuleDetailsInformations = styled('div', {
   display: 'flex',
   flexDirection: 'column',
@@ -226,6 +231,14 @@ export const RuleDetails = styled('div', {
     alignItems: 'center',
 
     gap: '0.5rem',
+  },
+
+  '&:hover': {
+    color: '$orange600',
+
+    [`${Heading}`]: {
+      color: '$orange600',
+    },
   },
 
   /* Media Queries min-width: 360px */
