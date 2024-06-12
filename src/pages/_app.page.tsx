@@ -1,8 +1,10 @@
-import { globalStyles } from '@/styles/global';
-
 import type { AppProps } from 'next/app';
 
 import { DefaultSeo } from 'next-seo';
+import { QueryClientProvider } from '@tanstack/react-query';
+import { queryClient } from '@/lib/queryClient';
+
+import { globalStyles } from '@/styles/global';
 
 globalStyles();
 
@@ -13,11 +15,13 @@ export default function App({ Component, pageProps }: AppProps) {
         openGraph={{
           type: 'website',
           locale: 'pt_BR',
-          url: 'https://www.ignit-call.com.br/',
+          url: 'https://www.ligaescolarcaruaru.com.br/',
           siteName: 'Liga Escolar',
         }}
       />
-      <Component {...pageProps} />
+      <QueryClientProvider client={queryClient}>
+        <Component {...pageProps} />
+      </QueryClientProvider>
     </>
   );
 }

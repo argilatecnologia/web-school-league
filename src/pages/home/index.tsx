@@ -11,6 +11,8 @@ import logoParternHomeImg01 from '../../assets/logo-binance.svg';
 import logoParternHomeImg02 from '../../assets/logo-crolla.svg';
 import logoParternHomeImg03 from '../../assets/logo-tesla.svg';
 
+import logoSchoolLeagueImg from '../../assets/logo-liga-escolar.jpg';
+
 import {
   HomeContainer,
   HomeContent,
@@ -18,11 +20,16 @@ import {
   HomeContentTitle,
   HomeContainerImage,
   HomeContentImage,
+  HomeRules,
+  HomeRulesTitle,
+  HomeRulesDetails,
+  HomeRulesImage,
   HomePartners,
   HomePartnersTitle,
   HomePartnersDetails,
   HomePartnersImage,
 } from './styles';
+import Link from 'next/link';
 
 export default function Home() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
@@ -61,6 +68,28 @@ export default function Home() {
             </HomeContainerImage>
           </HomeContentCenter>
 
+          <HomeRules>
+            <HomeRulesTitle>
+              <Heading size="3xl" color="gray-700">
+                Baixe aqui o regulamento geral e as normas da{' '}
+                <span style={{ color: '#E96924' }}>
+                  Liga Escolar {new Date().getFullYear()}!
+                </span>
+              </Heading>
+            </HomeRulesTitle>
+
+            <HomeRulesDetails>
+              <Link href="/rules" target="_blank">
+                <HomeRulesImage src={logoSchoolLeagueImg} alt="" />
+                <Heading size="3xl">
+                  <span style={{ color: '#E96924' }}>
+                    Regulamento Geral e Normas
+                  </span>
+                </Heading>
+              </Link>
+            </HomeRulesDetails>
+          </HomeRules>
+
           <HomePartners>
             <HomePartnersTitle>
               <Heading size="3xl" color="gray-700">
@@ -73,7 +102,8 @@ export default function Home() {
               <HomePartnersImage src={logoParternHomeImg02} alt="" />
               <HomePartnersImage src={logoParternHomeImg03} alt="" />
               <HomePartnersImage src={logoParternHomeImg01} alt="" />
-              {/* <HomePartnersImage src={logoParternHomeImg02} alt="" /> */}
+              <HomePartnersImage src={logoParternHomeImg02} alt="" />
+              <HomePartnersImage src={logoParternHomeImg03} alt="" />
             </HomePartnersDetails>
           </HomePartners>
         </HomeContent>

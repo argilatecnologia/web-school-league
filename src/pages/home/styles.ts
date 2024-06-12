@@ -326,6 +326,164 @@ export const HomeContentImage = styled(Image, {
   },
 });
 
+export const HomeRules = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+
+  gap: '2rem',
+  margin: '0 2.75rem 0',
+});
+
+export const HomeRulesTitle = styled('div', {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+
+  marginBottom: '1rem',
+
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    textAlign: 'center',
+
+    [`>${Heading}`]: {
+      fontSize: '$md',
+    },
+  },
+
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    [`>${Heading}`]: {
+      fontSize: '$xl',
+    },
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    [`>${Heading}`]: {
+      fontSize: '$xl',
+    },
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    [`>${Heading}`]: {
+      fontSize: '$xl',
+    },
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    [`>${Heading}`]: {
+      fontSize: '$3xl',
+    },
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    [`>${Heading}`]: {
+      fontSize: '$3xl',
+    },
+  },
+});
+
+export const HomeRulesDetails = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'center',
+
+  margin: '0 auto',
+
+  borderRadius: '0.25rem',
+  border: '1px solid $gray400',
+
+  padding: '0.75rem',
+
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    // display: 'grid',
+    // gridTemplateRows: 'repeat(4, 1fr)',
+  },
+
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    // display: 'grid',
+    // gridTemplateColumns: 'repeat(2, 1fr)',
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    // display: 'grid',
+    // gridTemplateColumns: 'repeat(2, 1fr)',
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    // display: 'grid',
+    // gridTemplateColumns: 'repeat(4, 1fr)',
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    // display: 'grid',
+    // gridTemplateColumns: 'repeat(3, 1fr)',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    // display: 'grid',
+    // gridTemplateColumns: 'repeat(6, 1fr)',
+  },
+});
+
+export const HomeRulesImage = styled(Image, {
+  display: 'flex',
+  alignItems: 'center',
+
+  margin: '0 auto',
+
+  width: '15rem',
+  height: '11rem',
+
+  padding: '0.5rem',
+
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    width: '11.5rem',
+    height: '7.5rem',
+  },
+
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    width: '11.5rem',
+    height: '7.5rem',
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    width: '11.5rem',
+    height: '7.5rem',
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    width: '12.5rem',
+    height: '8.5rem',
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    width: '15rem',
+    height: '11rem',
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    width: '15rem',
+    height: '11rem',
+  },
+});
+
 export const HomePartners = styled('div', {
   display: 'flex',
   flexDirection: 'column',
@@ -387,6 +545,8 @@ export const HomePartnersTitle = styled('div', {
 });
 
 export const HomePartnersDetails = styled('div', {
+  height: '30rem',
+
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
@@ -422,14 +582,16 @@ export const HomePartnersDetails = styled('div', {
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
     display: 'grid',
-    gridTemplateColumns: 'repeat(4, 1fr)',
+    gridTemplateColumns: 'repeat(3, 1fr)',
   },
 
   /* Media Queries min-width: 1536px */
   '@media(min-width: 1536px)': {
     display: 'grid',
-    gridTemplateColumns: 'repeat(4, 1fr)',
+    gridTemplateColumns: 'repeat(6, 1fr)',
   },
+
+  // border: '1px solid blue',
 });
 
 export const HomePartnersImage = styled(Image, {
