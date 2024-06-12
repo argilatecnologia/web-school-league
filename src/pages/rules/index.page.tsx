@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 import { useState } from 'react';
+import Link from 'next/link';
+
+import { DownloadSimple } from 'phosphor-react';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -15,7 +18,6 @@ import {
   RuleMonthTitle,
   RuleDetailsInformations,
   RuleDetails,
-  RuleDivider,
 } from './styles';
 
 export default function Rule() {
@@ -45,8 +47,8 @@ export default function Rule() {
             </Heading>
 
             <Text size="md" color="gray-700">
-              Fique por dentro do regulamento geral e das normas da Liga Escolar{' '}
-              {new Date().getFullYear()}
+              Baixe o regulamento geral e as normas da Liga Escolar{' '}
+              {new Date().getFullYear()} e fique por dentro!
             </Text>
           </RuleContentTitle>
 
@@ -54,44 +56,43 @@ export default function Rule() {
             <RuleContentInformations>
               <RuleMonthTitle>
                 <Heading size="lg" color="gray-700">
-                  Junho de 2024
+                  Regulamento Geral
                 </Heading>
               </RuleMonthTitle>
 
               <RuleDetailsInformations>
                 <RuleDetails>
-                  <Text size="md" color="gray-700">
-                    Data - Hora
-                  </Text>
-
-                  <RuleDivider />
-
-                  <Heading size="md" color="gray-700">
-                    Título do evento
-                  </Heading>
+                  <Link href="#">
+                    <DownloadSimple size={24} />
+                    <Heading size="md" color="gray-700">
+                      Regulamento Geral
+                    </Heading>
+                  </Link>
                 </RuleDetails>
+              </RuleDetailsInformations>
+            </RuleContentInformations>
+
+            <RuleMonthTitle>
+              <Heading size="lg" color="gray-700">
+                MODALIDADES COLETIVAS
+              </Heading>
+            </RuleMonthTitle>
+
+            <RuleContentInformations>
+              <RuleMonthTitle>
+                <Heading size="lg" color="gray-700">
+                  Futsal
+                </Heading>
+              </RuleMonthTitle>
+
+              <RuleDetailsInformations>
                 <RuleDetails>
-                  <Text size="md" color="gray-700">
-                    Data - Hora
-                  </Text>
-
-                  <RuleDivider />
-
-                  <Heading size="md" color="gray-700">
-                    Título do evento
-                  </Heading>
-                </RuleDetails>
-
-                <RuleDetails>
-                  <Text size="md" color="gray-700">
-                    Data - Hora
-                  </Text>
-
-                  <RuleDivider />
-
-                  <Heading size="md" color="gray-700">
-                    Título do evento
-                  </Heading>
+                  <Link href="#">
+                    <DownloadSimple size={24} />
+                    <Heading size="md" color="gray-700">
+                      Título do evento
+                    </Heading>
+                  </Link>
                 </RuleDetails>
               </RuleDetailsInformations>
             </RuleContentInformations>
@@ -99,29 +100,12 @@ export default function Rule() {
             <RuleContentInformations>
               <RuleMonthTitle>
                 <Heading size="lg" color="gray-700">
-                  Julho de 2024
+                  Basquete
                 </Heading>
               </RuleMonthTitle>
 
               <RuleDetailsInformations>
                 <RuleDetails>
-                  <Text size="md" color="gray-700">
-                    Data - Hora
-                  </Text>
-
-                  <RuleDivider />
-
-                  <Heading size="md" color="gray-700">
-                    Título do evento
-                  </Heading>
-                </RuleDetails>
-                <RuleDetails>
-                  <Text size="md" color="gray-700">
-                    Data - Hora
-                  </Text>
-
-                  <RuleDivider />
-
                   <Heading size="md" color="gray-700">
                     Título do evento
                   </Heading>
@@ -129,32 +113,21 @@ export default function Rule() {
               </RuleDetailsInformations>
             </RuleContentInformations>
 
+            <RuleMonthTitle>
+              <Heading size="lg" color="gray-700">
+                MODALIDADES INDIVIDUAIS
+              </Heading>
+            </RuleMonthTitle>
+
             <RuleContentInformations>
               <RuleMonthTitle>
                 <Heading size="lg" color="gray-700">
-                  Agosto de 2024
+                  Natação
                 </Heading>
               </RuleMonthTitle>
 
               <RuleDetailsInformations>
                 <RuleDetails>
-                  <Text size="md" color="gray-700">
-                    Data - Hora
-                  </Text>
-
-                  <RuleDivider />
-
-                  <Heading size="md" color="gray-700">
-                    Título do evento
-                  </Heading>
-                </RuleDetails>
-                <RuleDetails>
-                  <Text size="md" color="gray-700">
-                    Data - Hora
-                  </Text>
-
-                  <RuleDivider />
-
                   <Heading size="md" color="gray-700">
                     Título do evento
                   </Heading>

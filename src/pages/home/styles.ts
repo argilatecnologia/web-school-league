@@ -401,38 +401,46 @@ export const HomeRulesDetails = styled('div', {
 
   /* Media Queries min-width: 360px */
   '@media(min-width: 360px)': {
-    // display: 'grid',
-    // gridTemplateRows: 'repeat(4, 1fr)',
+    textAlign: 'center',
+
+    [`>${Heading}`]: {
+      fontSize: '$md',
+    },
   },
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
-    // display: 'grid',
-    // gridTemplateColumns: 'repeat(2, 1fr)',
+    [`>${Heading}`]: {
+      fontSize: '$xl',
+    },
   },
 
   /* Media Queries min-width: 768px */
   '@media(min-width: 768px)': {
-    // display: 'grid',
-    // gridTemplateColumns: 'repeat(2, 1fr)',
+    [`>${Heading}`]: {
+      fontSize: '$xl',
+    },
   },
 
   /* Media Queries min-width: 1024px */
   '@media(min-width: 1024px)': {
-    // display: 'grid',
-    // gridTemplateColumns: 'repeat(4, 1fr)',
+    [`>${Heading}`]: {
+      fontSize: '$xl',
+    },
   },
 
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
-    // display: 'grid',
-    // gridTemplateColumns: 'repeat(3, 1fr)',
+    [`>${Heading}`]: {
+      fontSize: '$3xl',
+    },
   },
 
   /* Media Queries min-width: 1536px */
   '@media(min-width: 1536px)': {
-    // display: 'grid',
-    // gridTemplateColumns: 'repeat(6, 1fr)',
+    [`>${Heading}`]: {
+      fontSize: '$3xl',
+    },
   },
 });
 
@@ -450,25 +458,25 @@ export const HomeRulesImage = styled(Image, {
   /* Media Queries min-width: 360px */
   '@media(min-width: 360px)': {
     width: '11.5rem',
-    height: '7.5rem',
+    height: '9rem',
   },
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
     width: '11.5rem',
-    height: '7.5rem',
+    height: '9rem',
   },
 
   /* Media Queries min-width: 768px */
   '@media(min-width: 768px)': {
     width: '11.5rem',
-    height: '7.5rem',
+    height: '9rem',
   },
 
   /* Media Queries min-width: 1024px */
   '@media(min-width: 1024px)': {
     width: '12.5rem',
-    height: '8.5rem',
+    height: '9.5rem',
   },
 
   /* Media Queries min-width: 1280px */
@@ -545,8 +553,6 @@ export const HomePartnersTitle = styled('div', {
 });
 
 export const HomePartnersDetails = styled('div', {
-  height: '30rem',
-
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
@@ -558,40 +564,48 @@ export const HomePartnersDetails = styled('div', {
   /* Media Queries min-width: 360px */
   '@media(min-width: 360px)': {
     display: 'grid',
-    gridTemplateRows: 'repeat(4, 1fr)',
+    gridTemplateRows: 'repeat(6, 1fr)',
   },
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
+    height: '30rem',
+
     display: 'grid',
     gridTemplateColumns: 'repeat(2, 1fr)',
   },
 
   /* Media Queries min-width: 768px */
   '@media(min-width: 768px)': {
+    height: '30rem',
+
     display: 'grid',
     gridTemplateColumns: 'repeat(2, 1fr)',
   },
 
   /* Media Queries min-width: 1024px */
   '@media(min-width: 1024px)': {
+    height: '22rem',
+
     display: 'grid',
-    gridTemplateColumns: 'repeat(4, 1fr)',
+    gridTemplateColumns: 'repeat(3, 1fr)',
   },
 
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
+    height: '22rem',
+
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
   },
 
   /* Media Queries min-width: 1536px */
   '@media(min-width: 1536px)': {
+    height: '12rem',
+
     display: 'grid',
     gridTemplateColumns: 'repeat(6, 1fr)',
   },
-
-  // border: '1px solid blue',
 });
 
 export const HomePartnersImage = styled(Image, {

@@ -79,7 +79,7 @@ export default function Home() {
             </HomeRulesTitle>
 
             <HomeRulesDetails>
-              <Link href="/rules" target="_blank">
+              <Link href="/rules">
                 <HomeRulesImage src={logoSchoolLeagueImg} alt="" />
                 <Heading size="3xl">
                   <span style={{ color: '#E96924' }}>

@@ -220,6 +220,14 @@ export const RuleDetails = styled('div', {
   '-moz-box-shadow': '0px 1px 1px $white750',
   boxShadow: '0px 2px 12px rgba(51, 51, 51, 0.3)',
 
+  a: {
+    display: 'flex',
+
+    alignItems: 'center',
+
+    gap: '0.5rem',
+  },
+
   /* Media Queries min-width: 360px */
   '@media(min-width: 360px)': {
     height: '5rem',
@@ -305,15 +313,4 @@ export const RuleDetails = styled('div', {
       paddingRight: '1rem',
     },
   },
-});
-
-export const RuleDivider = styled('div', {
-  display: 'flex',
-  flexDirection: 'row',
-  alignItems: 'center',
-
-  width: '1rem',
-  height: '1.25rem',
-
-  borderLeft: '2px solid $gray700',
 });
