@@ -1,12 +1,15 @@
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 import { useState } from 'react';
+import { useQuery } from '@tanstack/react-query';
+import { AxiosError } from 'axios';
+import dayjs from 'dayjs';
 
+import { api } from '@/lib/api';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Heading, Text } from '@/components/Typography';
-
-import fakeLogoImg from '../../assets/fake-logo.png';
+import { LoadingSpinner } from '@/components/LoadingSpinner';
 
 import {
   EventsContainer,
@@ -17,15 +20,13 @@ import {
   EventsDetails,
   EventsImage,
 } from './styles';
-import { useQuery } from '@tanstack/react-query';
-import { api } from '@/lib/api';
-import { AxiosError } from 'axios';
-import { LoadingSpinner } from '@/components/LoadingSpinner';
 
 interface IEvent {
   id: string;
   name: string;
   nameFormatted: string;
+  registration_deadline: string;
+  registration_deadline_formatted: string;
   image_url: string;
 }
 
@@ -54,9 +55,14 @@ export default function Events() {
                 ? event.name.substring(0, 15).concat(' ...')
                 : event.name;
 
+            const eventDateSplit = event.registration_deadline.split('T');
+            const eventDate = eventDateSplit[0];
+
             return {
               ...event,
               nameFormatted,
+              registration_deadline_formatted:
+                dayjs(eventDate).format('DD/MM/YYYY'),
             };
           });
 
@@ -123,7 +129,7 @@ export default function Events() {
                       </Heading>
 
                       <Text size="md" color="gray-700">
-                        Data - Hora
+                        {event.registration_deadline_formatted} - Hora
                       </Text>
                     </EventsDetails>
                   </>
