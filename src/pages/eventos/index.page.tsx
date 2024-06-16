@@ -17,9 +17,64 @@ import {
   EventsDetails,
   EventsImage,
 } from './styles';
+import { useQuery } from '@tanstack/react-query';
+import { api } from '@/lib/api';
+import { AxiosError } from 'axios';
+import { LoadingSpinner } from '@/components/LoadingSpinner';
+
+interface IEvent {
+  id: string;
+  name: string;
+  nameFormatted: string;
+  image_url: string;
+}
 
 export default function Events() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
+
+  // FUNCTION USE QUERY
+  const { data: detailEventsData, isLoading: isLoadingEvents } = useQuery<
+    IEvent[]
+  >({
+    queryKey: ['detailEventsPage'],
+    queryFn: async () => {
+      try {
+        const response = await api.get('/events', {
+          params: {
+            enabled: 'all',
+          },
+        });
+
+        if (response.status === 200) {
+          const eventsData = response.data.events as IEvent[];
+
+          const events = eventsData.map((event) => {
+            const nameFormatted =
+              event.name.length >= 25
+                ? event.name.substring(0, 15).concat(' ...')
+                : event.name;
+
+            return {
+              ...event,
+              nameFormatted,
+            };
+          });
+
+          return events;
+        }
+      } catch (err) {
+        if (err instanceof AxiosError) {
+          if (err.response) {
+            console.log('Nenhum evento encontrado.');
+          }
+        }
+      }
+
+      return [];
+    },
+    refetchOnWindowFocus: false,
+  });
+  // END FUNCTION USE QUERY
 
   return (
     <>
@@ -49,110 +104,33 @@ export default function Events() {
             </Text>
           </EventsContentTitle>
 
-          <EventsInformations>
-            <EventsDetailsInformations>
-              <EventsDetails>
-                <EventsImage src={fakeLogoImg} alt="" />
-                <Heading size="md" color="gray-700">
-                  Título do evento
-                </Heading>
+          {isLoadingEvents === true ? (
+            <LoadingSpinner />
+          ) : (
+            <EventsInformations>
+              <EventsDetailsInformations>
+                {detailEventsData?.map((event) => (
+                  <>
+                    <EventsDetails>
+                      <EventsImage
+                        src={event.image_url ? event.image_url : ''}
+                        alt=""
+                        width={120}
+                        height={120}
+                      />
+                      <Heading size="md" color="gray-700">
+                        {event.nameFormatted}
+                      </Heading>
 
-                <Text size="md" color="gray-700">
-                  Data - Hora
-                </Text>
-              </EventsDetails>
-              <EventsDetails>
-                <EventsImage src={fakeLogoImg} alt="" />
-                <Heading size="md" color="gray-700">
-                  Título do evento
-                </Heading>
-
-                <Text size="md" color="gray-700">
-                  Data - Hora
-                </Text>
-              </EventsDetails>
-              <EventsDetails>
-                <EventsImage src={fakeLogoImg} alt="" />
-                <Heading size="md" color="gray-700">
-                  Título do evento
-                </Heading>
-
-                <Text size="md" color="gray-700">
-                  Data - Hora
-                </Text>
-              </EventsDetails>
-              <EventsDetails>
-                <EventsImage src={fakeLogoImg} alt="" />
-                <Heading size="md" color="gray-700">
-                  Título do evento
-                </Heading>
-
-                <Text size="md" color="gray-700">
-                  Data - Hora
-                </Text>
-              </EventsDetails>
-              <EventsDetails>
-                <EventsImage src={fakeLogoImg} alt="" />
-                <Heading size="md" color="gray-700">
-                  Título do evento
-                </Heading>
-
-                <Text size="md" color="gray-700">
-                  Data - Hora
-                </Text>
-              </EventsDetails>
-              <EventsDetails>
-                <EventsImage src={fakeLogoImg} alt="" />
-                <Heading size="md" color="gray-700">
-                  Título do evento
-                </Heading>
-
-                <Text size="md" color="gray-700">
-                  Data - Hora
-                </Text>
-              </EventsDetails>
-              <EventsDetails>
-                <EventsImage src={fakeLogoImg} alt="" />
-                <Heading size="md" color="gray-700">
-                  Título do evento
-                </Heading>
-
-                <Text size="md" color="gray-700">
-                  Data - Hora
-                </Text>
-              </EventsDetails>
-              <EventsDetails>
-                <EventsImage src={fakeLogoImg} alt="" />
-                <Heading size="md" color="gray-700">
-                  Título do evento
-                </Heading>
-
-                <Text size="md" color="gray-700">
-                  Data - Hora
-                </Text>
-              </EventsDetails>
-              <EventsDetails>
-                <EventsImage src={fakeLogoImg} alt="" />
-                <Heading size="md" color="gray-700">
-                  Título do evento
-                </Heading>
-
-                <Text size="md" color="gray-700">
-                  Data - Hora
-                </Text>
-              </EventsDetails>
-              <EventsDetails>
-                <EventsImage src={fakeLogoImg} alt="" />
-                <Heading size="md" color="gray-700">
-                  Título do evento
-                </Heading>
-
-                <Text size="md" color="gray-700">
-                  Data - Hora
-                </Text>
-              </EventsDetails>
-            </EventsDetailsInformations>
-          </EventsInformations>
+                      <Text size="md" color="gray-700">
+                        Data - Hora
+                      </Text>
+                    </EventsDetails>
+                  </>
+                ))}
+              </EventsDetailsInformations>
+            </EventsInformations>
+          )}
         </EventsContent>
 
         <Footer />
