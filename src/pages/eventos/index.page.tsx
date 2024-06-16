@@ -27,6 +27,8 @@ interface IEvent {
   nameFormatted: string;
   registration_deadline: string;
   registration_deadline_formatted: string;
+  hour: string;
+  hour_formatted: string;
   image_url: string;
 }
 
@@ -129,7 +131,7 @@ export default function Events() {
                       </Heading>
 
                       <Text size="md" color="gray-700">
-                        {event.registration_deadline_formatted} - Hora
+                        {event.registration_deadline_formatted} - {event.hour}
                       </Text>
                     </EventsDetails>
                   </>
