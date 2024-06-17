@@ -28,7 +28,6 @@ interface IEvent {
   registration_deadline: string;
   registration_deadline_formatted: string;
   hour: string;
-  hour_formatted: string;
   image_url: string;
 }
 
