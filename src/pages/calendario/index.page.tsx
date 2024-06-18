@@ -18,6 +18,16 @@ import {
   CalendarDivider,
 } from './styles';
 
+interface IEventsCalendar {
+  name: string;
+  nameFormatted: string;
+  month: string;
+  event_date: string;
+  event_date_formatted: string;
+  hour: string;
+  image_url: string;
+}
+
 export default function Calendar() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
 
