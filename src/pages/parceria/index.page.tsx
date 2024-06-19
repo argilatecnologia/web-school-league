@@ -114,7 +114,7 @@ export default function Partnership() {
                   <>
                     <PartnersContentDetails>
                       <PartnershipImage
-                        src={partner.image_url}
+                        src={partner.image_url ? partner.image_url : ''}
                         alt=""
                         width={120}
                         height={120}

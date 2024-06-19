@@ -1,16 +1,17 @@
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 import { useState } from 'react';
+import Link from 'next/link';
+import { AxiosError } from 'axios';
+import { useQuery } from '@tanstack/react-query';
 
+import { api } from '@/lib/api';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Heading, Text } from '@/components/Typography';
+import { LoadingSpinner } from '@/components/LoadingSpinner';
 
 import backgroundHomeImg from '../../assets/background-home.png';
-import logoParternHomeImg01 from '../../assets/logo-binance.svg';
-import logoParternHomeImg02 from '../../assets/logo-crolla.svg';
-import logoParternHomeImg03 from '../../assets/logo-tesla.svg';
-
 import logoSchoolLeagueImg from '../../assets/logo-liga-escolar.jpg';
 
 import {
@@ -29,10 +30,46 @@ import {
   HomePartnersDetails,
   HomePartnersImage,
 } from './styles';
-import Link from 'next/link';
+
+interface IPartner {
+  id: string;
+  image_url: string;
+}
 
 export default function Home() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
+
+  // FUNCTION USE QUERY
+  const { data: detailPartnersData, isLoading: isLoadingPartners } = useQuery<
+    IPartner[]
+  >({
+    queryKey: ['detailPartnersPage'],
+    queryFn: async () => {
+      try {
+        const response = await api.get('/partners', {
+          params: {
+            enabled: 'all',
+          },
+        });
+
+        if (response.status === 200) {
+          const partnersData = response.data.partners as IPartner[];
+
+          return partnersData;
+        }
+      } catch (err) {
+        if (err instanceof AxiosError) {
+          if (err.response) {
+            console.log('Nenhuma empresa parceira encontrada.');
+          }
+        }
+      }
+
+      return [];
+    },
+    refetchOnWindowFocus: false,
+  });
+  // END FUNCTION USE QUERY
 
   return (
     <>
@@ -97,14 +134,23 @@ export default function Home() {
               </Heading>
             </HomePartnersTitle>
 
-            <HomePartnersDetails>
-              <HomePartnersImage src={logoParternHomeImg01} alt="" />
-              <HomePartnersImage src={logoParternHomeImg02} alt="" />
-              <HomePartnersImage src={logoParternHomeImg03} alt="" />
-              <HomePartnersImage src={logoParternHomeImg01} alt="" />
-              <HomePartnersImage src={logoParternHomeImg02} alt="" />
-              <HomePartnersImage src={logoParternHomeImg03} alt="" />
-            </HomePartnersDetails>
+            {isLoadingPartners === true ? (
+              <LoadingSpinner />
+            ) : (
+              <HomePartnersDetails>
+                {detailPartnersData?.slice(0, 5).map((partner) => (
+                  <>
+                    <HomePartnersImage
+                      key={partner.id}
+                      src={partner.image_url ? partner.image_url : ''}
+                      alt=""
+                      width={120}
+                      height={120}
+                    />
+                  </>
+                ))}
+              </HomePartnersDetails>
+            )}
           </HomePartners>
         </HomeContent>
 

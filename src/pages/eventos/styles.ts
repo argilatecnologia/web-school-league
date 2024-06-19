@@ -305,40 +305,30 @@ export const EventsImage = styled(Image, {
 
   /* Media Queries min-width: 360px */
   '@media(min-width: 360px)': {
-    padding: '0.125rem',
-
     width: '16rem',
     height: '12rem',
   },
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
-    padding: '0.125rem',
-
     width: '18rem',
     height: '14rem',
   },
 
   /* Media Queries min-width: 768px */
   '@media(min-width: 768px)': {
-    padding: '0.125rem',
-
     width: '18rem',
     height: '14rem',
   },
 
   /* Media Queries min-width: 1024px */
   '@media(min-width: 1024px)': {
-    padding: '0.125rem',
-
     width: '18rem',
     height: '14rem',
   },
 
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
-    padding: '0.125rem',
-
     width: '16.5rem',
     height: '14rem',
   },

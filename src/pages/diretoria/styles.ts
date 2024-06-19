@@ -188,6 +188,11 @@ export const DirectorshipDetails = styled('div', {
 
   borderRadius: '0.25rem',
   border: '1px solid $gray400',
+
+  [`${Text}`]: {
+    paddingLeft: '0.25rem',
+    paddingRight: '0.25rem',
+  },
 });
 
 export const DirectorshipImage = styled(Image, {
@@ -198,40 +203,30 @@ export const DirectorshipImage = styled(Image, {
 
   /* Media Queries min-width: 360px */
   '@media(min-width: 360px)': {
-    padding: '0.125rem',
-
     width: '8rem',
     height: '8rem',
   },
 
   /* Media Queries min-width: 640px */
   '@media(min-width: 640px)': {
-    padding: '0.125rem',
-
     width: '9rem',
     height: '9rem',
   },
 
   /* Media Queries min-width: 768px */
   '@media(min-width: 768px)': {
-    padding: '0.125rem',
-
     width: '9rem',
     height: '9rem',
   },
 
   /* Media Queries min-width: 1024px */
   '@media(min-width: 1024px)': {
-    padding: '0.125rem',
-
     width: '9rem',
     height: '9rem',
   },
 
   /* Media Queries min-width: 1280px */
   '@media(min-width: 1280px)': {
-    padding: '0.125rem',
-
     width: '9rem',
     height: '9rem',
   },

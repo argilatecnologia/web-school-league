@@ -564,7 +564,7 @@ export const HomePartnersDetails = styled('div', {
   /* Media Queries min-width: 360px */
   '@media(min-width: 360px)': {
     display: 'grid',
-    gridTemplateRows: 'repeat(6, 1fr)',
+    gridTemplateRows: 'repeat(5, 1fr)',
   },
 
   /* Media Queries min-width: 640px */
@@ -604,7 +604,7 @@ export const HomePartnersDetails = styled('div', {
     height: '12rem',
 
     display: 'grid',
-    gridTemplateColumns: 'repeat(6, 1fr)',
+    gridTemplateColumns: 'repeat(5, 1fr)',
   },
 });
 
@@ -615,7 +615,7 @@ export const HomePartnersImage = styled(Image, {
   borderRadius: '0.25rem',
   border: '1px solid $gray400',
 
-  padding: '0.5rem',
+  // padding: '0.5rem',
 
   /* Media Queries min-width: 360px */
   '@media(min-width: 360px)': {
