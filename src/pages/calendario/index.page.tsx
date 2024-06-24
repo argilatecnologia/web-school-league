@@ -55,6 +55,33 @@ export default function Calendar() {
             const eventCalendarsData = response.data
               .eventCalendars as IEventCalendar[];
 
+            const months = [];
+
+            const eventMonths = eventCalendarsData.map((event) => {
+              const eventDateSplit = event.event_date.split('T');
+              const eventDateSplitInDayMonthYear = eventDateSplit[0].split('-');
+
+              const eventCalendarMonth = eventDateSplitInDayMonthYear[1];
+
+              console.log('Mês com algum evento', eventCalendarMonth);
+
+              return eventCalendarMonth;
+            });
+
+            if (months.length === 0) {
+              months.push(eventMonths[0]);
+            }
+
+            months.forEach((month) => {
+              eventMonths.forEach((eventM) => {
+                if (month !== eventM) {
+                  months.push(eventM);
+                }
+              });
+            });
+
+            console.log(months);
+
             const events = eventCalendarsData.map((event) => {
               const titleFormatted =
                 event.title.length >= 25
@@ -88,6 +115,33 @@ export default function Calendar() {
                   dayjs(eventCurrentYear).format('YYYY'),
               };
             });
+
+            const datas = [];
+
+            months.forEach((mes) => {
+              const datasEvento = events.filter((data) => {
+                const eventDateSplit = data.event_date.split('T');
+                const eventDateSplitInDayMonthYear =
+                  eventDateSplit[0].split('-');
+
+                const eventCalendarMonth = eventDateSplitInDayMonthYear[1];
+
+                if (mes === eventCalendarMonth) {
+                  return data;
+                }
+
+                return null;
+              });
+
+              const dia = {
+                mes,
+                evento: datasEvento,
+              };
+
+              datas.push(dia);
+            });
+
+            console.log('Datas', datas);
 
             return events;
           }
