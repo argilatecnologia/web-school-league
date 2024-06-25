@@ -36,12 +36,18 @@ interface IEventCalendar {
   hour: string;
 }
 
+interface IEventDate {
+  monthEvent: string;
+  month_event_formatted: string;
+  eventDate: IEventCalendar[];
+}
+
 export default function Calendar() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
 
   // FUNCTION USE QUERY
   const { data: detailEventCalendarsData, isLoading: isLoadingEventCalendars } =
-    useQuery<IEventCalendar[]>({
+    useQuery<IEventDate[]>({
       queryKey: ['detailEventCalendarsPage'],
       queryFn: async () => {
         try {
@@ -63,8 +69,6 @@ export default function Calendar() {
 
               const eventCalendarMonth = eventDateSplitInDayMonthYear[1];
 
-              console.log('Mês com algum evento', eventCalendarMonth);
-
               return eventCalendarMonth;
             });
 
@@ -79,8 +83,6 @@ export default function Calendar() {
                 }
               });
             });
-
-            console.log(months);
 
             const events = eventCalendarsData.map((event) => {
               const titleFormatted =
@@ -97,12 +99,6 @@ export default function Calendar() {
               const eventCalendarMonth = eventDateSplitInDayMonthYear[1];
               const eventCurrentYear = eventDateSplitInDayMonthYear[0];
 
-              // console.log(eventDateSplit);
-              // console.log('Event date', eventDate);
-
-              // console.log('Mes', eventCalendarMonth);
-              // console.log('Ano', eventCurrentYear);
-
               return {
                 ...event,
                 titleFormatted,
@@ -116,34 +112,36 @@ export default function Calendar() {
               };
             });
 
-            const datas = [];
+            const datesWithEvents: IEventDate[] = [];
 
-            months.forEach((mes) => {
-              const datasEvento = events.filter((data) => {
-                const eventDateSplit = data.event_date.split('T');
+            months.forEach((monthEvent) => {
+              const datesEvents = events.filter((dateEvent) => {
+                const eventDateSplit = dateEvent.event_date.split('T');
                 const eventDateSplitInDayMonthYear =
                   eventDateSplit[0].split('-');
 
                 const eventCalendarMonth = eventDateSplitInDayMonthYear[1];
 
-                if (mes === eventCalendarMonth) {
-                  return data;
+                if (monthEvent === eventCalendarMonth) {
+                  return dateEvent;
                 }
 
                 return null;
               });
 
-              const dia = {
-                mes,
-                evento: datasEvento,
+              const dateOfEvent = {
+                monthEvent,
+                month_event_formatted: dayjs(monthEvent)
+                  .locale(ptBR)
+                  .format('MMMM')
+                  .toUpperCase(),
+                eventDate: datesEvents,
               };
 
-              datas.push(dia);
+              datesWithEvents.push(dateOfEvent);
             });
 
-            console.log('Datas', datas);
-
-            return events;
+            return datesWithEvents;
           }
         } catch (err) {
           if (err instanceof AxiosError) {
@@ -196,24 +194,27 @@ export default function Calendar() {
                   <>
                     <CalendarMonthTitle>
                       <Heading size="lg" color="gray-700">
-                        {event.event_month_formatted} de{' '}
-                        {event.event_current_year_formatted}
+                        {event.month_event_formatted}
                       </Heading>
                     </CalendarMonthTitle>
 
-                    <CalendarDetailsInformations>
-                      <CalendarDetails>
-                        <Text size="md" color="gray-700">
-                          {event.event_date_formatted} - {event.hour}
-                        </Text>
+                    {event.eventDate.map((e) => (
+                      <>
+                        <CalendarDetailsInformations>
+                          <CalendarDetails>
+                            <Text size="md" color="gray-700">
+                              {e.event_date_formatted} - {e.hour}
+                            </Text>
 
-                        <CalendarDivider />
+                            <CalendarDivider />
 
-                        <Heading size="md" color="gray-700">
-                          {event.title}
-                        </Heading>
-                      </CalendarDetails>
-                    </CalendarDetailsInformations>
+                            <Heading size="md" color="gray-700">
+                              {e.title}
+                            </Heading>
+                          </CalendarDetails>
+                        </CalendarDetailsInformations>
+                      </>
+                    ))}
                   </>
                 ))}
               </CalendarContentInformations>
