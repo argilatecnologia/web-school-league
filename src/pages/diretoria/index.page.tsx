@@ -19,6 +19,7 @@ import {
   DirectorshipImage,
 } from './styles';
 import { LoadingSpinner } from '@/components/LoadingSpinner';
+import { GetServerSideProps } from 'next';
 
 interface IDirector {
   name: string;
@@ -112,11 +113,8 @@ export default function Directorship() {
                         height={120}
                       />
                       <Text size="md" color="gray-700">
-                        oi
+                        {director.nameFormatted}
                       </Text>
-                      {/* <Text size="md" color="gray-700">
-                        {director?.nameFormatted}
-                      </Text> */}
                     </DirectorshipDetails>
                   </>
                 ))}
@@ -130,3 +128,9 @@ export default function Directorship() {
     </>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {},
+  };
+};
