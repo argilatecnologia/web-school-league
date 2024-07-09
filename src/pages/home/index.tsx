@@ -118,7 +118,7 @@ export default function Home() {
             <HomeRulesDetails>
               <Link href="/rules">
                 <HomeRulesImage src={logoSchoolLeagueImg} alt="" />
-                <Heading size="3xl">
+                <Heading size="3xl" color="gray-100">
                   <span style={{ color: '#E96924' }}>
                     Regulamento Geral e Normas
                   </span>
