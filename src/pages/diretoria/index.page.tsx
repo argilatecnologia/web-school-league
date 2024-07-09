@@ -112,8 +112,11 @@ export default function Directorship() {
                         height={120}
                       />
                       <Text size="md" color="gray-700">
-                        {director?.nameFormatted}
+                        oi
                       </Text>
+                      {/* <Text size="md" color="gray-700">
+                        {director?.nameFormatted}
+                      </Text> */}
                     </DirectorshipDetails>
                   </>
                 ))}
