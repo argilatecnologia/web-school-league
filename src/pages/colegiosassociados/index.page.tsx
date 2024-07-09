@@ -1,3 +1,5 @@
+'use client';
+
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 import { useState } from 'react';
