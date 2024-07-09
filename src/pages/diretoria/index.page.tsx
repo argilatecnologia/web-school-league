@@ -99,7 +99,7 @@ export default function Directorship() {
             </Heading>
           </DirectorshipContentTitle>
 
-          {isLoadingDirectors && !detailDirectorsData ? (
+          {isLoadingDirectors === true ? (
             <LoadingSpinner />
           ) : (
             <DirectorshipInformations>
@@ -113,7 +113,6 @@ export default function Directorship() {
                         width={120}
                         height={120}
                       />
-                      {/* <p>{director.nameFormatted}</p> */}
                       <Text size="md" color="gray-700">
                         {director.nameFormatted}
                       </Text>
