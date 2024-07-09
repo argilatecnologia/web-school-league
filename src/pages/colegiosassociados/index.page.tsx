@@ -10,7 +10,7 @@ import { api } from '@/lib/api';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { Heading, Text } from '@/components/Typography';
+import { Heading } from '@/components/Typography';
 import { LoadingSpinner } from '@/components/LoadingSpinner';
 
 import {
