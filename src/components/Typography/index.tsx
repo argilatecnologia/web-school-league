@@ -20,7 +20,6 @@ interface IHeadingProps {
   children: ReactNode;
   size: 'xs' | 'sm' | 'md' | 'lg' | '3xl' | '4xl';
   color?:
-    | ''
     | 'gray-100'
     | 'gray-200'
     | 'gray-300'
