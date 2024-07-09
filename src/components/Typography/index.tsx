@@ -1,114 +1,49 @@
-import { styled } from '@/styles/stitches.config';
+import { ReactNode } from 'react';
+import { HeadingTypograph, TextTypograph } from './styles';
 
-export const Text = styled('p', {
-  lineHeight: '$base',
+interface ITextProps {
+  children: ReactNode;
+  size: 'sm' | 'md' | 'lg';
+  color:
+    | 'white-25'
+    | 'gray-100'
+    | 'gray-200'
+    | 'gray-300'
+    | 'gray-400'
+    | 'gray-500'
+    | 'gray-600'
+    | 'gray-700'
+    | 'gray-800';
+}
 
-  variants: {
-    size: {
-      sm: {
-        fontSize: '$sm',
-      },
-      md: {
-        fontSize: '$md',
-      },
-      lg: {
-        fontSize: '$xl',
-      },
-    },
+interface IHeadingProps {
+  children: ReactNode;
+  size: 'xs' | 'sm' | 'md' | 'lg' | '3xl' | '4xl';
+  color:
+    | 'gray-100'
+    | 'gray-200'
+    | 'gray-300'
+    | 'gray-400'
+    | 'gray-500'
+    | 'gray-600'
+    | 'gray-700'
+    | 'gray-800';
+}
 
-    color: {
-      'white-25': {
-        color: '$white25',
-      },
-      'gray-100': {
-        color: '$gray100',
-      },
-      'gray-200': {
-        color: '$gray200',
-      },
-      'gray-300': {
-        color: '$gray300',
-      },
-      'gray-400': {
-        color: '$gray400',
-      },
-      'gray-500': {
-        color: '$gray500',
-      },
-      'gray-600': {
-        color: '$gray600',
-      },
-      'gray-700': {
-        color: '$gray700',
-      },
-      'gray-800': {
-        color: '$gray800',
-      },
-    },
-  },
+const Text = ({ children, size, color }: ITextProps) => {
+  return (
+    <TextTypograph size={size} color={color}>
+      {children}
+    </TextTypograph>
+  );
+};
 
-  defaultVariants: {
-    size: 'md',
-    color: 'gray-100',
-  },
-});
+const Heading = ({ children, size, color }: IHeadingProps) => {
+  return (
+    <HeadingTypograph size={size} color={color}>
+      {children}
+    </HeadingTypograph>
+  );
+};
 
-export const Heading = styled('h1', {
-  fontWeight: '$bold',
-  lineHeight: '$short',
-
-  variants: {
-    size: {
-      xs: {
-        fontSize: '$md',
-      },
-      sm: {
-        fontSize: '$lg',
-      },
-      md: {
-        fontSize: '$xl',
-      },
-      lg: {
-        fontSize: '$2xl',
-      },
-      '3xl': {
-        fontSize: '$3xl',
-      },
-      '4xl': {
-        fontSize: '$4xl',
-      },
-    },
-
-    color: {
-      'gray-100': {
-        color: '$gray100',
-      },
-      'gray-200': {
-        color: '$gray200',
-      },
-      'gray-300': {
-        color: '$gray300',
-      },
-      'gray-400': {
-        color: '$gray400',
-      },
-      'gray-500': {
-        color: '$gray500',
-      },
-      'gray-600': {
-        color: '$gray600',
-      },
-      'gray-700': {
-        color: '$gray700',
-      },
-      'gray-800': {
-        color: '$gray800',
-      },
-    },
-  },
-
-  defaultVariants: {
-    size: 'md',
-    color: 'gray-100',
-  },
-});
+export { Text, Heading };
