@@ -107,9 +107,9 @@ export default function AssociatedColleges() {
           ) : (
             <AssociatedCollegesInformations>
               <AssociatedCollegesDetailsInformations>
-                {detailAssociatedCollegesData?.map((college) => (
+                {detailAssociatedCollegesData?.map((college, i) => (
                   <>
-                    <AssociatedCollegesDetails>
+                    <AssociatedCollegesDetails key={college.name + i}>
                       <AssociatedCollegesImage
                         src={college.image_url ? college.image_url : ''}
                         alt=""
@@ -117,7 +117,7 @@ export default function AssociatedColleges() {
                         height={120}
                       />
                       <Text size="md" color="gray-700">
-                        {college.nameFormatted}
+                        {college?.nameFormatted}
                       </Text>
                     </AssociatedCollegesDetails>
                   </>
