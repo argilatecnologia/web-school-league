@@ -121,7 +121,7 @@ export default function PreviousEditions() {
                         height={120}
                       />
                       <Heading size="md" color="gray-700">
-                        {edition?.titleFormatted}
+                        {edition.titleFormatted}
                       </Heading>
                     </PreviousEditionsDetails>
                   </>
@@ -136,3 +136,9 @@ export default function PreviousEditions() {
     </>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {},
+  };
+};

@@ -117,7 +117,7 @@ export default function AssociatedColleges() {
                         height={120}
                       />
                       <Text size="md" color="gray-700">
-                        {college?.nameFormatted}
+                        {college.nameFormatted}
                       </Text>
                     </AssociatedCollegesDetails>
                   </>
@@ -132,3 +132,9 @@ export default function AssociatedColleges() {
     </>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {},
+  };
+};

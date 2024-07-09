@@ -82,3 +82,9 @@ export default function WhoWeAre() {
     </>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {},
+  };
+};
