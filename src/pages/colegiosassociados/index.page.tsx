@@ -116,9 +116,10 @@ export default function AssociatedColleges() {
                         width={120}
                         height={120}
                       />
-                      <Text size="md" color="gray-700">
+                      {/* <Text size="md" color="gray-700">
                         {college?.nameFormatted}
-                      </Text>
+                      </Text> */}
+                      <p>{college?.nameFormatted}</p>
                     </AssociatedCollegesDetails>
                   </>
                 ))}
