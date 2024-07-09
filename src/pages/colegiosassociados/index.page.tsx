@@ -10,7 +10,7 @@ import { api } from '@/lib/api';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { Heading } from '@/components/Typography';
+import { Heading, Text } from '@/components/Typography';
 import { LoadingSpinner } from '@/components/LoadingSpinner';
 
 import {
@@ -107,19 +107,18 @@ export default function AssociatedColleges() {
           ) : (
             <AssociatedCollegesInformations>
               <AssociatedCollegesDetailsInformations>
-                {detailAssociatedCollegesData?.map((college, i) => (
+                {detailAssociatedCollegesData?.map((college) => (
                   <>
-                    <AssociatedCollegesDetails key={college.name + i}>
+                    <AssociatedCollegesDetails>
                       <AssociatedCollegesImage
                         src={college.image_url ? college.image_url : ''}
                         alt=""
                         width={120}
                         height={120}
                       />
-                      {/* <Text size="md" color="gray-700">
+                      <Text size="md" color="gray-700">
                         {college?.nameFormatted}
-                      </Text> */}
-                      <p>{college?.nameFormatted}</p>
+                      </Text>
                     </AssociatedCollegesDetails>
                   </>
                 ))}
