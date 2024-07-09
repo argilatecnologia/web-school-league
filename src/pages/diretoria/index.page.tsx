@@ -7,7 +7,7 @@ import { useQuery } from '@tanstack/react-query';
 
 import { api } from '@/lib/api';
 
-import { Heading, Text } from '@/components/Typography';
+import { Heading } from '@/components/Typography';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { LoadingSpinner } from '@/components/LoadingSpinner';
