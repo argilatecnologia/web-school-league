@@ -17,6 +17,9 @@ export const Text = styled('p', {
     },
 
     color: {
+      'white-25': {
+        color: '$white25',
+      },
       'gray-100': {
         color: '$gray100',
       },
@@ -29,8 +32,17 @@ export const Text = styled('p', {
       'gray-400': {
         color: '$gray400',
       },
-      'orange-600': {
-        color: '#F78728',
+      'gray-500': {
+        color: '$gray500',
+      },
+      'gray-600': {
+        color: '$gray600',
+      },
+      'gray-700': {
+        color: '$gray700',
+      },
+      'gray-800': {
+        color: '$gray800',
       },
     },
   },
@@ -59,6 +71,12 @@ export const Heading = styled('h1', {
       lg: {
         fontSize: '$2xl',
       },
+      '3xl': {
+        fontSize: '$3xl',
+      },
+      '4xl': {
+        fontSize: '$4xl',
+      },
     },
 
     color: {
@@ -73,6 +91,18 @@ export const Heading = styled('h1', {
       },
       'gray-400': {
         color: '$gray400',
+      },
+      'gray-500': {
+        color: '$gray500',
+      },
+      'gray-600': {
+        color: '$gray600',
+      },
+      'gray-700': {
+        color: '$gray700',
+      },
+      'gray-800': {
+        color: '$gray800',
       },
     },
   },
