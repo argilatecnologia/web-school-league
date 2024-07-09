@@ -113,9 +113,10 @@ export default function Directorship() {
                         width={120}
                         height={120}
                       />
-                      <Text size="md" color="gray-700">
+                      <p>{director.nameFormatted}</p>
+                      {/* <Text size="md" color="gray-700">
                         {director.nameFormatted}
-                      </Text>
+                      </Text> */}
                     </DirectorshipDetails>
                   </>
                 ))}
