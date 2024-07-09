@@ -7,7 +7,7 @@ import { useQuery } from '@tanstack/react-query';
 
 import { api } from '@/lib/api';
 
-import { Heading } from '@/components/Typography';
+import { Heading, Text } from '@/components/Typography';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { LoadingSpinner } from '@/components/LoadingSpinner';
@@ -99,7 +99,7 @@ export default function Directorship() {
             </Heading>
           </DirectorshipContentTitle>
 
-          {isLoadingDirectors === true ? (
+          {isLoadingDirectors && !detailDirectorsData ? (
             <LoadingSpinner />
           ) : (
             <DirectorshipInformations>
@@ -113,10 +113,10 @@ export default function Directorship() {
                         width={120}
                         height={120}
                       />
-                      <p>{director.nameFormatted}</p>
-                      {/* <Text size="md" color="gray-700">
+                      {/* <p>{director.nameFormatted}</p> */}
+                      <Text size="md" color="gray-700">
                         {director.nameFormatted}
-                      </Text> */}
+                      </Text>
                     </DirectorshipDetails>
                   </>
                 ))}
