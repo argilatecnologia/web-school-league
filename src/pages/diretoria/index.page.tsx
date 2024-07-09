@@ -1,3 +1,4 @@
+import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 import { useState } from 'react';
@@ -5,9 +6,11 @@ import { AxiosError } from 'axios';
 import { useQuery } from '@tanstack/react-query';
 
 import { api } from '@/lib/api';
+
 import { Heading, Text } from '@/components/Typography';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { LoadingSpinner } from '@/components/LoadingSpinner';
 
 import {
   DirectorshipContainer,
@@ -18,8 +21,6 @@ import {
   DirectorshipDetails,
   DirectorshipImage,
 } from './styles';
-import { LoadingSpinner } from '@/components/LoadingSpinner';
-import { GetServerSideProps } from 'next';
 
 interface IDirector {
   name: string;
