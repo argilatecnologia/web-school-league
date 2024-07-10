@@ -7,7 +7,7 @@ import { useQuery } from '@tanstack/react-query';
 
 import { api } from '@/lib/api';
 
-import { Heading, Text } from '@/components/Typography';
+import { Heading } from '@/components/Typography';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { LoadingSpinner } from '@/components/LoadingSpinner';
@@ -113,9 +113,9 @@ export default function Directorship() {
                         width={120}
                         height={120}
                       />
-                      <Text size="md" color="gray-700">
+                      <p style={{ color: '#374151', fontSize: '1rem' }}>
                         {director.nameFormatted}
-                      </Text>
+                      </p>
                     </DirectorshipDetails>
                   </>
                 ))}
@@ -133,9 +133,5 @@ export default function Directorship() {
 export const getServerSideProps: GetServerSideProps = async () => {
   return {
     props: {},
-    redirect: {
-      destination: '/',
-      permanent: false,
-    },
   };
 };
