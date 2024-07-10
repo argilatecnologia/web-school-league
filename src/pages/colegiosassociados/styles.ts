@@ -1,6 +1,6 @@
 import { styled } from '@/styles/stitches.config';
 
-import { Heading } from '@/components/Typography';
+import { Heading, Text } from '@/components/Typography';
 
 import Image from 'next/image';
 
