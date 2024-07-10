@@ -135,5 +135,9 @@ export default function AssociatedColleges() {
 export const getServerSideProps: GetServerSideProps = async () => {
   return {
     props: {},
+    redirect: {
+      destination: '/',
+      permanent: false,
+    },
   };
 };
