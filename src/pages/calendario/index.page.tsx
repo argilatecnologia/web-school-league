@@ -1,8 +1,12 @@
+import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 import { useState } from 'react';
 import { AxiosError } from 'axios';
 import { useQuery } from '@tanstack/react-query';
+
+import dayjs from 'dayjs';
+import ptBR from 'dayjs/locale/pt-br';
 
 import { api } from '@/lib/api';
 
@@ -22,8 +26,6 @@ import {
   CalendarDetails,
   CalendarDivider,
 } from './styles';
-import dayjs from 'dayjs';
-import ptBR from 'dayjs/locale/pt-br';
 
 interface IEventCalendar {
   title: string;
@@ -194,7 +196,9 @@ export default function Calendar() {
                   <>
                     <CalendarMonthTitle>
                       <Heading size="lg" color="gray-700">
-                        {event.month_event_formatted}
+                        {event.month_event_formatted
+                          ? event.month_event_formatted
+                          : ''}
                       </Heading>
                     </CalendarMonthTitle>
 
@@ -203,13 +207,16 @@ export default function Calendar() {
                         <CalendarDetailsInformations>
                           <CalendarDetails>
                             <Text size="md" color="gray-700">
-                              {e.event_date_formatted} - {e.hour}
+                              {e.event_date_formatted
+                                ? e.event_date_formatted
+                                : ''}{' '}
+                              - {e.hour ? e.hour : ''}
                             </Text>
 
                             <CalendarDivider />
 
                             <Heading size="md" color="gray-700">
-                              {e.title}
+                              {e.title ? e.title : ''}
                             </Heading>
                           </CalendarDetails>
                         </CalendarDetailsInformations>
@@ -227,3 +234,9 @@ export default function Calendar() {
     </>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {},
+  };
+};

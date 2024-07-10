@@ -121,7 +121,7 @@ export default function Partnership() {
                         height={120}
                       />
                       <Text size="md" color="gray-700">
-                        {partner.nameFormatted}
+                        {partner.nameFormatted ? partner.nameFormatted : ''}
                       </Text>
                     </PartnersContentDetails>
                   </>

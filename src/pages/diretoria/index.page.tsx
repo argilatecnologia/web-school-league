@@ -114,7 +114,7 @@ export default function Directorship() {
                         height={120}
                       />
                       <Text size="md" color="gray-700">
-                        {director.nameFormatted}
+                        {director.nameFormatted ? director.nameFormatted : ''}
                       </Text>
                     </DirectorshipDetails>
                   </>
