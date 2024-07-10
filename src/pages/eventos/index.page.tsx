@@ -127,14 +127,11 @@ export default function Events() {
                         height={120}
                       />
                       <Heading size="md" color="gray-700">
-                        {event.nameFormatted ? event.nameFormatted : ''}
+                        {event.nameFormatted}
                       </Heading>
 
                       <Text size="md" color="gray-700">
-                        {event.registration_deadline_formatted
-                          ? event.registration_deadline_formatted
-                          : ''}{' '}
-                        - {event.hour ? event.hour : ''}
+                        {event.registration_deadline_formatted} - {event?.hour}
                       </Text>
                     </EventsDetails>
                   </>

@@ -196,9 +196,7 @@ export default function Calendar() {
                   <>
                     <CalendarMonthTitle>
                       <Heading size="lg" color="gray-700">
-                        {event.month_event_formatted
-                          ? event.month_event_formatted
-                          : ''}
+                        {event.month_event_formatted}
                       </Heading>
                     </CalendarMonthTitle>
 
@@ -207,16 +205,13 @@ export default function Calendar() {
                         <CalendarDetailsInformations>
                           <CalendarDetails>
                             <Text size="md" color="gray-700">
-                              {e.event_date_formatted
-                                ? e.event_date_formatted
-                                : ''}{' '}
-                              - {e.hour ? e.hour : ''}
+                              {e.event_date_formatted} - {e.hour}
                             </Text>
 
                             <CalendarDivider />
 
                             <Heading size="md" color="gray-700">
-                              {e.title ? e.title : ''}
+                              {e.title}
                             </Heading>
                           </CalendarDetails>
                         </CalendarDetailsInformations>

@@ -122,7 +122,7 @@ export default function PreviousEditions() {
                         height={120}
                       />
                       <Heading size="md" color="gray-700">
-                        {edition.titleFormatted ? edition.titleFormatted : ''}
+                        {edition.titleFormatted}
                       </Heading>
                     </PreviousEditionsDetails>
                   </>
