@@ -279,3 +279,90 @@ export const AboutContentTitle = styled('div', {
     },
   },
 });
+
+export const AboutContentTextItem = styled('div', {
+  gap: '1rem',
+  margin: '0 0 0.75rem 0',
+  textAlign: 'justify',
+
+  /* Media Queries min-width: 360px */
+  '@media(min-width: 360px)': {
+    paddingLeft: '1.5rem',
+    paddingRight: '2rem',
+
+    [`>${Heading}`]: {
+      textAlign: 'center',
+      fontSize: '$lg',
+    },
+
+    [`>${Text}`]: {
+      textAlign: 'justify',
+      fontSize: '$md',
+    },
+  },
+
+  /* Media Queries min-width: 640px */
+  '@media(min-width: 640px)': {
+    margin: '0 auto',
+
+    padding: '1.5rem',
+
+    [`>${Heading}`]: {
+      textAlign: 'center',
+      fontSize: '$2xl',
+    },
+
+    [`>${Text}`]: {
+      textAlign: 'justify',
+      fontSize: '$md',
+    },
+  },
+
+  /* Media Queries min-width: 768px */
+  '@media(min-width: 768px)': {
+    [`>${Heading}`]: {
+      fontSize: '$2xl',
+    },
+
+    [`>${Text}`]: {
+      textAlign: 'justify',
+      fontSize: '$md',
+    },
+  },
+
+  /* Media Queries min-width: 1024px */
+  '@media(min-width: 1024px)': {
+    [`>${Heading}`]: {
+      fontSize: '$2xl',
+    },
+
+    [`>${Text}`]: {
+      textAlign: 'justify',
+      fontSize: '$md',
+    },
+  },
+
+  /* Media Queries min-width: 1280px */
+  '@media(min-width: 1280px)': {
+    [`>${Heading}`]: {
+      fontSize: '$3xl',
+    },
+
+    [`>${Text}`]: {
+      textAlign: 'justify',
+      fontSize: '$lg',
+    },
+  },
+
+  /* Media Queries min-width: 1536px */
+  '@media(min-width: 1536px)': {
+    [`>${Heading}`]: {
+      fontSize: '$3xl',
+    },
+
+    [`>${Text}`]: {
+      textAlign: 'justify',
+      fontSize: '$xl',
+    },
+  },
+});

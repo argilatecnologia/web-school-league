@@ -15,6 +15,7 @@ import {
   AboutContainerImage,
   AboutContentImage,
   AboutContentTitle,
+  AboutContentTextItem,
 } from './styles';
 
 export default function WhoWeAre() {
@@ -47,33 +48,59 @@ export default function WhoWeAre() {
               Quem somos
             </Heading>
 
+            {<br />}
+
             <Text size="md" color="gray-700">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-              illum quae non laudantium earum eligendi, culpa in minus
-              asperiores voluptatum aperiam nam! Odit consectetur explicabo
-              omnis fuga esse perspiciatis porro! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Repellat quis vel dolorem. Neque
-              labore, odio ab veritatis error magni, esse laboriosam fugiat id
-              quam vitae. Dolores odit soluta architecto adipisci? Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Aliquid quisquam et
-              iure autem magni doloremque nihil earum laudantium repellat
-              ducimus! Maiores, et excepturi ut dolore ullam fugiat unde
-              accusamus nulla?
+              {' '}
+              <strong>Uma chama acesa pelo esporte e pela educação.</strong>
+            </Text>
+
+            <Text size="md" color="gray-700">
+              Somos a Liga Escolar, um evento estudantil idealizado por
+              professores de Educação Física em 2014, com a missão de ampliar as
+              oportunidades no mercado de trabalho e manter viva a chama do
+              esporte educacional na rede privada de Caruaru e cidades vizinhas.
               {<br />}
               {<br />}
-              In placerat, felis vitae sodales dictum, lacus quam pretium mi, ut
-              pretium urna turpis eu dui. Vestibulum id ullamcorper nibh. Donec
-              luctus, nunc finibus elementum suscipit, tortor augue vulputate
-              sapien, vitae feugiat enim augue sed. Quisque id aliquam elit.{' '}
+              <strong>Mais que um evento, um movimento.</strong>
+              {<br />}
+              {<br />}A Liga Escolar transcende a arena das competições. Somos
+              um movimento que:
+              {<br />}
+              <AboutContentTextItem>
+                - <strong>Promove a integração: </strong>Reunimos estudantes de
+                diversas escolas, fomentando a amizade, o respeito e o espírito
+                de equipe.
+                {<br />}- <strong>Incentiva a prática esportiva: </strong>
+                Acreditamos no poder transformador do esporte e na sua
+                importância para o desenvolvimento físico, mental e social dos
+                jovens.
+                {<br />}- <strong>Descobre talentos: </strong>Revelamos novos
+                atletas e impulsionamos a formação de futuros profissionais da
+                área de Educação Física.
+                {<br />}- <strong>Contribui para a formação integral: </strong>
+                Através do esporte, educamos para valores como disciplina,
+                responsabilidade, fair play e superação.
+              </AboutContentTextItem>
+              <strong>Nossa história, nossa marca.</strong>
               {<br />}
               {<br />}
-              Suspendisse congue pharetra maximus. Duis rutrum velit a leo
-              euismod dictum. Sed sodales est efficitur arcu tincidunt
-              tincidunt. Curabitur fringilla, risus at feugiat feugiat, nisl
-              nulla tincidunt tellus, elementum elementum lorem nisl eleifend
-              dolor. Nullam eget dui at sem ullamcorper luctus.
+              Ao longo dos anos, a Liga Escolar se consolidou como um dos
+              principais eventos esportivos estudantis da região. Mais do que um
+              campeonato, construímos uma história de conquistas, sonhos e
+              realizações.
               {<br />}
               {<br />}
+              <strong>Junte-se a nós!</strong>
+              {<br />}
+              {<br />}
+              Se você é apaixonado por esporte e educação, a Liga Escolar é o
+              seu lugar! Participe das nossas competições, torça pelos seus
+              favoritos e faça parte desse movimento que transforma vidas
+              através do esporte.
+              {<br />}
+              {<br />}
+              <strong>#LigaEscolar #Esporte #Educação #Caruaru</strong>
             </Text>
           </AboutContentTitle>
         </AboutContent>
