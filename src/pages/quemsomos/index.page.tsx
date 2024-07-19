@@ -45,7 +45,7 @@ export default function WhoWeAre() {
 
           <AboutContentTitle>
             <Heading size="3xl" color="gray-700">
-              Quem somos
+              A Liga Escolar
             </Heading>
 
             {<br />}

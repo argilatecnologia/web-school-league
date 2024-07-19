@@ -44,36 +44,65 @@ export default function WhoWeAre() {
 
           <HistoricContentTitle>
             <Heading size="3xl" color="gray-700">
-              Histórico
+              Liga Escolar de Caruaru: Uma Década Fomentando o Esporte e a
+              Educação (2014-2024)
             </Heading>
 
+            {<br />}
+
             <Text size="md" color="gray-700">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-              illum quae non laudantium earum eligendi, culpa in minus
-              asperiores voluptatum aperiam nam! Odit consectetur explicabo
-              omnis fuga esse perspiciatis porro! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Repellat quis vel dolorem. Neque
-              labore, odio ab veritatis error magni, esse laboriosam fugiat id
-              quam vitae. Dolores odit soluta architecto adipisci? Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Aliquid quisquam et
-              iure autem magni doloremque nihil earum laudantium repellat
-              ducimus! Maiores, et excepturi ut dolore ullam fugiat unde
-              accusamus nulla?
+              Em 2014, um marco histórico foi escrito para o esporte educacional
+              de Caruaru. Um grupo de visionários professores de Educação
+              Física, em parceria com gestores de escolas, idealizou e deu vida
+              à Liga Escolar, um evento esportivo direcionado à rede particular
+              de ensino do município. A iniciativa, nascida da união da
+              infraestrutura das escolas com parcerias valiosas de associações e
+              federações esportivas, rapidamente se consolidou como um grande
+              sucesso em sua primeira edição.
               {<br />}
               {<br />}
-              In placerat, felis vitae sodales dictum, lacus quam pretium mi, ut
-              pretium urna turpis eu dui. Vestibulum id ullamcorper nibh. Donec
-              luctus, nunc finibus elementum suscipit, tortor augue vulputate
-              sapien, vitae feugiat enim augue sed. Quisque id aliquam elit.{' '}
+              Ao longo dos anos seguintes, a Liga Escolar se tornou um evento
+              anual imperdível, reunindo milhares de alunos, professores e
+              familiares em torno da paixão pelo esporte. Mais do que
+              competições, a Liga Escolar se consolidou como um espaço de
+              confraternização, incentivo à prática esportiva, desenvolvimento
+              de valores como disciplina, respeito e trabalho em equipe, e
+              promoção da integração entre as escolas participantes.
               {<br />}
               {<br />}
-              Suspendisse congue pharetra maximus. Duis rutrum velit a leo
-              euismod dictum. Sed sodales est efficitur arcu tincidunt
-              tincidunt. Curabitur fringilla, risus at feugiat feugiat, nisl
-              nulla tincidunt tellus, elementum elementum lorem nisl eleifend
-              dolor. Nullam eget dui at sem ullamcorper luctus.
+              No entanto, em 2020, o mundo se viu diante de um desafio
+              inesperado: a pandemia da COVID-19. Diante da necessidade de
+              preservar a saúde e o bem-estar de todos, a edição daquele ano da
+              Liga Escolar precisou ser adiada. Mas nem mesmo a pandemia foi
+              capaz de apagar a chama do esporte educacional em Caruaru.
               {<br />}
               {<br />}
+              Em 2023, a Liga Escolar retornou com força total, marcando um
+              momento de retomada, superação e alegria para toda a comunidade
+              escolar. A edição daquele ano foi ainda mais especial, pois
+              celebramos 9 anos de sucesso da Liga, evidenciando o seu papel
+              fundamental na formação de cidadãos completos e na promoção de um
+              futuro mais saudável e promissor para as crianças e jovens de
+              Caruaru.
+              {<br />}
+              {<br />}E agora, em 2024, chegamos a um momento ainda mais
+              grandioso: a celebração dos 10 anos da Liga Escolar! Uma década de
+              conquistas, sonhos realizados e a certeza de que o esporte
+              continua sendo uma ferramenta poderosa para o desenvolvimento
+              humano e para a construção de uma sociedade mais justa e fraterna.
+              {<br />}
+              {<br />}A Liga Escolar de Caruaru é, sem dúvida, um patrimônio do
+              esporte educacional do município. Sua história inspiradora e seus
+              resultados positivos demonstram o poder transformador do esporte
+              quando aliado à educação de qualidade. Agradecemos a todos que
+              contribuíram para o sucesso dessa iniciativa ao longo desses 10
+              anos, especialmente aos professores, gestores, alunos, familiares,
+              parceiros e patrocinadores.
+              {<br />}
+              {<br />}
+              Que a Liga Escolar continue por muitos anos a fomentar o esporte,
+              a educação e a união da comunidade caruaruense, construindo um
+              futuro ainda mais brilhante para as nossas crianças e jovens!
             </Text>
           </HistoricContentTitle>
         </HistoricContent>
