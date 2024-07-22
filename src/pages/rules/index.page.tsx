@@ -236,6 +236,29 @@ export default function Rule() {
             <RuleContentInformations>
               <RuleMonthTitle>
                 <Heading size="lg" color="gray-700">
+                  Ginástica Artística
+                </Heading>
+              </RuleMonthTitle>
+
+              <RuleDetailsInformations>
+                <RuleDetails>
+                  <Link
+                    href="/docs/NORMAS_ESPECIFICAS_GINASTICA_ARTISTICA.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <DownloadSimple size={24} />
+                    <Heading size="md" color="gray-700">
+                      Normas Específicas Ginástica Artística
+                    </Heading>
+                  </Link>
+                </RuleDetails>
+              </RuleDetailsInformations>
+            </RuleContentInformations>
+
+            <RuleContentInformations>
+              <RuleMonthTitle>
+                <Heading size="lg" color="gray-700">
                   Judô
                 </Heading>
               </RuleMonthTitle>

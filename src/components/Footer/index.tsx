@@ -24,7 +24,7 @@ const Footer = () => {
           </Text>
           <Text size="sm" color="white-25">
             Desenvolvido por{' '}
-            <Link href="#" target="_blank">
+            <Link href="https://www.argilatecnologia.com/" target="_blank">
               Argila Tecnologia
             </Link>
           </Text>
