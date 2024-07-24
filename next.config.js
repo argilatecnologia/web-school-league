@@ -7,14 +7,14 @@ const nextConfig = {
     domains: [
       '192.168.100.53',
     ],
-    // remotePatterns: [
-    //   {
-    //     protocol: 'http',
-    //     hostname: '192.168.100.53',
-    //     port: "3333",
-    //     pathname: '/api/image/get/**',
-    //   },
-    // ],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'ligaescolarbucket.s3.amazonaws.com',
+        // port: '',
+        // pathname: '',
+      },
+    ],
   },
   webpack: (config) => {
     config.resolve.fallback = { fs: false };
