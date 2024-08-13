@@ -65,7 +65,7 @@ export default function Contact() {
             <ContactDetailsInformations>
               <Phone size={24} />
               <Text size="sm" color="gray-700">
-                81 99313-9096
+                (81) 99313-9096
               </Text>
             </ContactDetailsInformations>
 
@@ -80,7 +80,7 @@ export default function Contact() {
             <ContactDetailsInformations>
               <EnvelopeSimple size={24} />
               <Text size="sm" color="gray-700">
-                contato@example.com
+                ligaescolarcaruaru@gmail.com
               </Text>
             </ContactDetailsInformations>
           </ContactInformations>
